@@ -1,2 +1,28 @@
-# RenderOverrideMaya
-RenderOverride for Maya
+# RenderOverride [Maya Plugin]
+
+## 概要
+
+[概要]
+
+
+## 詳細(ドキュメント)
+
+* [トップページ](https://pluginmania.github.io/RenderOverrideMaya/)
+
+* 日本語ドキュメント
+  * [セクション01]()
+  * [セクション02]()
+  * [セクション03]()
+  * [セクション04]()
+
+  * [正誤表]()
+  * [ライセンス]()
+  * [更新履歴]()
+
+
+## ライセンス購入
+
+Autodesk社のApp Storeより、ライセンス購入してください。
+支払方法、領収書などはAutodesk社にお問い合わせください。
+
+デモ版の機能については、画面にウォーターマークが表示される事を除き、商用版と変わりません。

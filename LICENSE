@@ -1,0 +1,211 @@
+Copyright (c) 2022 PluginMania @github
+RenderOverride
+https://github.com/PluginMania/RenderOverrideMaya
+
+[English translation is after Japanese]
+
+本ソフトウェアおよび関連文書ファイル（以下「本ソフトウェア」といいます）を使用される場合は、
+本ソフトウェアのライセンス及びAutodesk社のソフトウェア条項に反しない範囲で使用することが義務付けられます。
+本ソフトウェアのみならず、Autodesk社のソフトウェアのライセンスもご購入の上、ご使用ください。
+
+
+* 本ソフトウェアのライセンス形態
+   1. 評価版 (商用利用不可)
+   2. 有償ライセンス (商用利用可)
+
+
+* 評価版(トライアル・商用利用不可)
+    次の行為を許可します
+    ※ 但し、本ソフトウェアのバグ等によりウォーターマークが外れた場合は、使用を中止してください
+      1. 私的使用
+         * 学習目的で、本ソフトウェアのコピーを使用すること
+      2. 本ソフトウェアの宣伝を目的として、
+         a) WebページのURL
+         b) 使用の様子をキャプチャした動画
+         を載せる事
+
+    禁止事項
+      1. 本ソフトウェアの著作権・所有権を主張すること
+      2. 修正
+      3. 結合
+      4. リバースエンジニアリング
+      5. 配布 (ファイルサーバーへのコピーなども含む)
+         * 他人に紹介する場合は、必ずAutodeskAppStoreからのダウンロードを案内してください
+      6. ウォーターマークの表示を取り除くこと
+      7. 商用利用
+
+    免責
+      本ソフトウェアは、商品性、特定目的への適合性、および非侵害の保証を含むがこれに限定されない、明示的または黙示的ないかなる種類の保証もなく、「現状のまま」で提供されます。いかなる場合においても、著者または著作権者は、本ソフトウェアまたは本ソフトウェアの使用またはその他の取引に起因する、または関連する、契約、不法行為またはその他の行為であるかを問わず、いかなる請求、損害またはその他の責任も負いません。
+
+    その他
+      * 料金
+        * 無償
+          (デモ版のページより本ソフトウェアの認証・ダウンロードを行ってください。有償版のページより認証した場合は、ライセンス料が引き落とされる可能性があります。間違ってライセンスをお支払い頂いた場合、返金は致しかねますのでご了承ください)
+
+      * 有効期限
+        * 定めなし
+          ※ 但し、ウォーターマークが表示されている限り
+
+      * 本ソフトウェアのダウンロード・インストール
+        * AutodeskAppStoreからインストーラーをダウンロードしてください
+        * AutodeskAppStore以外での配布は行っておりません
+        * メンテナンスなどでAutodeskAppStoreが利用できない場合は、復旧するまでお待ちください
+        * インストールができない場合はAutodeskAppStoreへお問い合わせください
+
+
+* 有償ライセンス(商用ライセンス)
+    条件
+      * AutodeskAppStoreにて、本人もしくは組織の代表者のアカウントを通じてライセンスを購入していること
+      * ライセンスの有効期限内であること
+      * ネットワークに繋いでいること
+      * 本ソフトウェアがAutodeskLicenseサーバーへ問い合わせが可能なこと
+
+    次の行為を許可します。
+      1. 本ソフトウェアのコピーを使用すること
+      2. 私的使用
+      3. 商用利用
+      4. 本ソフトウェアの宣伝を目的として、
+         a) WebページのURL
+         b) 使用の様子をキャプチャした動画
+         を載せる事
+
+    禁止事項
+      1. 本ソフトウェアの著作権・所有権を主張すること
+      2. 修正
+      3. 結合
+      4. リバースエンジニアリング
+      5. 配布 (ファイルサーバーへのコピーなども含む)
+         * 他人に紹介する場合は、必ずAutodeskAppStoreからのダウンロードを案内してください
+
+    免責
+      本ソフトウェアは、商品性、特定目的への適合性、および非侵害の保証を含むがこれに限定されない、明示的または黙示的ないかなる種類の保証もなく、「現状のまま」で提供されます。いかなる場合においても、著者または著作権者は、本ソフトウェアまたは本ソフトウェアの使用またはその他の取引に起因する、または関連する、契約、不法行為またはその他の行為であるかを問わず、いかなる請求、損害またはその他の責任も負いません。
+
+    その他
+      * 料金
+        * AutodeskAppStoreにてご確認ください
+        * 料金は予告なく変更される可能性があります
+
+      * 有効期限
+        * AutodeskAppStoreでの購入条件に準じる
+          (詳しい有効期限はAutodeskAppStoreにてご確認ください)
+
+      * 支払方法
+        * AutodeskAppStoreで対応可能な支払方法に限ります
+        * AutodeskAppStore以外での金銭のやり取りは行いません
+
+      * 返金
+        * AutodeskAppStoreの対応に準じる
+        * 著者から返金することはできません
+        * 返金トラブルはAutodeskAppStoreとの間で解決してください
+
+      * 領収書
+        * AutodeskAppStoreへお問い合わせください
+        * 本ソフトウェアの著作者から発行は致しません
+
+      * 本ソフトウェアのダウンロード・インストール
+        * AutodeskAppStoreからインストーラーをダウンロードしてください
+        * AutodeskAppStore以外での配布は行っておりません
+        * メンテナンスなどでAutodeskAppStoreが利用できない場合は、復旧するまでお待ちください
+        * インストールができない場合はAutodeskAppStoreへお問い合わせください
+
+# ====================================================================== #
+If there is any difference in nuance between the Japanese and English translations, the Japanese license terms shall prevail.
+
+
+If you use this software and related documentation files (the "Software"), you must You are obligated to use the software to the extent that it does not violate the license of the software and the terms of Autodesk's software.
+You must purchase and use not only the Software, but also the license for Autodesk's software.
+
+
+* License type of this software
+   1. Trial license (NOT for commercial use)
+   2. Paid license (commercial use allowed)
+
+
+* Trial license (trial version, NOT for commercial use)
+    The following actions are permitted
+    However, if the watermark is removed due to a bug in the software, etc., please discontinue use.
+      1. private use
+         * Using a copy of this software for learning purposes.
+      2. for the purpose of promoting the Software
+         a) URL of the web page
+         b) A video capturing the use
+         to be posted on the website.
+
+    Prohibited items
+      1. to claim copyright or ownership of this software
+      2. modification
+      3. combining
+      4. reverse engineering
+      5. distribution (including copying to a file server)
+         * If you introduce this service to others, be sure to inform them to download it from the AutodeskAppStore.
+      6. removing the watermark indication
+      7. commercial use
+
+    Disclaimer of Liability
+      the software is provided "as is" without warranty of any kind, either express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement. in no event shall the author or copyright holder be liable for any claims, damages or other liability, whether in contract, tort or otherwise, arising out of or in connection with the software or any use or other dealings with the software.
+
+    Other
+      * Fee
+        * No charge
+          (Please authenticate and download this software from the Demo Version page. If you authenticate from the paid version page, the license fee may be deducted. Please note that no refunds will be made if you have paid for the license by mistake.)
+
+      * Expiration date
+        * Not specified
+          However, as long as the watermark is displayed
+
+      * Download and install this software
+        * Download the installer from AutodeskAppStore
+        * We do not distribute the software outside of the AutodeskAppStore.
+        * If AutodeskAppStore is unavailable due to maintenance or other reasons, please wait until it is restored.
+        * If you cannot install the software, please contact AutodeskAppStore.
+
+* Paid license (commercial license)
+    Terms and Conditions
+      * License must be purchased on the AutodeskAppStore through an account owned by you or a representative of your organization.
+      * License must be within the expiration date.
+      * Must be connected to a network
+      * The software must be able to query the AutodeskLicense server.
+
+    The following actions are permitted
+      1. use a copy of the Software
+      2. private use
+      3. commercial use
+      4. for the purpose of promoting the Software
+         a) URL of the web page
+         b) Video of the use of the system
+         to be posted on the website.
+
+    Prohibited matters
+      1. to claim copyright or ownership of this software
+      2. modification
+      3. combining
+      4. reverse engineering
+      5. distribution (including copying to a file server)
+         * If you introduce this service to others, be sure to inform them to download it from the AutodeskAppStore.
+
+    Disclaimer of Liability
+      the software is provided "as is" without warranty of any kind, either express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement. in no event shall the author or copyright holder be liable for any claims, damages or other liability, whether in contract, tort or otherwise, arising out of or in connection with the software or any use or other dealings with the software.
+
+
+    Other
+      * Price
+        * Please refer to AutodeskAppStore
+        * Prices are subject to change without notice
+
+      * Expiration date
+        * Subject to terms and conditions of purchase on AutodeskAppStore
+          (Please refer to AutodeskAppStore for detailed expiration date)
+
+      * Payment method
+        * Only payment methods supported by AutodeskAppStore are accepted.
+        * No money will be exchanged outside of the AutodeskAppStore
+
+      * Receipt
+        * Please contact AutodeskAppStore
+        * Not to be issued by the author of this software
+
+      * Download and install this software
+        * Download the installer from AutodeskAppStore
+        * We do not distribute the software outside of the AutodeskAppStore.
+        * If AutodeskAppStore is unavailable due to maintenance or other reasons, please wait until it is restored.
+        * If you cannot install the software, please contact AutodeskAppStore.
