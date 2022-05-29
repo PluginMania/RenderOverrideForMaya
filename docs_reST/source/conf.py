@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 
 project = 'RenderOverride for Maya'
 copyright = '2022, PluginMania'
-author = 'https://github.com/PluginMania/RenderOverrideMaya'
+author = 'https://github.com/PluginMania/RenderOverrideForMaya'
 
 # The short X.Y version
 version = '1.0'
