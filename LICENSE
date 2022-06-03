@@ -1,6 +1,6 @@
 Copyright (c) 2022 PluginMania @github
-RenderOverride
-https://github.com/PluginMania/RenderOverrideMaya
+RenderOverride for Maya
+https://github.com/PluginMania/RenderOverrideForMaya
 
 [English translation is after Japanese]
 
@@ -50,7 +50,6 @@ https://github.com/PluginMania/RenderOverrideMaya
         * AutodeskAppStoreからインストーラーをダウンロードしてください
         * AutodeskAppStore以外での配布は行っておりません
         * メンテナンスなどでAutodeskAppStoreが利用できない場合は、復旧するまでお待ちください
-        * インストールができない場合はAutodeskAppStoreへお問い合わせください
 
 
 * 有償ライセンス(商用ライセンス)
@@ -83,7 +82,6 @@ https://github.com/PluginMania/RenderOverrideMaya
     その他
       * 料金
         * AutodeskAppStoreにてご確認ください
-        * 料金は予告なく変更される可能性があります
 
       * 有効期限
         * AutodeskAppStoreでの購入条件に準じる
@@ -96,17 +94,15 @@ https://github.com/PluginMania/RenderOverrideMaya
       * 返金
         * AutodeskAppStoreの対応に準じる
         * 著者から返金することはできません
-        * 返金トラブルはAutodeskAppStoreとの間で解決してください
 
       * 領収書
-        * AutodeskAppStoreへお問い合わせください
+        * AutodeskAppStoreの規約をご確認ください
         * 本ソフトウェアの著作者から発行は致しません
 
       * 本ソフトウェアのダウンロード・インストール
         * AutodeskAppStoreからインストーラーをダウンロードしてください
         * AutodeskAppStore以外での配布は行っておりません
         * メンテナンスなどでAutodeskAppStoreが利用できない場合は、復旧するまでお待ちください
-        * インストールができない場合はAutodeskAppStoreへお問い合わせください
 
 # ====================================================================== #
 If there is any difference in nuance between the Japanese and English translations, the Japanese license terms shall prevail.
@@ -147,7 +143,7 @@ You must purchase and use not only the Software, but also the license for Autode
     Other
       * Fee
         * No charge
-          (Please authenticate and download this software from the Demo Version page. If you authenticate from the paid version page, the license fee may be deducted. Please note that no refunds will be made if you have paid for the license by mistake.)
+          (Please authenticate and download this software from the Trial Version page. If you authenticate from the paid version page, the license fee may be deducted. Please note that no refunds will be made if you have paid for the license by mistake.)
 
       * Expiration date
         * Not specified
@@ -157,7 +153,6 @@ You must purchase and use not only the Software, but also the license for Autode
         * Download the installer from AutodeskAppStore
         * We do not distribute the software outside of the AutodeskAppStore.
         * If AutodeskAppStore is unavailable due to maintenance or other reasons, please wait until it is restored.
-        * If you cannot install the software, please contact AutodeskAppStore.
 
 * Paid license (commercial license)
     Terms and Conditions
@@ -190,7 +185,6 @@ You must purchase and use not only the Software, but also the license for Autode
     Other
       * Price
         * Please refer to AutodeskAppStore
-        * Prices are subject to change without notice
 
       * Expiration date
         * Subject to terms and conditions of purchase on AutodeskAppStore
@@ -201,11 +195,11 @@ You must purchase and use not only the Software, but also the license for Autode
         * No money will be exchanged outside of the AutodeskAppStore
 
       * Receipt
-        * Please contact AutodeskAppStore
+        * Please check the AutodeskAppStore terms and conditions
         * Not to be issued by the author of this software
 
       * Download and install this software
         * Download the installer from AutodeskAppStore
         * We do not distribute the software outside of the AutodeskAppStore.
         * If AutodeskAppStore is unavailable due to maintenance or other reasons, please wait until it is restored.
-        * If you cannot install the software, please contact AutodeskAppStore.
+
