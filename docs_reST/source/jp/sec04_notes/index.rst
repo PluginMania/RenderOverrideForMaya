@@ -1,6 +1,5 @@
-注意事項
-########
-
+注意事項・補足
+##############
 
 .. Contents:
 
@@ -8,6 +7,7 @@
    :maxdepth: 2
    :caption: このセクションの目次
 
+   notes_camera_attr
    notes_python
    notes_mel
 

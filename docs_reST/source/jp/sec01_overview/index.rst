@@ -9,9 +9,9 @@
    :caption: このセクションの目次
 
    overview
-   license
    install
    loadPlugin
+   license
 
 
 

@@ -36,8 +36,8 @@ Notes for applying textures
 ++++
 
 
-Attribute
-*********
+Attributes
+**********
 
 .. figure:: ../../_images/bgAttr1.png
    :alt: bgAttr1
@@ -58,8 +58,8 @@ Enable
 ++++
 
 
-Attribute (BG Colors[*] in frame)
-*********************************
+Attributes (BG Colors[*] in frame)
+**********************************
 
 .. figure:: ../../_images/bgAttr2.png
    :alt: bgAttr2

@@ -78,5 +78,5 @@ Start Frame
 * Actionを削除します
 
 
-.. _Issues: https://github.com/PluginMania/RenderOverrideMaya/issues
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
 

@@ -51,5 +51,5 @@ Gridを複数設定すると、表示されないものがある
 
 
 
-.. _Issues: https://github.com/PluginMania/RenderOverrideMaya/issues
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
 

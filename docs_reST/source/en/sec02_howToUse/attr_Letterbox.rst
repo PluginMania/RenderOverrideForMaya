@@ -15,17 +15,17 @@ Overview
 
 * Letterboxes can be displayed on the top, bottom, left, and right
 * The standard for displaying the borders is ResolutionGate.
-* The width/height of the letterbox is specified by the ratio of the width/height of the ResolutionGate.
+* The thickness of the letterbox is calculated based on the resolution value in RenderSettings
 
-  * For example, if you enter ``10`` for Top, the letterbox will be displayed with a thickness of 10% of the ResolutionGate height.
+  * For example, to display a letterbox in the top 10% of a ResolutionGate of 1000px height, set the **Top** attribute to ``100`` (px)
 
 .. figure:: ../../_gif/_tmp_gif.gif
    :alt: letterbox
 
 ++++
 
-Attribute
-**********************
+Attributes
+**********
 
 .. figure:: ../../_images/letterboxAttr.png
    :alt: letterbox
@@ -40,26 +40,26 @@ Opacity
 
 * Letterbox opacity
 
-Top (%)
-=======
-
-* Specify the height of the letterbox to be displayed at the top
-* Specified as a percentage of the ResolutionGate height.
-
-Left (%)
-========
-
-* Specify the width of the letterbox to be displayed on the left side
-* Specified as a percentage of the width of the ResolutionGate.
-
-Right (%)
+Top (px)
 =========
 
-* Specify the width of the letterbox to be displayed on the right side
-* Specified as a percentage of the width of the ResolutionGate.
+* Specify the height of the letterbox to be displayed at the top
 
-Bottom (%)
+Left (px)
 ==========
 
+* Specify the width of the letterbox to be displayed on the left side
+
+Right (px)
+===========
+
+* Specify the width of the letterbox to be displayed on the right side
+
+Bottom (px)
+============
+
 * Specify the height of the letterbox to be displayed at the bottom.
-* Specified as a percentage of the ResolutionGate height.
+
+
+.. seealso::
+   See ":ref:`sample_letterbox_en`" for concrete examples of how to use it.

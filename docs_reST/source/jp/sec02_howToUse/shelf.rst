@@ -34,7 +34,7 @@ Shelf
 
   * アイコンをクリックすると、次のようなウィンドウが開きます
 
-    .. figure:: ../../_images/NodeEditorAll.jpg
+    .. figure:: ../../_images/NodeEditorAll_JP.png
        :scale: 100%
        :alt: NodeEditorAll
 

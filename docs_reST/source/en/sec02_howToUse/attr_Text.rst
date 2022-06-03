@@ -27,8 +27,8 @@ Overview
 ++++
 
 
-Attribute
-**********************
+Attributes
+**********
 
 Text group
 ==========

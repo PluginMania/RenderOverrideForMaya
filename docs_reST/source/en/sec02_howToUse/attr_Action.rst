@@ -24,8 +24,8 @@ Overview
 ++++
 
 
-Attribute
-*********
+Attributes
+**********
 
 .. figure:: ../../_images/actionAttr1.png
    :alt: actionAttr1
@@ -39,8 +39,8 @@ Attribute
 ++++
 
 
-Attribute (Actions[*] in frame)
-*******************************
+Attributes (Actions[*] in frame)
+********************************
 
 .. figure:: ../../_images/actionAttr2.png
    :alt: actionAttr2
@@ -78,5 +78,5 @@ Start Frame
 * Delete Action
 
 
-.. _Issues: https://github.com/PluginMania/RenderOverrideMaya/issues
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
 

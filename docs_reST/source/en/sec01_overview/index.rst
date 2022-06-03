@@ -1,4 +1,4 @@
-overview
+Overview
 ########
 
 
@@ -9,9 +9,9 @@ overview
    :caption: Table of Contents for this section
 
    overview
-   license
    install
    loadPlugin
+   license
 
 
 

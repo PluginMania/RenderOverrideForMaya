@@ -36,4 +36,4 @@
 
 .. _Trial version Download: http://link
 .. _Commercial version Download: http://link
-.. _Issues: https://github.com/PluginMania/RenderOverrideMaya/issues
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

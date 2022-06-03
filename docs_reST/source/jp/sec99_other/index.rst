@@ -10,4 +10,5 @@
    knownIssues
    releaseNotes
    thirdPartySoftware
+   questionnaire
 

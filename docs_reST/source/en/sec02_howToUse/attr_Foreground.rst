@@ -36,8 +36,8 @@ Notes for applying textures
 ++++
 
 
-Attribute
-*********
+Attributes
+**********
 
 .. figure:: ../../_images/fgAttr1.png
    :alt: fgAttr1
@@ -58,8 +58,8 @@ Enable
 ++++
 
 
-Attribute (FG Colors[*] in frame)
-*********************************
+Attributes (FG Colors[*] in frame)
+**********************************
 
 .. figure:: ../../_images/fgAttr2.png
    :alt: fgAttr2

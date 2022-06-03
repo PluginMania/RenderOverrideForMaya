@@ -1,9 +1,14 @@
-Render Override for Maya
+RenderOverride for Maya
 ########################
 
 Last update(最終更新日): [|today|]
 
-(英語の目次の後に、日本語の目次があります)
+(日本語の目次は、英語の次にあります)
+
+++++
+
+* [:ref:`questionnaire_jp`] ご使用後のご感想をお聞かせ下さい
+* [:ref:`questionnaire_en`] Please let us know your impressions after using our products.
 
 ++++
 
@@ -35,7 +40,7 @@ Last update(最終更新日): [|today|]
    jp/sec99_other/index
 
 
-.. _Issues: https://github.com/PluginMania/RenderOverrideMaya/issues
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
 
 
 

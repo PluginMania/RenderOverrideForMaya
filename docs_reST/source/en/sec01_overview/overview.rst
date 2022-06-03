@@ -32,13 +32,13 @@ Functions
 Supported Versions / OS
 ****************************
 
-+------+-------------------+-----------+---------+---------------------------------+
-| Maya | OS                | Operation | Support | Source code                     |
-+======+===================+===========+=========+=================================+
-| 2022 | Windows10 (64bit) | ✅        | Active  | Python3.7 + MayaAPI2.0 + Cython |
-+------+-------------------+-----------+---------+---------------------------------+
-| 2023 | Windows10 (64bit) | ✅        | Active  | Python3.9 + MayaAPI2.0 + Cython |
-+------+-------------------+-----------+---------+---------------------------------+
++------+---------------+----------------------------+-----------+---------+-------------------------+
+| Maya | OS            | Latest version of plug-ins | Operation | Support | Source code             |
++======+===============+============================+===========+=========+=========================+
+| 2022 | Win10 (64bit) | 1.0.0                      | ✅        | Active  | Python3.7 + Maya API2.0 |
++------+---------------+----------------------------+-----------+---------+-------------------------+
+| 2023 | Win10 (64bit) | 1.0.0                      | ✅        | Active  | Python3.9 + Maya API2.0 |
++------+---------------+----------------------------+-----------+---------+-------------------------+
 
 
 * RenderOverride is designed for use with Maya 2022 and later
@@ -56,10 +56,10 @@ Supported Versions / OS
   * Maya versions that have been supported in the past can continue to be used, but there is a possibility that bugs may not be addressed if they are discovered.
 
 .. note::
-   * MacOS will not be supported in the future.
+   * MacOS cannot be supported.
    * Linux (CentOS, Rocky Linux) support will be considered when we get some builders to help us.
 
      * If you have any requests for Linux version, or if you want to help us to build it, please report them in `Issues`_.
 
 
-.. _Issues: https://github.com/PluginMania/RenderOverrideMaya/issues
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

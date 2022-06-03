@@ -8,5 +8,5 @@
    :maxdepth: 2
    :caption: このセクションの目次
 
+   sample_letterbox
    sample_Action
-

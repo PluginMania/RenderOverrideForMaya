@@ -21,9 +21,7 @@ There are two types of licenses
 * There is no difference in functionality between the two types of licenses other than whether or not the watermark is displayed.
 * Please check the operation of the trial version first, and if there are no problems, please purchase the paid license.
 
-.. seealso::
-   Please also check the `LICENSE`_ file; in case of any differences between the LICENSE file and this web page, the one in the LICENSE file takes precedence.
-
+  * The content of the paid/free version of the program distributed on AutodeskAppStore is the same, so there is no need to re-install the program.
 
 
 License Expiration Date/Upgrade
@@ -34,8 +32,6 @@ License Expiration Date/Upgrade
   * No expiration date as long as it is for non-commercial use
   * You can always use the latest version
 
-    * Must be updated by downloading the latest version from the AutodeskAppStore
-
 * Paid version (subscription)
 
   * Expires in one-month increments
@@ -43,8 +39,6 @@ License Expiration Date/Upgrade
     * Check AutodeskAppStore for detailed expiration dates
 
   * You can always use the latest version
-
-    * Must be updated by downloading the latest version from AutodeskAppStore
 
 
 Licensing
@@ -62,8 +56,8 @@ Therefore, the following conditions must be met.
 
 .. separate
 
-* If you are using a paid version of the plug-in, the watermark will be hidden if the license is verified.
-* If you have been provided with a License file for a commercial license by the developer, you may use the plug-in for commercial purposes as long as the license is valid.
+* Once the license is approved, the watermark is hidden and can be used for commercial purposes.
+* If the developer provides you with a LICENSE file, you can use it for commercial purposes as long as the license is valid.
 
 
 Prohibited Items
@@ -77,11 +71,9 @@ Prohibited Items
 
    * If you introduce the software to others, please inform them to download the software from AutodeskAppStore.
 
-6. Commercial use (for trial version)
-
 .. note::
    * The above items are prohibited for the **program (source code)** of this software.
-   * There are no restrictions on Maya files or video files created using this software as long as you use the commercial version.
+   * There are no restrictions on Maya files or video files created during the period of validity of the commercial use of this software.
 
 
 
@@ -92,8 +84,6 @@ More
 
   * Trial version is free.
   * See AutodeskAppStore for pricing of paid version
-
-    * Prices are subject to change without notice.
 
 * Expiration date
 
@@ -117,10 +107,17 @@ More
 
 * Receipts
 
-  * Please contact the AutodeskAppStore for a receipt.
+  * Please check the AutodeskAppStore terms and conditions
   * Receipts will not be issued by the author of this software.
 
 
+.. important::
+   **Disclaimer of Liability**
+      the software is provided "as is" without warranty of any kind, either express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement. in no event shall the author or copyright holder be liable for any claims, damages or other liability, whether in contract, tort or otherwise, arising out of or in connection with the software or any use or other dealings with the software.
 
-.. _LICENSE: https://github.com/PluginMania/RenderOverrideMaya/
+.. seealso::
+   Please also check the `LICENSE`_ file.
+
+
+.. _LICENSE: https://github.com/PluginMania/RenderOverrideForMaya/
 

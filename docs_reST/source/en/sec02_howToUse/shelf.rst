@@ -34,7 +34,7 @@ Description of each tool
 
   * Clicking on the icon opens a window that looks like this
 
-    .. figure:: ../../_images/NodeEditorAll.jpg
+    .. figure:: ../../_images/NodeEditorAll_EN.png
        :scale: 100%
        :alt: NodeEditorAll
 

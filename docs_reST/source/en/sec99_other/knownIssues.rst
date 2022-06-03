@@ -51,5 +51,5 @@ When multiple Grids are set, some of them are not displayed.
 
 
 
-.. _Issues: https://github.com/PluginMania/RenderOverrideMaya/issues
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
 

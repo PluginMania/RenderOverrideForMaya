@@ -30,7 +30,7 @@ Create RenderOverride node
 
   2. Click the ``Create RenderOverride Node`` button to create a node
 
-     .. figure:: ../../_images/NodeEditorAll.jpg
+     .. figure:: ../../_images/NodeEditorAll_EN.png
         :alt: NodeEditorAll
 
 * Method2
@@ -59,7 +59,7 @@ How to verify that a node has been created
 
   * **NodeEditor**
 
-    .. figure:: ../../_images/NodeEditorAll.jpg
+    .. figure:: ../../_images/NodeEditorList.png
        :alt: NodeEditorAll
 
        The created node will appear in the list of nodes in NodeEditor.

@@ -30,7 +30,7 @@ RenderOverride ノードの作成
 
   2. ``Create RenderOverride Node`` ボタンをクリックすると、ノードが作成されます
 
-     .. figure:: ../../_images/NodeEditorAll.jpg
+     .. figure:: ../../_images/NodeEditorAll_JP.png
         :alt: NodeEditorAll
 
 * 方法2
@@ -59,7 +59,7 @@ RenderOverride ノードの作成
 
   * **NodeEditor で確認する**
 
-    .. figure:: ../../_images/NodeEditorAll.jpg
+    .. figure:: ../../_images/NodeEditorList.png
        :alt: NodeEditorAll
 
        NodeEditorのノードのリストに、作成されたノードが表示されます。

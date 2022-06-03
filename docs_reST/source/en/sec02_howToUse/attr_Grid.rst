@@ -23,8 +23,8 @@ Overview
 ++++
 
 
-Attribute
-*********
+Attributes
+**********
 
 .. figure:: ../../_images/gridAttr1.png
    :alt: gridAttr1
@@ -43,8 +43,8 @@ Enable
 ++++
 
 
-Attribute (Grids[*] in frame)
-*****************************
+Attributes (Grids[*] in frame)
+******************************
 
 .. figure:: ../../_images/gridAttr2.png
    :alt: gridAttr2

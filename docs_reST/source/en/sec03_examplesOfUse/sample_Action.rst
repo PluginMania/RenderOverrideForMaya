@@ -1,7 +1,7 @@
 .. _sample_Action_en:
 
-Example: Actions (using external Python files)
-##############################################
+Actions (using external Python files)
+#####################################
 
 .. contents:: Contents of this page:
    :depth: 3
