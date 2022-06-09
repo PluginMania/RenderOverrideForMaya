@@ -13,8 +13,6 @@ Actions (外部Pythonファイルの利用)
 *****
 
 * Pythonスクリプトを使うことで、状況に合わせたテキストを生成し、表示させることができます
-
-  * Mayaシーンの情報の取得はもちろん、Webからの情報の取得や、データベースから情報を取り出すこともできます
 * この作例では、RenderOverrideノードの ``Actions`` アトリビュートと組み合わせ、アクションの情報を出力する方法を紹介します
 
 ++++
@@ -27,9 +25,15 @@ Actions (外部Pythonファイルの利用)
 
 * ``Actions`` アトリビュートに情報を加えてください
 
+.. figure:: ../../_images/_tmp_img.png
+   :alt: ActionsAttr
+
+   アクション名と開始フレーム番号を入力します
+
 
 2. Pythonスクリプトの準備
 =========================
+
 * 今回は、プラグインで用意されている ``renderoverride_actions.py`` を使用します
 
   * Pythonファイルは ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA VERSION]/python/`` にインストールされています
@@ -56,11 +60,10 @@ Actions (外部Pythonファイルの利用)
 
 * タイムラインを再生させ、添付動画のように表示が切り替われば成功です
 
+.. figure:: ../../_gif/_tmp_gif.gif
+   :alt: ActionsResult
+
 ++++
 
-Pythonスクリプトの注意事項
-**************************
-
-:ref:`こちら<notes_python_jp>` を参照してください
-
-
+.. seealso::
+   :ref:`notes_python_jp`

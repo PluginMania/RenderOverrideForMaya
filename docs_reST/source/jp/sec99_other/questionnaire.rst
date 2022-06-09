@@ -7,7 +7,7 @@
 
 .. raw:: html
 
-   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckfFcrlO2JmL-yjIZ_a17bvYCv4IJwJS84vgNpd6rEFjoNmw/viewform?embedded=true" width="640" height="2550" frameborder="0" marginheight="20" marginwidth="0">読み込んでいます…</iframe>
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckfFcrlO2JmL-yjIZ_a17bvYCv4IJwJS84vgNpd6rEFjoNmw/viewform?embedded=true" width="640" height="2272" frameborder="0" marginheight="20" marginwidth="0">読み込んでいます…</iframe>
 
 
 .. note::

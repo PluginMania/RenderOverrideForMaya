@@ -23,7 +23,9 @@ Notes on downloading and installation
 How to download and install plug-ins
 ******************************************
 
-1. Download the installer from AutodeskAppStore (you will find the "Download" button in the upper right corner of the following URL).
+1. Download the installer from AutodeskAppStore.
+
+.. (you will find the "Download" button in the upper right corner of the following URL)
 
    * [Trial version] `Trial version Download`_ **(*Link is broken. We are working on it)**
    * [Commercial version] `Commercial version Download`_ **(*Link is broken. We are working on it)**
@@ -33,6 +35,6 @@ How to download and install plug-ins
 4. Close the installer when installation is complete.
 
 
-.. _Trial version Download: http://link
-.. _Commercial version Download: http://link
+.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
+.. _Commercial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

@@ -7,7 +7,7 @@ Release notes
 
 ++++
 
-1.0.0 [May 01, 2022]
+1.0.0 [MM DD, 2022]
 ********************
 
 [Trial Version] New Release

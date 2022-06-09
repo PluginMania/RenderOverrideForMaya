@@ -17,11 +17,12 @@ RenderOverrideを起動すると基本的な情報(テキスト)が表示され�
 .. figure:: ../../_images/outlinerFindNode.png
    :alt: outlinerFindNode
 
+++++
 
 RenderOverride ノードの作成
 ***************************
 
-* 方法1
+* **方法1**
 
   1. Shelfから、 **NodeEditor** アイコンをクリックし、エディタを立ち上げます
 
@@ -33,7 +34,7 @@ RenderOverride ノードの作成
      .. figure:: ../../_images/NodeEditorAll_JP.png
         :alt: NodeEditorAll
 
-* 方法2
+* **方法2**
 
   * 次のMELコマンドを実行します
 
@@ -41,6 +42,7 @@ RenderOverride ノードの作成
 
        createNode "renderOverride";
 
+++++
 
 ノードの確認方法
 ****************
@@ -78,8 +80,10 @@ RenderOverride ノードの作成
 
    .. sep
 
+   * NodeEditorを使用すれば、選択したノード以外の ``Enable`` アトリビュートは **off** になるので、アクティブなノードを1つに限定することができます
    * 「 **レイアウト用** 」, 「 **Playblast用** 」のように、複数のノードを目的に応じて使い分けることができます。
 
+++++
 
 RenderOverrideノードのアトリビュート
 ************************************

@@ -17,6 +17,10 @@ Overview
 * If the texture has an embedded alpha channel, it will be treated as transparent
 * Multiple images can be stacked on top of each other
 
+* It is possible to work with a reference image always displayed at the edge of the screen during modeling.
+
+  * Easier than with ImagePlane, you can scale, offset, and display multiple images.
+
 .. figure:: ../../_gif/_tmp_gif.gif
    :alt: bgOverview
 

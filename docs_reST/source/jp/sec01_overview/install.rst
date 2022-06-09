@@ -23,7 +23,9 @@
 プラグインのダウンロード・インストール方法
 ******************************************
 
-1. AutodeskAppStoreからインストーラーをダウンロードしてください(下記URL先ページの右上に『ダウンロード』というボタンがあります)
+1. AutodeskAppStoreからインストーラーをダウンロードしてください
+
+.. (下記URL先ページの右上に『ダウンロード』というボタンがあります)
 
    * [評価版] `Trial version Download`_ **(※リンク外れています。対応中)**
    * [商用版] `Commercial version Download`_ **(※リンク外れています。対応中)**
@@ -33,7 +35,6 @@
 4. インストールが完了したら、インストーラーを閉じます
 
 
-
-.. _Trial version Download: http://link
-.. _Commercial version Download: http://link
+.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
+.. _Commercial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

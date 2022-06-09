@@ -63,9 +63,9 @@ Grid Type
 
   .. figure:: ../../_images/grid_list_v002.svg
      :alt: gridList
+     :scale: 100%
 
-     (The blue dashed line in the figure is an auxiliary line (it indicates the location of the line's vertex and is not drawn)).
-     To enlarge the image, right-click on the image and follow the menu "Open image in new tab".
+     (The blue dashed line in the figure is an auxiliary line (it indicates the location of the line's vertex and is not drawn). Click on the image for a larger view)
 
 Mirror
 ======

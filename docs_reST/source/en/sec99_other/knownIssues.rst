@@ -18,8 +18,21 @@ Changing the color of the "Color" attribute is not immediately reflected in the 
   .. figure:: ../../_images/shelf_refresh_icon.png
      :alt: shelf_editor_icon
 
+
 ++++
 
+Foreground and background images are not displayed even if they are set in the file node.
+*****************************************************************************************
+
+
+* This error is occurring in **Maya2023**.
+* Click the ``Refresh`` button on the Shelf to refresh the screen
+
+  .. figure:: ../../_images/shelf_refresh_icon.png
+     :alt: shelf_editor_icon
+
+
+++++
 
 When multiple Grids are set, some of them are not displayed.
 ************************************************************

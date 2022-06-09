@@ -17,11 +17,12 @@ When RenderOverride is activated, basic information (text) is displayed, but for
 .. figure:: ../../_images/outlinerFindNode.png
    :alt: outlinerFindNode
 
+++++
 
 Create RenderOverride node
 **************************
 
-* Method1
+* **Method1**
 
   1. From Shelf, click on the **NodeEditor** icon to launch the editor
 
@@ -33,7 +34,7 @@ Create RenderOverride node
      .. figure:: ../../_images/NodeEditorAll_EN.png
         :alt: NodeEditorAll
 
-* Method2
+* **Method2**
 
   * Run the following MEL command
 
@@ -41,6 +42,7 @@ Create RenderOverride node
 
        createNode "renderOverride";
 
+++++
 
 How to verify that a node has been created
 ******************************************
@@ -78,8 +80,10 @@ How to verify that a node has been created
 
    .. sep
 
+   * With NodeEditor, you can limit the number of active nodes to one, since the ``Enable`` attribute will be **off** for all but the selected node.
    * Multiple nodes can be used for different purposes, such as " **for layout** " and " **for Playblast** ".
 
+++++
 
 Attributes of the RenderOverride node
 *************************************

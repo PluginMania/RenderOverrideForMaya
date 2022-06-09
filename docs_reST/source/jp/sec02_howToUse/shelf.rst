@@ -16,11 +16,11 @@ Shelf
 * 次のようなShelfが読み込まれていることを確認してください
 
   .. figure:: ../../_images/shelf_all.png
-     :scale: 100%
      :alt: Shelf
 
 * RenderOverrideノードの作成や、アクティブなノードの切り替えなどでこのShelfを使います
 
+++++
 
 各ツールの説明
 **************
@@ -29,13 +29,11 @@ Shelf
 ==============
 
   .. figure:: ../../_images/shelf_editor_icon.png
-     :scale: 100%
      :alt: ShelfNodeEditorIcon
 
   * アイコンをクリックすると、次のようなウィンドウが開きます
 
     .. figure:: ../../_images/NodeEditorAll_JP.png
-       :scale: 100%
        :alt: NodeEditorAll
 
     * **ノードのリスト**
@@ -63,7 +61,6 @@ Shelf
 ==========
 
   .. figure:: ../../_images/shelf_refresh_icon.png
-     :scale: 100%
      :alt: ShelfRefreshIcon
 
   * アイコンをクリックすると、ビューがリフレッシュされます

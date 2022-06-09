@@ -13,8 +13,12 @@ Overview
 ********
 
 * This section describes how to calculate the resolution and other settings when using letterboxes.
-* This is how to set the letterbox to be displayed at ``10%`` height at the top and bottom of the screen.
+* Letterboxes at the top and bottom of the screen at ResolutionGate's ``10%`` ratio.
 * Here are the steps to output with Playblast.
+
+.. sep
+
+* Please create a RenderOverride node.
 
 ++++
 
@@ -23,7 +27,7 @@ Process
 
 1. First, check the "Resolution" in ResolutionGate
 
-   * Basically, this is the resolution at the time of final rendering.
+   * Basically, it is the resolution or its magnification at the time of final rendering.
    * In this case, we will use ``1920 x 1080``.
 
 2. To add letterboxes to the top and bottom of the screen by 10%, we multiply the previous resolution height by ``1.2``.
@@ -49,7 +53,6 @@ Process
 
    .. figure:: ../../_images/sample_letterbox_viewPx.png
       :alt: LetterboxView
-      :scale: 70%
 
 5. Enter the text you want to display in the ``Text String`` attribute of the RenderOverride node and see if the text appears on the letterbox.
 

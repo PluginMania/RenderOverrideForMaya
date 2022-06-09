@@ -18,8 +18,20 @@ Colorアトリビュートの色を変更しても、ビューに直ぐに反映
   .. figure:: ../../_images/shelf_refresh_icon.png
      :alt: shelf_editor_icon
 
+
 ++++
 
+foregroundやbackgroundの画像をfileノードで設定しても表示されない
+****************************************************************
+
+* この症状は、 **Maya2023** で確認されています
+* Shelfの ``Refresh`` ボタンをクリックし、画面をリフレッシュさせてください
+
+  .. figure:: ../../_images/shelf_refresh_icon.png
+     :alt: shelf_editor_icon
+
+
+++++
 
 Gridを複数設定すると、表示されないものがある
 ********************************************

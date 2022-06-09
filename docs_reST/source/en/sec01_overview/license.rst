@@ -21,7 +21,7 @@ There are two types of licenses
 * There is no difference in functionality between the two types of licenses other than whether or not the watermark is displayed.
 * Please check the operation of the trial version first, and if there are no problems, please purchase the paid license.
 
-  * The content of the paid/free version of the program distributed on AutodeskAppStore is the same, so there is no need to re-install the program.
+  * The content of the paid version and the trial version distributed on the AutodeskAppStore is the same, so there is no need to reinstall the paid version if you have already installed the trial version.
 
 
 License Expiration Date/Upgrade
@@ -32,7 +32,7 @@ License Expiration Date/Upgrade
   * No expiration date as long as it is for non-commercial use
   * You can always use the latest version
 
-* Paid version (subscription)
+* Paid version (subscription/monthly)
 
   * Expires in one-month increments
 

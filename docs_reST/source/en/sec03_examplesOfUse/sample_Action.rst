@@ -13,9 +13,6 @@ Overview
 ********
 
 * Python scripts can be used to generate and display text tailored to the situation
-
-  * You can retrieve information from the Maya scene, retrieve information from the web, or retrieve information from a database.
-
 * This example shows how to output action information in combination with the ``Actions`` Attribute of the RenderOverride node
 
 ++++
@@ -27,6 +24,11 @@ Process
 =============================
 
 * Add information to the ``Actions`` attribute
+
+.. figure:: ../../_images/_tmp_img.png
+   :alt: ActionsAttr
+
+   Enter the action name and start frame number
 
 
 2. Preparing Python Scripts
@@ -58,9 +60,10 @@ Process
 
 * Play the timeline, and if the display changes as shown in the attached video, you have succeeded!
 
+.. figure:: ../../_gif/_tmp_gif.gif
+   :alt: ActionsResult
+
 ++++
 
-Python Scripting Notes
-**************************
-
-See :ref:`here<notes_python_en>`
+.. seealso::
+   :ref:`notes_python_en`

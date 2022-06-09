@@ -16,11 +16,11 @@ Overview
 * Please make sure that the following Shelf is loaded
 
   .. figure:: ../../_images/shelf_all.png
-     :scale: 100%
      :alt: Shelf
 
 * Use this Shelf for creating RenderOverride nodes, switching active nodes, etc.
 
+++++
 
 Description of each tool
 ************************
@@ -29,13 +29,11 @@ Description of each tool
 ==============
 
   .. figure:: ../../_images/shelf_editor_icon.png
-     :scale: 100%
      :alt: ShelfNodeEditorIcon
 
   * Clicking on the icon opens a window that looks like this
 
     .. figure:: ../../_images/NodeEditorAll_EN.png
-       :scale: 100%
        :alt: NodeEditorAll
 
     * **Node List**
@@ -63,7 +61,6 @@ Description of each tool
 ==========
 
   .. figure:: ../../_images/shelf_refresh_icon.png
-     :scale: 100%
      :alt: ShelfRefreshIcon
 
   * Click the icon to refresh the view
