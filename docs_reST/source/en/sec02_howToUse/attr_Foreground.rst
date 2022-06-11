@@ -17,8 +17,9 @@ Overview
 * If the texture has an embedded alpha channel, it will be treated as transparent
 * Multiple images can be stacked on top of each other
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: fgOverview
+  .. figure:: ../../_gif/renderoverride_fgTop.gif
+     :scale: 70%
+     :alt: fgOverview
 
 
 .. _fg_texture_note_en:

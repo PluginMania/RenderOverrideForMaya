@@ -17,8 +17,9 @@
 * ファイ・グリッド(Phi Grid)など、よく使われているグリッドのプリセットが用意されています
 * 複数のグリッドを組み合わせて表示することもできます
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: gridOverview
+  .. figure:: ../../_gif/renderoverride_gridTop.gif
+     :scale: 80%
+     :alt: gridOverview
 
 ++++
 
@@ -35,8 +36,8 @@ Enable
 * Grid全体のon/offを制御します
 
 
-Add New Item ボタン
-===================
+[Add New Item] ボタン
+=====================
 
 * グリッドのアイテムを追加します
 

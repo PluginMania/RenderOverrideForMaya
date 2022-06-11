@@ -18,10 +18,11 @@
 * 複数の画像を重ねることができます
 * モデリング作業時に、リファレンス画像を常に画面端に表示した状態で作業するという事も可能です
 
-  * ImagePlaneよりも簡単に、画像の拡大・縮小や、オフセットを掛けることができ、複数の画像を表示させることも可能です
+  * ImagePlaneよりも簡単に、画像のスケールやオフセットを掛けることができ、複数の画像を表示させることも可能です
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: fgOverview
+  .. figure:: ../../_gif/renderoverride_bgTop.gif
+     :scale: 70%
+     :alt: bgOverview
 
 
 .. _bg_texture_note_jp:
@@ -51,8 +52,8 @@ Enable
 * Background全体のon/offを制御します
 
 
-Add New Item ボタン
-===================
+[Add New Item] ボタン
+=====================
 
 * Backgroundのアイテムを追加します
 

@@ -23,12 +23,11 @@
 * ※Viewport2.0の表示(オブジェクトの見え方)に変化はありません
 
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :scale: 100%
-   :alt: overview
-   :align: left
+  .. figure:: ../../_gif/renderoverride_top.gif
+     :scale: 60%
+     :alt: overview
 
-
+++++
 
 サポートされるバージョン・OS
 ****************************

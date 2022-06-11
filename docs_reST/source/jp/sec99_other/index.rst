@@ -8,7 +8,8 @@
    :caption: このセクションの目次
 
    knownIssues
-   releaseNotes
-   thirdPartySoftware
+   privacyPolicy
    questionnaire
+   thirdPartySoftware
+   releaseNotes
 

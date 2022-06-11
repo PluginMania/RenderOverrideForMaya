@@ -15,6 +15,21 @@ Actions (外部Pythonファイルの利用)
 * Pythonスクリプトを使うことで、状況に合わせたテキストを生成し、表示させることができます
 * この作例では、RenderOverrideノードの ``Actions`` アトリビュートと組み合わせ、アクションの情報を出力する方法を紹介します
 
+  .. figure:: ../../_gif/renderoverride_actionsSampleResult.gif
+     :scale: 70%
+     :alt: ActionsResult
+
+     テキストの表示を、右上のように切り替えることができます
+
+++++
+
+サンプル プロジェクト
+*********************
+
+* このプロジェクトの完成シーンです (Maya2022で保存されています)
+
+  * :download:`MayaScene(2022) <../../_download/cube_animation_sample_actions_maya2022_v001.zip>`
+
 ++++
 
 手順
@@ -25,10 +40,10 @@ Actions (外部Pythonファイルの利用)
 
 * ``Actions`` アトリビュートに情報を加えてください
 
-.. figure:: ../../_images/_tmp_img.png
-   :alt: ActionsAttr
+  .. figure:: ../../_images/sample_actions_attrs.png
+     :alt: ActionsAttr
 
-   アクション名と開始フレーム番号を入力します
+     アクション名と開始フレーム番号を入力します
 
 
 2. Pythonスクリプトの準備
@@ -49,19 +64,28 @@ Actions (外部Pythonファイルの利用)
 2. Textの ``Generate Type`` を **Python** に設定します
 3. ``Text String`` アトリビュートに、次のコードを入力します
 
-   * (テキストボックス上で右クリックすると、テンプレートを選択することができます( ``Python: Actions`` を選択してください))
-
    .. code-block:: python
 
       import renderoverride_actions;renderoverride_actions.actions_text()
 
+   .. figure:: ../../_images/sample_actions_textAttrs.png
+      :alt: TextAttr
+
+   * テキストボックス上で右クリックし、 ``Python: Actions`` を選択すると、コードが入力されます
+
+     .. figure:: ../../_images/sample_actions_textRightClicked.png
+        :alt: TextRightClicked
+
+
 4. 表示の確認
 =============
 
-* タイムラインを再生させ、添付動画のように表示が切り替われば成功です
+* タイムラインを再生させ、次の動画の、右上のテキストのように表示が切り替われば成功です
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: ActionsResult
+  .. figure:: ../../_gif/renderoverride_actionsSampleResult.gif
+     :scale: 70%
+     :alt: ActionsResult
+
 
 ++++
 

@@ -13,19 +13,20 @@ Overview
 ********
 
 * RenderOverride allows you to freely customize the text to be displayed by using the RenderOverride node
+* Font, color, opacity, size, and display position offset can be set for text
+* Multiple lines can be displayed
 * In addition to the usual string specifications, complex information can be displayed using Python or MEL commands
 
-  * For example, entering the MEL code ``ls -sl`` will display a list of the objects selected in the scene
+  * For example, entering the MEL code ``ls -selection`` will display a list of the objects selected in the scene
+
+    .. figure:: ../../_gif/renderoverride_textTop.gif
+       :scale: 80%
+       :alt: attrText
+
   * It can also be combined with the Actions attribute of the RenderOverride node to display action information (this feature is especially useful when creating game motions. (:ref:`sample_Action_en`))
 
-* Multiple lines can be displayed
-* Font, color, opacity, size, and display position offset can be set for text
-
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: attrText
 
 ++++
-
 
 Attributes
 **********
@@ -65,7 +66,6 @@ Text group
 
 
 ++++
-
 
 Attributes within each group
 ============================

@@ -17,8 +17,9 @@ Overview
 * "Phi Grid" and other commonly used grids are available
 * Multiple grids can be displayed in combination.
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: gridOverview
+  .. figure:: ../../_gif/renderoverride_gridTop.gif
+     :scale: 80%
+     :alt: gridOverview
 
 ++++
 

@@ -21,8 +21,9 @@ Overview
 
   * Easier than with ImagePlane, you can scale, offset, and display multiple images.
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: bgOverview
+  .. figure:: ../../_gif/renderoverride_bgTop.gif
+     :scale: 70%
+     :alt: bgOverview
 
 
 .. _bg_texture_note_en:

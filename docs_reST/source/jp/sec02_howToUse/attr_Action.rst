@@ -31,8 +31,8 @@ Action List
    :alt: actionAttr1
 
 
-Add New Item ボタン
-===================
+[Add New Item] ボタン
+=====================
 
 * Actionのアイテムを追加します
 

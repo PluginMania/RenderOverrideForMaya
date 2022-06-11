@@ -8,7 +8,7 @@ Others
    :caption: Table of Contents for this section
 
    knownIssues
-   releaseNotes
-   thirdPartySoftware
+   privacyPolicy
    questionnaire
-
+   thirdPartySoftware
+   releaseNotes

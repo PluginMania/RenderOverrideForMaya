@@ -23,11 +23,11 @@ Functions
 * There is no change in the Viewport 2.0 display (object visibility)
 
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :scale: 100%
-   :alt: overview
-   :align: left
+  .. figure:: ../../_gif/renderoverride_top.gif
+     :scale: 60%
+     :alt: overview
 
+++++
 
 Supported Versions / OS
 ****************************

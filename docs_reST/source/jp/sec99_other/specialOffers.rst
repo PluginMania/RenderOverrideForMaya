@@ -1,5 +1,5 @@
-モニター
-########
+新バージョンのモニター
+######################
 
 .. contents:: このページの目次:
    :depth: 2
@@ -12,7 +12,7 @@
 
 * 本ソフトウェアの新バージョンのリリースを前に、モニターを募集しています
 * 実際にツールを使用していただき、使用感のフィードバックやバグの報告をお願いしております
-* モニターの方には、開発者よりライセンスをお送りします
+* モニターの方には、開発者より新バージョンのプログラムファイルとライセンスをお送りします
 
   * ライセンスが有効な間、商用利用することができます
   * 既にサブスクリプション契約をされている方は、モニター期間中は契約を一時中断して頂いて構いません
@@ -22,9 +22,10 @@
 
   * 有効期間については、ライセンス受取り時に開発者に確認するか、ライセンスファイルの中身から確認することができます
 
-    .. figure:: ../../_images/_tmp_img.png
-       :scale: 50%
+    .. figure:: ../../_images/sp_licenseDate.png
        :alt: LicenseDate
+
+       ライセンスファイルは、 ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents`` 内にあります
 
 ++++
 
@@ -51,28 +52,36 @@
 インストール
 ============
 
-* 既にRenderOverrideを使用しており、 **Plug-in Manager** の **Auto Load** にチェックが入っている場合は、チェックを外してください
+* 既にRenderOverrideを使用しており、 **Plug-in Manager** の ``Auto Load`` にチェックが入っている場合は、チェックを外してください
 
   * 既にインストールされている実行ファイルと、新しいバージョン(テスト用プログラム)の実行ファイルの衝突を防ぐために、予めチェックを外しておきます
-  * アンインストールする必要はありません
+  * 既にインストールされている、正規版のアプリはアンインストールする必要はありません
+
+    .. figure:: ../../_images/sp_loadOff.png
+       :alt: PluginManager
 
 * 新しいバージョンのプログラムファイルは、zip圧縮したものを個別に共有します
 
   * 配布されたzipファイルを解凍してください
 
-* 解凍されたフォルダの中に、 ``RenderOverrideNewFeature[VERSION]`` という名前のフォルダが入っています。(AutodeskAppStoreからインストールしたフォルダと被らないような名前になっています)
+  .. figure:: ../../_images/sp_zipExtract.png
+     :alt: zipFile
 
-  .. figure:: ../../_images/_tmp_img.png
-     :scale: 50%
-     :alt: PluginManager
+* 解凍されたフォルダの中に、 ``RenderOverrideNewFeature_[VERSION]`` という名前のフォルダが入っています。(AutodeskAppStoreからインストールしたフォルダと被らないような名前になっています)
 
-* ``RenderOverrideNewFeature[VERSION]`` フォルダを、 ``C:/ProgramData/Autodesk/ApplicationPlugins/`` にコピーしてください
-* コピー後にMayaを起動し、 **Plug-in Manager** を確認すると、 ``RenderOverrideNewFeature[VERSION]`` の項目がありますので、ロードしてください
+  .. figure:: ../../_images/sp_rootFolder.png
+     :alt: RootFolder
+
+* ``RenderOverrideNewFeature_[VERSION]`` フォルダを、 ``C:/ProgramData/Autodesk/ApplicationPlugins/`` にコピーしてください
+
+  .. figure:: ../../_images/sp_copyRootFolder.png
+     :alt: CopyRootFolder
+
+* コピー後にMayaを起動し、 **Plug-in Manager** を確認すると、 ``RenderOverrideNewFeature_[VERSION]`` の項目がありますので、ロードしてください
 
   * 正常にロードされると、通常の製品版と同じように使用することができます
 
-  .. figure:: ../../_images/_tmp_img.png
-     :scale: 50%
+  .. figure:: ../../_images/sp_loadOn.png
      :alt: PluginManager
 
 
@@ -80,12 +89,12 @@
 ========
 
 1. Mayaを落とします
-2. ``RenderOverrideNewFeature[VERSION]`` フォルダをDeleteしてください
+2. ``RenderOverrideNewFeature_[VERSION]`` フォルダをDeleteしてください
 
    * (``C:/ProgramData/Autodesk/ApplicationPlugins/`` 内)
 
    .. note::
-      ライセンスの切れた、モニター用のプログラムは、小まめに削除するようにしてください。
+      モニター期間終了後は、削除するようにしてください。
 
 ++++
 

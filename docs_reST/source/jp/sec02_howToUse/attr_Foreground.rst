@@ -17,8 +17,9 @@
 * テクスチャにアルファチャンネルが埋め込まれていれば、透明処理されます
 * 複数の画像を重ねることができます
 
-.. figure:: ../../_gif/_tmp_gif.gif
-   :alt: fgOverview
+  .. figure:: ../../_gif/renderoverride_fgTop.gif
+     :scale: 70%
+     :alt: fgOverview
 
 
 .. _fg_texture_note_jp:
@@ -49,8 +50,8 @@ Enable
 * Foreground全体のon/offを制御します
 
 
-Add New Item ボタン
-===================
+[Add New Item] ボタン
+=====================
 
 * Foregroundのアイテムを追加します
 

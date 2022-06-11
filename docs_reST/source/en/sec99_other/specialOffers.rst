@@ -13,7 +13,7 @@ Request to check for new software versions
 
 * We are looking for survey panelist to help us prepare for the release of a new version of this software.
 * We ask that you actually use the tool, give us feedback on how it feels to use, and report bugs.
-* Survey panelist will receive a license from the developer
+* Survey panelist will receive program files and licenses for the new version from the developer.
 
   * Can be used commercially while the license is valid
   * If you are already a subscriber, you may suspend your subscription during the monitoring period.
@@ -23,9 +23,10 @@ Request to check for new software versions
 
   * You can check the expiration date with the developer when you receive your license, or you can check the contents of your license file.
 
-    .. figure:: ../../_images/_tmp_img.png
-       :scale: 50%
+    .. figure:: ../../_images/sp_licenseDate.png
        :alt: LicenseDate
+
+       The license file is located in ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents``.
 
 ++++
 
@@ -52,41 +53,50 @@ How to install/remove a new version
 Install
 ============
 
-* If you are already using RenderOverride and **Auto Load** in **Plug-in Manager** is checked, uncheck it.
+* If you are already using RenderOverride and ``Auto Load`` in **Plug-in Manager** is checked, uncheck it.
 
   * Uncheck this box in advance to prevent conflicts between the already installed executable and the new version (test program) executable.
-  * No need to uninstall
+  * There is no need to uninstall the already installed, authorized version of the application.
+
+    .. figure:: ../../_images/sp_loadOff.png
+       :alt: PluginManager
 
 * Newer versions of the program files will be shared separately, zipped
 
   * Unzip the distributed zip file
 
-* In the extracted folder, you will find a folder named ``RenderOverrideNewFeature[VERSION]``. (The name of this folder is such that it will not be covered by the folder you installed from the AutodeskAppStore.)
+  .. figure:: ../../_images/sp_zipExtract.png
+     :alt: zipFile
 
-  .. figure:: ../../_images/_tmp_img.png
-     :scale: 50%
-     :alt: PluginManager
+* In the extracted folder, you will find a folder named ``RenderOverrideNewFeature_[VERSION]``. (The name of this folder is such that it will not be covered by the folder you installed from the AutodeskAppStore.)
 
-* Copy the ``RenderOverrideNewFeature[VERSION]`` folder to ``C:/ProgramData/Autodesk/ApplicationPlugins/``.
-* After copying, start Maya and check the **Plug-in Manager** for the ``RenderOverrideNewFeature[VERSION]`` item and load it.
+  .. figure:: ../../_images/sp_rootFolder.png
+     :alt: RootFolder
+
+* Copy the ``RenderOverrideNewFeature_[VERSION]`` folder to ``C:/ProgramData/Autodesk/ApplicationPlugins/``.
+
+  .. figure:: ../../_images/sp_copyRootFolder.png
+     :alt: CopyRootFolder
+
+* After copying, start Maya and check the **Plug-in Manager** for the ``RenderOverrideNewFeature_[VERSION]`` item and load it.
 
   * Once successfully loaded, you can use it just like the regular production version
 
-  .. figure:: ../../_images/_tmp_img.png
-     :scale: 50%
+  .. figure:: ../../_images/sp_loadOn.png
      :alt: PluginManager
+
 
 
 Remove
 ======
 
 1. Close Maya
-2. Delete the ``RenderOverrideNewFeature[VERSION]`` folder
+2. Delete the ``RenderOverrideNewFeature_[VERSION]`` folder
 
    * (``C:/ProgramData/Autodesk/ApplicationPlugins/``)
 
    .. note::
-      Be sure to remove expired programs for monitoring in a timely manner.
+      After the monitoring period, please delete the data.
 
 ++++
 
