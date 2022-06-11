@@ -117,5 +117,5 @@
    `LICENSE`_ ファイルも合わせてご確認ください。
 
 
-.. _LICENSE: https://github.com/PluginMania/RenderOverrideForMaya/
+.. _LICENSE: https://raw.githubusercontent.com/PluginMania/RenderOverrideForMaya/main/LICENSE
 
