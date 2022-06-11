@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/jp/sec01_overview/loadPlugin.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>プラグインのロード &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ライセンス" href="license.html" />
+    <link rel="prev" title="プラグインのダウンロード・インストール" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">概要</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">プラグインのダウンロード・インストール</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">プラグインのロード</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">プラグインのロード方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">ライセンス認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shelf">Shelf</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="license.html">ライセンス</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec02_howToUse/index.html">使い方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">概要</a> &raquo;</li>
+        
+      <li>プラグインのロード</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/jp/sec01_overview/loadPlugin.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>プラグインのロード<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="id2">
+<p class="topic-title">このページの目次:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id5">プラグインのロード方法</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id6">ライセンス認証</a></p></li>
+<li><p><a class="reference internal" href="#shelf" id="id7">Shelf</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mayaを起動する前に、プラグインのインストールを完了させてください</p>
+<ul>
+<li><p>(<a class="reference internal" href="install.html#how-to-plugin-install-jp"><span class="std std-ref">プラグインのダウンロード・インストール方法</span></a>)</p></li>
+</ul>
+</li>
+<li><p>インストールができたら、Mayaを起動します</p></li>
+</ul>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id5">プラグインのロード方法</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Mayaのメニューから <code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">&gt;</span> <span class="pre">Settings/Preferences</span> <span class="pre">&gt;</span> <span class="pre">Plug-in</span> <span class="pre">Manager</span></code> と辿ります</p></li>
+<li><p>Plug-in Managerのダイアログの <code class="docutils literal notranslate"><span class="pre">RenderOverride.py</span></code> と <code class="docutils literal notranslate"><span class="pre">RenderOverrideNode.py</span></code> の <strong>Loaded</strong> もしくは <strong>Auto load</strong> にチェックを入れます</p>
+<div class="figure align-default">
+<img alt="PluginManager" src="../../_images/pluginManager.png" />
+</div>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id6">ライセンス認証</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>プラグインのロード時に、ライセンス認証が行われます</p></li>
+<li><p>認証の手順は次の通りです</p>
+<ol class="arabic">
+<li><p>LICENSEファイルのチェック</p>
+<ul class="simple">
+<li><p>LICENSEファイルが存在する場合は、ライセンスが有効かどうかを確認します</p></li>
+<li><p>有効な場合は、商用版として使うことができます</p></li>
+<li><p>LICENSEファイルが有効であれば、(2.)のAutodesk App Storeへの認証プロセスはスキップされます</p></li>
+</ul>
+</li>
+<li><p>Autodesk App Storeへ、商用ライセンスの有無を確認する</p>
+<ul>
+<li><p>ネットワーク経由でAutodesk社のサーバーへアクセスし、ライセンスが有効かどうかを確認します</p></li>
+<li><p>必ずネットワークに繋がっていることを確認してください</p></li>
+<li><p>下図のようなダイアログが表示されますので、AutodeskユーザーID(メールアドレス)を入力し、OKボタンを押してください</p>
+<div class="figure align-default">
+<img alt="AutodeskUserID" src="../../_images/licenseAuthUserIdDialog.png" />
+</div>
+</li>
+<li><p>認証されると商用利用が可能になります</p></li>
+<li><p>認証されなかった場合は、試用利用になります(ウォーターマークが表示されます)</p></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>図で表すと次の通りです</p>
+<div class="figure align-default">
+<img alt="licenseAuthFlowJP" src="../../_images/licenseAuthFlowJP.PNG" />
+</div>
+</li>
+<li><p>プラグインがロードされる際、ScriptEditorに認証の履歴が出力されます</p>
+<div class="figure align-default">
+<img alt="licenseAuthFlowJP" src="../../_images/licenseAuthScriptEditor.png" />
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ライセンス認証のトラブルがありましたら、 <a class="reference external" href="https://github.com/PluginMania/RenderOverrideForMaya/issues">Issues</a> からご報告をお願いします。
+その際、ScriptEditorのスナップショットを添付していただけると、対応しやすくなります。</p>
+</div>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="shelf">
+<h2><a class="toc-backref" href="#id7">Shelf</a><a class="headerlink" href="#shelf" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>RenderOverrideが正常にロードされると、”RenderOverride” Shelfが自動的に読み込まれます</p>
+<ul class="simple">
+<li><p>(プラグインのインストール後、Maya起動時に自動的に読み込まれている可能性があります)</p></li>
+</ul>
+</li>
+<li><p>下図のようなShelfが読み込まれていることを確認してください</p></li>
+<li><p>RenderOverrideノードの作成や、アクティブなノードの切り替えを行うときに使います</p>
+<div class="figure align-default">
+<img alt="Shelf" src="../../_images/shelf_all.png" />
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Shelfの各機能の説明はこちら &gt;  <a class="reference internal" href="../sec02_howToUse/shelf.html#shelf-jp"><span class="std std-ref">Shelf</span></a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="license.html" class="btn btn-neutral float-right" title="ライセンス" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="install.html" class="btn btn-neutral float-left" title="プラグインのダウンロード・インストール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

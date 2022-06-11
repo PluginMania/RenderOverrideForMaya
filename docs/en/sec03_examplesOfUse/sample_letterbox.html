@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/en/sec03_examplesOfUse/sample_letterbox.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>How to set up Letterbox &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Actions (using external Python files)" href="sample_Action.html" />
+    <link rel="prev" title="Examples of Use" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Examples of Use</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to set up Letterbox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#process">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sample_Action.html">Actions (using external Python files)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec02_howToUse/index.html">使い方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Examples of Use</a> &raquo;</li>
+        
+      <li>How to set up Letterbox</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/en/sec03_examplesOfUse/sample_letterbox.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-set-up-letterbox">
+<span id="sample-letterbox-en"></span><h1>How to set up Letterbox<a class="headerlink" href="#how-to-set-up-letterbox" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents-of-this-page">
+<p class="topic-title">Contents of this page:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id2">Overview</a></p></li>
+<li><p><a class="reference internal" href="#process" id="id3">Process</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="overview">
+<h2><a class="toc-backref" href="#id2">Overview</a><a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>This section describes how to calculate the resolution and other settings when using letterboxes.</p></li>
+<li><p>Letterboxes at the top and bottom of the screen at ResolutionGate’s <code class="docutils literal notranslate"><span class="pre">10%</span></code> ratio.</p></li>
+<li><p>Here are the steps to output with Playblast.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Please create a RenderOverride node.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="process">
+<h2><a class="toc-backref" href="#id3">Process</a><a class="headerlink" href="#process" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>First, check the “Resolution” in ResolutionGate</p>
+<ul class="simple">
+<li><p>Basically, it is the resolution or its magnification at the time of final rendering.</p></li>
+<li><p>In this case, we will use <code class="docutils literal notranslate"><span class="pre">1920</span> <span class="pre">x</span> <span class="pre">1080</span></code>.</p></li>
+</ul>
+</li>
+<li><p>To add letterboxes to the top and bottom of the screen by 10%, we multiply the previous resolution height by <code class="docutils literal notranslate"><span class="pre">1.2</span></code>.</p>
+<ul class="simple">
+<li><p>The result is <code class="docutils literal notranslate"><span class="pre">1296</span></code> (px).</p></li>
+</ul>
+</li>
+<li><p>Set the ImageSize in RenderSettings to the resolution you just set (<code class="docutils literal notranslate"><span class="pre">1920</span> <span class="pre">x</span> <span class="pre">1296</span></code>)</p>
+<ul class="simple">
+<li><p>(The resolution setting is necessary because the position of the letterbox is based on ResolutionGate)</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="RenderSettings" src="../../_images/sample_letterbox_renderSettings.png" />
+</div>
+</li>
+<li><p>Set the <strong>Top</strong> and <strong>Bottom</strong> attributes of the RenderOverride node’s letterbox to <code class="docutils literal notranslate"><span class="pre">108</span></code> respectively</p>
+<ul class="simple">
+<li><p>The width of the letterbox is calculated based on the resolution value in the RenderSettings.</p></li>
+<li><p>Based on the value of <code class="docutils literal notranslate"><span class="pre">1296</span></code>, the letterboxes will be displayed in <code class="docutils literal notranslate"><span class="pre">108</span></code> increments above and below</p>
+<ul>
+<li><p>(* based on ResolutionGate height ratios)</p></li>
+</ul>
+</li>
+</ul>
+<div class="figure align-default">
+<img alt="LetterboxAttr" src="../../_images/sample_letterbox_changeAttr.png" />
+</div>
+<div class="figure align-default">
+<img alt="LetterboxView" src="../../_images/sample_letterbox_viewPx.png" />
+</div>
+</li>
+<li><p>Enter the text you want to display in the <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> attribute of the RenderOverride node and see if the text appears on the letterbox.</p>
+<ul class="simple">
+<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Fit</span> <span class="pre">text</span> <span class="pre">size</span> <span class="pre">to</span> <span class="pre">letterbox</span></code> attribute to <strong>on</strong> if you want the text size to match the letterbox height.</p></li>
+<li><p>Adjust the <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Scale</span></code> and <code class="docutils literal notranslate"><span class="pre">Offset</span></code> attributes as needed.</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="TextAttr" src="../../_images/sample_letterbox_textAttr.png" />
+</div>
+<div class="figure align-default">
+<img alt="DisplayText" src="../../_images/sample_letterbox_displayText.png" />
+</div>
+</li>
+<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Overscan</span></code> attribute of the camera to <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+<ul class="simple">
+<li><p>This setting will crop the view with the ResolutionGate border during the playblast (without having to crop it with AfterEffects or other editing software).</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="CameraOverscanAttr" src="../../_images/sample_letterbox_camOverscanAttr.png" />
+</div>
+</li>
+<li><p>Open Playblast options and set the “<strong>Display size</strong>” attribute to <code class="docutils literal notranslate"><span class="pre">From</span> <span class="pre">Render</span> <span class="pre">Settings</span></code>.</p>
+<div class="figure align-default" id="id1">
+<img alt="PlayblastOption" src="../../_images/sample_letterbox_playblastOpt.png" />
+<p class="caption"><span class="caption-text">(Other options are at your disposal)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Playblast</span></code> or <code class="docutils literal notranslate"><span class="pre">Apply</span></code> button in the options dialog to run Playblast</p>
+<ul class="simple">
+<li><p>Check the output video</p></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="sample_Action.html" class="btn btn-neutral float-right" title="Actions (using external Python files)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Examples of Use" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

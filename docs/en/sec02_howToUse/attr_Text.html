@@ -1,0 +1,730 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/en/sec02_howToUse/attr_Text.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Text &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Letterbox" href="attr_Letterbox.html" />
+    <link rel="prev" title="Render Override Node" href="renderOverrideNode.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">How to use</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="renderOverride.html">Render Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="renderOverrideNode.html">Render Override Node</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Text</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#attributes">Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#text-group">Text group</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attributes-within-each-group">Attributes within each group</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Letterbox.html">Letterbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Grid.html">Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Foreground.html">Foreground</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Action.html">Action List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shelf.html">Shelf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec02_howToUse/index.html">使い方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">How to use</a> &raquo;</li>
+        
+      <li>Text</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/en/sec02_howToUse/attr_Text.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="text">
+<span id="attr-text-en"></span><h1>Text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents-of-this-page">
+<p class="topic-title">Contents of this page:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id1">Overview</a></p></li>
+<li><p><a class="reference internal" href="#attributes" id="id2">Attributes</a></p>
+<ul>
+<li><p><a class="reference internal" href="#text-group" id="id3">Text group</a></p></li>
+<li><p><a class="reference internal" href="#attributes-within-each-group" id="id4">Attributes within each group</a></p>
+<ul>
+<li><p><a class="reference internal" href="#enable" id="id5">Enable</a></p></li>
+<li><p><a class="reference internal" href="#generate-type" id="id6">Generate Type</a></p></li>
+<li><p><a class="reference internal" href="#text-string" id="id7">Text String</a></p></li>
+<li><p><a class="reference internal" href="#text-color" id="id8">Text Color</a></p></li>
+<li><p><a class="reference internal" href="#text-opacity" id="id9">Text Opacity</a></p></li>
+<li><p><a class="reference internal" href="#fit-text-size-to-letterbox" id="id10">Fit text size to letterbox</a></p></li>
+<li><p><a class="reference internal" href="#text-scale" id="id11">Text Scale</a></p></li>
+<li><p><a class="reference internal" href="#offset-x" id="id12">Offset X (%)</a></p></li>
+<li><p><a class="reference internal" href="#offset-y" id="id13">Offset Y (%)</a></p></li>
+<li><p><a class="reference internal" href="#font" id="id14">Font</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="overview">
+<h2><a class="toc-backref" href="#id1">Overview</a><a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>RenderOverride allows you to freely customize the text to be displayed by using the RenderOverride node</p></li>
+<li><p>Font, color, opacity, size, and display position offset can be set for text</p></li>
+<li><p>Multiple lines can be displayed</p></li>
+<li><p>In addition to the usual string specifications, complex information can be displayed using Python or MEL commands</p>
+<ul>
+<li><p>For example, entering the MEL code <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-selection</span></code> will display a list of the objects selected in the scene</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/renderoverride_textTop.gif"><img alt="attrText" src="../../_images/renderoverride_textTop.gif" style="width: 627.2px; height: 358.40000000000003px;" /></a>
+</div>
+</li>
+<li><p>It can also be combined with the Actions attribute of the RenderOverride node to display action information (this feature is especially useful when creating game motions. (<a class="reference internal" href="../sec03_examplesOfUse/sample_Action.html#sample-action-en"><span class="std std-ref">Actions (using external Python files)</span></a>))</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="attributes">
+<h2><a class="toc-backref" href="#id2">Attributes</a><a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="text-group">
+<h3><a class="toc-backref" href="#id3">Text group</a><a class="headerlink" href="#text-group" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<img alt="TextGroup" src="../../_images/textAttrGroup.png" />
+</div>
+<ul>
+<li><p>There are nine <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">groups</span></code> available.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Group Name</p></th>
+<th class="head"><p>Where to display within ResolutionGate (Text align)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Text [Top Left]</p></td>
+<td><p>Top Left (Left)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Top Center]</p></td>
+<td><p>Top Center (Center)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Top Right]</p></td>
+<td><p>Top Right (Right)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Center Left]</p></td>
+<td><p>Center Left (Left)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Center]</p></td>
+<td><p>Center] (Center)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Center Right]</p></td>
+<td><p>Center Right (Right)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Bottom Left]</p></td>
+<td><p>Bottom Left (Left)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Bottom Center]</p></td>
+<td><p>Bottom Center (Center)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Bottom Right]</p></td>
+<td><p>Bottom Right (Right)</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Text can be set for each display position</p></li>
+<li><p>ResolutionGate is the standard for the position to be displayed</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="attributes-within-each-group">
+<h3><a class="toc-backref" href="#id4">Attributes within each group</a><a class="headerlink" href="#attributes-within-each-group" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<img alt="TextAttr" src="../../_images/textAttrs.png" />
+</div>
+<ul class="simple">
+<li><p>Attributes within each group have the same configuration</p></li>
+</ul>
+<p>(Summary of each attribute)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Attribute</p></th>
+<th class="head"><p>Summary</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Enable</p></td>
+<td><p>Enable/disable for each group</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">Generate Type</div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">Select “<strong>String</strong>” to display the characters as they appear in the <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> attribute.</div>
+<div class="line">If you want to run a script, select ” <strong>Python</strong> ” or ” <strong>MEL</strong> “.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Text String</p></td>
+<td><p>Enter the text you want to display. If you want the script to run, write the code.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text Color</p></td>
+<td><p>Text Color</p></td>
+</tr>
+<tr class="row-even"><td><p>Text Opacity</p></td>
+<td><p>Text opacity (0.0: transparent, 1.0: opaque)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fit text size to letterbox</p></td>
+<td><p>Match the font size to the size of <a class="reference internal" href="attr_Letterbox.html#attr-letterbox-en"><span class="std std-ref">Letterbox</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Text Scale</p></td>
+<td><p>Multiply the automatically calculated text size by the scale.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Offset X (%)</p></td>
+<td><p>Offset value for the horizontal axis. Specifies the offset as a percentage of the ResolutionGate width.</p></td>
+</tr>
+<tr class="row-even"><td><p>Offset Y (%)</p></td>
+<td><p>Offset value for the vertical axis. Specifies the offset as a percentage of the ResolutionGate height.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Font</p></td>
+<td><p>Set the font, which can be edited via the <code class="docutils literal notranslate"><span class="pre">Font</span> <span class="pre">Dialog</span></code> / <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Default</span></code> button.</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="section" id="enable">
+<h4><a class="toc-backref" href="#id5">Enable</a><a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Text in each position can be turned on or off individually</p></li>
+<li><p>If text is not displayed, check to see if this attribute is turned on</p></li>
+</ul>
+</div>
+<div class="section" id="generate-type">
+<h4><a class="toc-backref" href="#id6">Generate Type</a><a class="headerlink" href="#generate-type" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><strong>String</strong></p>
+<ul>
+<li><p>Select ” <strong>String</strong> ” to display the characters described in the <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> attribute as they are.</p></li>
+</ul>
+</li>
+<li><p><strong>Python</strong></p>
+<ul>
+<li><p>If you want to run Python code, select “<strong>Python</strong>”.</p></li>
+<li><p>If you want to run external files (.py, etc.), you need to pass <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> in advance.</p></li>
+</ul>
+</li>
+<li><p><strong>MEL</strong></p>
+<ul>
+<li><p>If you want to run MEL code, select “<strong>MEL</strong>”</p></li>
+<li><p>If you want to run an external file (.mel), please make sure that Maya can recognize it in your environment.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="text-string">
+<h4><a class="toc-backref" href="#id7">Text String</a><a class="headerlink" href="#text-string" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Write the plain text to be displayed or the code to be executed.</p></li>
+</ul>
+<div class="section" id="if-generate-type-is-string-then">
+<h5>(If Generate Type is <strong>String</strong>, then)<a class="headerlink" href="#if-generate-type-is-string-then" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li><p>Type the characters you want to display</p></li>
+<li><p>Insert a line break code (<code class="docutils literal notranslate"><span class="pre">\n</span></code>) between lines to break lines</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">1st</span> <span class="pre">line\n2nd</span> <span class="pre">line</span></code></p></li>
+</ul>
+</li>
+<li><p>If you enter a keyword (variable) with the pre-prepared keywords enclosed in curly brackets ( <code class="docutils literal notranslate"><span class="pre">{}</span></code> ), the value will be substituted and displayed.</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">{FOCAL_LENGTH}</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">35.0</span></code></p></li>
+</ul>
+</li>
+<li><p>You can also combine keywords with regular strings</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">{FOCAL_LENGTH}mm</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">35.0mm</span></code></p></li>
+</ul>
+</li>
+<li><p>Display options (the format after the colon in curly brackets) can be used to control the output, for example, to “align the decimal point”.</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">{FOCAL_LENGTH:.3f}</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">35.000</span></code> (align decimal point to 3 digits)</p></li>
+<li><p>display options conform to <a class="reference external" href="https://docs.python.org/3.10/tutorial/inputoutput.html">Formatted String Literals</a> .</p></li>
+</ul>
+</li>
+</ul>
+<p>(Keywords (variables) and their meanings)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 51%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Keywords (variables)</p></th>
+<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Value to be replaced (e.g.)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ANIM_START_TIME</p></td>
+<td><p>Animation start time</p></td>
+<td><p>1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>ANIM_END_TIME</p></td>
+<td><p>Animation end time</p></td>
+<td><p>48.0</p></td>
+</tr>
+<tr class="row-even"><td><p>MIN_TIME</p></td>
+<td><p>Start time of time range of playback</p></td>
+<td><p>5.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>MAX_TIME</p></td>
+<td><p>End time of time range of playback</p></td>
+<td><p>24.0</p></td>
+</tr>
+<tr class="row-even"><td><p>CUR_TIME</p></td>
+<td><p>Current Time</p></td>
+<td><p>10.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>SCENE_NAME</p></td>
+<td><p>Maya file name (“Untitled” if the file is not saved)</p></td>
+<td><p>PRJ_ChrA_model_v001.ma</p></td>
+</tr>
+<tr class="row-even"><td><p>CAM_NAME</p></td>
+<td><p>Camera name in view</p></td>
+<td><p>persp</p></td>
+</tr>
+<tr class="row-odd"><td><p>FOCAL_LENGTH</p></td>
+<td><p>Camera focal length</p></td>
+<td><p>35.0</p></td>
+</tr>
+<tr class="row-even"><td><p>USER</p></td>
+<td><p>Name of the user logged in to the machine</p></td>
+<td><p>JohnSmith</p></td>
+</tr>
+<tr class="row-odd"><td><p>DATE_JP</p></td>
+<td><p>Today’s date (Japanese format)</p></td>
+<td><p>2022/04/25</p></td>
+</tr>
+<tr class="row-even"><td><p>DATE_US</p></td>
+<td><p>Today’s date (American format)</p></td>
+<td><p>Apr 25, 2022</p></td>
+</tr>
+<tr class="row-odd"><td><p>DATE_UK</p></td>
+<td><p>Today’s date (UK format)</p></td>
+<td><p>14 Apr 2022</p></td>
+</tr>
+</tbody>
+</table>
+<p>(Example of a combination of keywords, characters, and display options (<a class="reference external" href="https://docs.python.org/3.10/tutorial/inputoutput.html">Formatted String Literals</a>))</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 13%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Value to be entered for the attribute</p></th>
+<th class="head"><p>Output Example</p></th>
+<th class="head"><p>Remarks</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">[{MIN_TIME:.0f}</span> <span class="pre">-</span> <span class="pre">{MAX_TIME:.0f}]</span> <span class="pre">{CUR_TIME:03.0f}</span></code></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">[1</span> <span class="pre">-</span> <span class="pre">48]</span> <span class="pre">005</span></code></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">Displays the “start/end time” of the playback time range and the current frame.</div>
+<div class="line">You can remove the decimal point with <code class="docutils literal notranslate"><span class="pre">:.0f</span></code> after the keyword (“zero decimal places”).</div>
+<div class="line">The <code class="docutils literal notranslate"><span class="pre">:03.0f</span></code> after the keyword allows you to remove the decimal portion and make the integer portion 3 digits.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Focal</span> <span class="pre">Length:</span> <span class="pre">{FOCAL_LENGTH:.1f}mm</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Focal</span> <span class="pre">Length:</span> <span class="pre">35.0mm</span></code></p></td>
+<td><p>Displays the focal length with one decimal place (<code class="docutils literal notranslate"><span class="pre">:.1f</span></code>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="when-generate-type-is-python-or-mel">
+<h5>(When Generate Type is <strong>Python</strong> or <strong>MEL</strong>)<a class="headerlink" href="#when-generate-type-is-python-or-mel" title="Permalink to this headline">¶</a></h5>
+<ul>
+<li><p>To run an external Python script, write the following (make sure Maya can recognize it through <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> or something similar)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">renderoverride_actions</span><span class="p">;</span><span class="n">renderoverride_actions</span><span class="o">.</span><span class="n">actions_text</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>An example utilizing Python scripts can be found at <a class="reference internal" href="../sec03_examplesOfUse/sample_Action.html#sample-action-en"><span class="std std-ref">here</span></a>.</p></li>
+</ul>
+</li>
+<li><p>To execute the MEL command directly, write</p>
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">selection</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>A list of selected objects is displayed</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="apply-preset-from-right-click">
+<h5>(Apply preset from right click)<a class="headerlink" href="#apply-preset-from-right-click" title="Permalink to this headline">¶</a></h5>
+<ul>
+<li><p>Right-clicking on a text box brings up a menu</p></li>
+<li><p>Selecting any of the presets will update the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Type</span></code> and <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> attributes</p>
+<div class="figure align-default">
+<img alt="textRightClick" src="../../_images/textRightClick.png" />
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="text-color">
+<h4><a class="toc-backref" href="#id8">Text Color</a><a class="headerlink" href="#text-color" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p>Sets the text color</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When I change the color, the view does not immediately refresh. This is a problem with the Attribute Editor (the view is not refreshed when the Color UI is updated). Therefore, if you want to see the result of the update, press the “Refresh” button in Shelf after setting the color to refresh the view.</p>
+<div class="figure align-default">
+<img alt="shelfRefresh" src="../../_images/shelf_refresh_icon.png" />
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="text-opacity">
+<h4><a class="toc-backref" href="#id9">Text Opacity</a><a class="headerlink" href="#text-opacity" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Sets the opacity of the text</p></li>
+</ul>
+</div>
+<div class="section" id="fit-text-size-to-letterbox">
+<h4><a class="toc-backref" href="#id10">Fit text size to letterbox</a><a class="headerlink" href="#fit-text-size-to-letterbox" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p>Adjust the size of the text to match the height of <a class="reference internal" href="attr_Letterbox.html#attr-letterbox-en"><span class="std std-ref">Letterbox</span></a>.</p>
+<div class="figure align-default">
+<img alt="textFitLine1" src="../../_images/textFitLine1.png" />
+</div>
+</li>
+<li><p>If the text is multiple lines, all lines will be adjusted to fit in the letterbox.</p>
+<div class="figure align-default">
+<img alt="textFitLine2" src="../../_images/textFitLine2.png" />
+</div>
+</li>
+<li><p>If the height of the letterbox is not high enough, the text may overhang the letterbox because it tries to keep the text at least 10px.</p>
+<div class="figure align-default">
+<img alt="textFitLine3" src="../../_images/textFitLine3.png" />
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="text-scale">
+<h4><a class="toc-backref" href="#id11">Text Scale</a><a class="headerlink" href="#text-scale" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Multiply the automatically calculated text size by the scale</p>
+<ul>
+<li><p>By default, the text size is automatically calculated according to the ResolutionGate height</p></li>
+<li><p>If the <code class="docutils literal notranslate"><span class="pre">Fit</span> <span class="pre">text</span> <span class="pre">size</span> <span class="pre">to</span> <span class="pre">letterbox</span></code> attribute is on, the text size will be automatically calculated according to the letterbox height.</p></li>
+</ul>
+</li>
+<li><p>If the text size is less than 10px after scaling, it will be fixed at 10px.</p></li>
+</ul>
+</div>
+<div class="section" id="offset-x">
+<h4><a class="toc-backref" href="#id12">Offset X (%)</a><a class="headerlink" href="#offset-x" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Specifies the percentage of the horizontal axis to be offset from the automatically calculated position.</p>
+<ul>
+<li><p>Calculated based on the width of ResolutionGate.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="offset-y">
+<h4><a class="toc-backref" href="#id13">Offset Y (%)</a><a class="headerlink" href="#offset-y" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Specifies the percentage of the vertical axis to be offset from the automatically calculated position.</p>
+<ul>
+<li><p>Calculated based on the height of ResolutionGate.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="font">
+<h4><a class="toc-backref" href="#id14">Font</a><a class="headerlink" href="#font" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-default">
+<img alt="textFontAttr" src="../../_images/textFontAttr.png" />
+</div>
+<ul>
+<li><p>You can specify font family, thickness, italics, underlining, etc.</p></li>
+<li><p>Attributes cannot be edited directly, so use the <strong>Font Dialog</strong>/<strong>Set Default</strong> button</p>
+<ul>
+<li><p><strong>Font Dialog</strong></p>
+<ul>
+<li><p>FontDialog is displayed</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="textFontDialog" src="../../_images/textFontDialog.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>In this dialog, set <code class="docutils literal notranslate"><span class="pre">Font</span></code>, <code class="docutils literal notranslate"><span class="pre">Font</span> <span class="pre">style</span></code>, <code class="docutils literal notranslate"><span class="pre">Strikeout</span></code>, and <code class="docutils literal notranslate"><span class="pre">Underline</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p><strong>Size</strong> does not apply</p>
+<ul>
+<li><p>(Since it is automatically calculated according to the ResolutionGate height)</p></li>
+<li><p>Adjust the text size by multiplying the automatically calculated size by the <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Scale</span></code> value</p></li>
+</ul>
+</li>
+<li><p><strong>Strikeout</strong> and <strong>Underline</strong> cannot be used at the same time</p>
+<ul>
+<li><p>If both are checked, <strong>Underline</strong> takes precedence</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Set Default</strong></p>
+<ul class="simple">
+<li><p>Set to Maya default font</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="attr_Letterbox.html" class="btn btn-neutral float-right" title="Letterbox" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="renderOverrideNode.html" class="btn btn-neutral float-left" title="Render Override Node" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

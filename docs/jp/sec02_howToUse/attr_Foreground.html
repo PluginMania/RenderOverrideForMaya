@@ -1,0 +1,485 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/jp/sec02_howToUse/attr_Foreground.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>フォアグラウンド &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="バックグラウンド" href="attr_Background.html" />
+    <link rel="prev" title="グリッド" href="attr_Grid.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">使い方</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="renderOverride.html">Render Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="renderOverrideNode.html">Render Override Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Text.html">テキスト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Letterbox.html">レターボックス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Grid.html">グリッド</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">フォアグラウンド</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">概要</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fg-texture-note-jp">※テクスチャを適用させる場合の注意事項</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">アトリビュート</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enable">Enable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-new-item">[Add New Item] ボタン</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#fg-colors">アトリビュート(FG Colors[*]枠内)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Enable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#color">Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#placement">Placement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#alignment">Alignment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scale">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#offset-x-offset-y">Offset X (%), Offset Y (%)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">“ゴミ箱”アイコン</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Background.html">バックグラウンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Action.html">Action List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shelf.html">Shelf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">使い方</a> &raquo;</li>
+        
+      <li>フォアグラウンド</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/jp/sec02_howToUse/attr_Foreground.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="attr-foreground-jp">
+<span id="id1"></span><h1>フォアグラウンド<a class="headerlink" href="#attr-foreground-jp" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="id2">
+<p class="topic-title">このページの目次:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id8">概要</a></p>
+<ul>
+<li><p><a class="reference internal" href="#fg-texture-note-jp" id="id9">※テクスチャを適用させる場合の注意事項</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id5" id="id10">アトリビュート</a></p>
+<ul>
+<li><p><a class="reference internal" href="#enable" id="id11">Enable</a></p></li>
+<li><p><a class="reference internal" href="#add-new-item" id="id12">[Add New Item] ボタン</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#fg-colors" id="id13">アトリビュート(FG Colors[*]枠内)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id6" id="id14">Enable</a></p></li>
+<li><p><a class="reference internal" href="#color" id="id15">Color</a></p></li>
+<li><p><a class="reference internal" href="#placement" id="id16">Placement</a></p></li>
+<li><p><a class="reference internal" href="#alignment" id="id17">Alignment</a></p></li>
+<li><p><a class="reference internal" href="#scale" id="id18">Scale</a></p></li>
+<li><p><a class="reference internal" href="#offset-x-offset-y" id="id19">Offset X (%), Offset Y (%)</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id20">“ゴミ箱”アイコン</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id8">概要</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>3Dオブジェクトの手前に画像を表示させることができます</p></li>
+<li><p>テクスチャにアルファチャンネルが埋め込まれていれば、透明処理されます</p></li>
+<li><p>複数の画像を重ねることができます</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/renderoverride_fgTop.gif"><img alt="fgOverview" src="../../_images/renderoverride_fgTop.gif" style="width: 823.1999999999999px; height: 546.0px;" /></a>
+</div>
+</li>
+</ul>
+<div class="section" id="fg-texture-note-jp">
+<span id="id4"></span><h3><a class="toc-backref" href="#id9">※テクスチャを適用させる場合の注意事項</a><a class="headerlink" href="#fg-texture-note-jp" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>fileノードを <code class="docutils literal notranslate"><span class="pre">Color</span></code> アトリビュートに直接接続してください</p></li>
+<li><p>fileノードの <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">Space</span></code> などの色調補正の効果は無効になります</p>
+<ul>
+<li><p>LUTなどをベイクした連番素材を用意してください</p></li>
+<li><p>但し、ビューの <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">Transform</span></code> の影響は受けます</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id10">アトリビュート</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="fgAttr1" src="../../_images/fgAttr1.png" />
+</div>
+<div class="section" id="enable">
+<h3><a class="toc-backref" href="#id11">Enable</a><a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Foreground全体のon/offを制御します</p></li>
+</ul>
+</div>
+<div class="section" id="add-new-item">
+<h3><a class="toc-backref" href="#id12">[Add New Item] ボタン</a><a class="headerlink" href="#add-new-item" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Foregroundのアイテムを追加します</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="fg-colors">
+<h2><a class="toc-backref" href="#id13">アトリビュート(FG Colors[*]枠内)</a><a class="headerlink" href="#fg-colors" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="fgAttr2" src="../../_images/fgAttr2.png" />
+</div>
+<div class="section" id="id6">
+<h3><a class="toc-backref" href="#id14">Enable</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>各Foregroundのon/off</p></li>
+<li><p>個別に無効にすることができます</p></li>
+</ul>
+</div>
+<div class="section" id="color">
+<h3><a class="toc-backref" href="#id15">Color</a><a class="headerlink" href="#color" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Foregroundのカラー</p></li>
+<li><p><a class="reference internal" href="#fg-texture-note-jp"><span class="std std-ref">テクスチャを表示させる時の注意事項</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="placement">
+<h3><a class="toc-backref" href="#id16">Placement</a><a class="headerlink" href="#placement" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Fit to ResolutionGate</strong></p>
+<ul>
+<li><p>画像をResolutionGateの縦横幅に合わせて表示します</p></li>
+<li><p>画像とResolutionGateの縦横比が違う場合は、ResolutionGateにフィットするように調整されます</p></li>
+</ul>
+</li>
+<li><p><strong>Fit to Letterbox</strong></p>
+<ul>
+<li><p>画像をLetterboxの縦横幅に合わせて表示します</p></li>
+<li><p>画像とLetterboxの縦横比が違う場合は、Letterboxにフィットするように調整されます</p></li>
+</ul>
+</li>
+<li><p><strong>Ctrl by params [ResolutionGate align]</strong></p>
+<ul>
+<li><p>ResolutionGateに整列した画像に対し、Scaleを掛けたり、ポジションをOffsetさせることができます</p></li>
+<li><p>画像の縦横比は保持されます</p></li>
+</ul>
+</li>
+<li><p><strong>Ctrl by params [Letterbox align]</strong></p>
+<ul>
+<li><p>レターボックスに整列した画像に対し、Scaleを掛けたり、ポジションをOffsetさせることができます</p></li>
+<li><p>画像の縦横比は保持されます</p></li>
+</ul>
+</li>
+<li><p><strong>Ctrl by params [View align]</strong></p>
+<ul>
+<li><p>ビューポートに整列した画像に対し、Scaleを掛けたり、ポジションをOffsetさせることができます</p></li>
+<li><p>画像の縦横比は保持されます</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="alignment">
+<h3><a class="toc-backref" href="#id17">Alignment</a><a class="headerlink" href="#alignment" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Placement</span></code> アトリビュートの、次の項目が選択されている時のみ有効</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[ResolutionGate</span> <span class="pre">align]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[Letterbox</span> <span class="pre">align]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[View</span> <span class="pre">align]</span></code></p></li>
+</ul>
+</li>
+<li><p>基準となる枠(<code class="docutils literal notranslate"><span class="pre">ResolutionGate</span></code> , <code class="docutils literal notranslate"><span class="pre">Letterbox</span></code> , <code class="docutils literal notranslate"><span class="pre">View</span></code>)のどこに整列するか指定します</p>
+<ul class="simple">
+<li><p>画像にScaleを掛けるときのピボットにもなります</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 60%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Alignment</p></th>
+<th class="head"><p>整列箇所</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Top Left</p></td>
+<td><p>左上</p></td>
+</tr>
+<tr class="row-odd"><td><p>Top Center</p></td>
+<td><p>上中央</p></td>
+</tr>
+<tr class="row-even"><td><p>Top Right</p></td>
+<td><p>右上</p></td>
+</tr>
+<tr class="row-odd"><td><p>Center Left</p></td>
+<td><p>左中央</p></td>
+</tr>
+<tr class="row-even"><td><p>Center</p></td>
+<td><p>中央</p></td>
+</tr>
+<tr class="row-odd"><td><p>Center Right</p></td>
+<td><p>右中央</p></td>
+</tr>
+<tr class="row-even"><td><p>Bottom Left</p></td>
+<td><p>左下</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bottom Center</p></td>
+<td><p>下中央</p></td>
+</tr>
+<tr class="row-even"><td><p>Bottom Right</p></td>
+<td><p>右下</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="section" id="scale">
+<h3><a class="toc-backref" href="#id18">Scale</a><a class="headerlink" href="#scale" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Placement</span></code> アトリビュートの、次の項目が選択されている時のみ有効</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[ResolutionGate</span> <span class="pre">align]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[Letterbox</span> <span class="pre">align]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[View</span> <span class="pre">align]</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Alignment</span></code> アトリビュートで指定した整列箇所を中心に、画像にスケールを掛けます</p></li>
+</ul>
+</div>
+<div class="section" id="offset-x-offset-y">
+<h3><a class="toc-backref" href="#id19">Offset X (%), Offset Y (%)</a><a class="headerlink" href="#offset-x-offset-y" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Placement</span></code> アトリビュートの、次の項目が選択されている時のみ有効</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[ResolutionGate</span> <span class="pre">align]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[Letterbox</span> <span class="pre">align]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">by</span> <span class="pre">params</span> <span class="pre">[View</span> <span class="pre">align]</span></code></p></li>
+</ul>
+</li>
+<li><p>画像のポジションを上下左右にオフセットします</p></li>
+<li><p>数値は、基準となる枠(<code class="docutils literal notranslate"><span class="pre">ResolutionGate</span></code> , <code class="docutils literal notranslate"><span class="pre">Letterbox</span></code> , <code class="docutils literal notranslate"><span class="pre">View</span></code>)の縦横の長さに対する割合になります</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3><a class="toc-backref" href="#id20">“ゴミ箱”アイコン</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>FG Colorを削除します</p></li>
+<li><p>一時的に非表示にしたい場合は、 <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートを使用してください</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="attr_Background.html" class="btn btn-neutral float-right" title="バックグラウンド" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="attr_Grid.html" class="btn btn-neutral float-left" title="グリッド" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

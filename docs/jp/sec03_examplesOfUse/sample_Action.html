@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/jp/sec03_examplesOfUse/sample_Action.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Actions (外部Pythonファイルの利用) &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="注意事項・補足" href="../sec04_notes/index.html" />
+    <link rel="prev" title="Letterboxの設定方法" href="sample_letterbox.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec02_howToUse/index.html">使い方</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">作例</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sample_letterbox.html">Letterboxの設定方法</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Actions (外部Pythonファイルの利用)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">概要</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">サンプル プロジェクト</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">手順</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#actions">1. Actionsアトリビュートの設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#python">2. Pythonスクリプトの準備</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#text">3. Textアトリビュートの設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">4. 表示の確認</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">作例</a> &raquo;</li>
+        
+      <li>Actions (外部Pythonファイルの利用)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/jp/sec03_examplesOfUse/sample_Action.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="actions-python">
+<span id="sample-action-jp"></span><h1>Actions (外部Pythonファイルの利用)<a class="headerlink" href="#actions-python" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="id1">
+<p class="topic-title">このページの目次:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id8">概要</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id9">サンプル プロジェクト</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id10">手順</a></p>
+<ul>
+<li><p><a class="reference internal" href="#actions" id="id11">1. Actionsアトリビュートの設定</a></p></li>
+<li><p><a class="reference internal" href="#python" id="id12">2. Pythonスクリプトの準備</a></p></li>
+<li><p><a class="reference internal" href="#text" id="id13">3. Textアトリビュートの設定</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id14">4. 表示の確認</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id8">概要</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Pythonスクリプトを使うことで、状況に合わせたテキストを生成し、表示させることができます</p></li>
+<li><p>この作例では、RenderOverrideノードの <code class="docutils literal notranslate"><span class="pre">Actions</span></code> アトリビュートと組み合わせ、アクションの情報を出力する方法を紹介します</p>
+<div class="figure align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/renderoverride_actionsSampleResult.gif"><img alt="ActionsResult" src="../../_images/renderoverride_actionsSampleResult.gif" style="width: 807.8px; height: 546.0px;" /></a>
+<p class="caption"><span class="caption-text">テキストの表示を、右上のように切り替えることができます</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id9">サンプル プロジェクト</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>このプロジェクトの完成シーンです (Maya2022で保存されています)</p>
+<ul>
+<li><p><a class="reference download internal" download="" href="../../_downloads/aa9eb3e682c6200235ebf923d88469f2/cube_animation_sample_actions_maya2022_v001.zip"><code class="xref download docutils literal notranslate"><span class="pre">MayaScene(2022)</span></code></a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id10">手順</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="actions">
+<h3><a class="toc-backref" href="#id11">1. Actionsアトリビュートの設定</a><a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Actions</span></code> アトリビュートに情報を加えてください</p>
+<div class="figure align-default" id="id7">
+<img alt="ActionsAttr" src="../../_images/sample_actions_attrs.png" />
+<p class="caption"><span class="caption-text">アクション名と開始フレーム番号を入力します</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="python">
+<h3><a class="toc-backref" href="#id12">2. Pythonスクリプトの準備</a><a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>今回は、プラグインで用意されている <code class="docutils literal notranslate"><span class="pre">renderoverride_actions.py</span></code> を使用します</p>
+<ul>
+<li><p>Pythonファイルは <code class="docutils literal notranslate"><span class="pre">C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA</span> <span class="pre">VERSION]/python/</span></code> にインストールされています</p></li>
+<li><p>RenderOverrideをロードした段階で <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> が通っているので、すぐに使うことができます</p>
+<ul>
+<li><p>(自分で作ったPythonコードを実行させたい時は、 <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> などを使用し、パスを通しておくことを推奨します)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="text">
+<h3><a class="toc-backref" href="#id13">3. Textアトリビュートの設定</a><a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Textの <code class="docutils literal notranslate"><span class="pre">Enable</span></code> にチェックを入れます</p></li>
+<li><p>Textの <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Type</span></code> を <strong>Python</strong> に設定します</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> アトリビュートに、次のコードを入力します</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">renderoverride_actions</span><span class="p">;</span><span class="n">renderoverride_actions</span><span class="o">.</span><span class="n">actions_text</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<img alt="TextAttr" src="../../_images/sample_actions_textAttrs.png" />
+</div>
+<ul>
+<li><p>テキストボックス上で右クリックし、 <code class="docutils literal notranslate"><span class="pre">Python:</span> <span class="pre">Actions</span></code> を選択すると、コードが入力されます</p>
+<div class="figure align-default">
+<img alt="TextRightClicked" src="../../_images/sample_actions_textRightClicked.png" />
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id14">4. 表示の確認</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>タイムラインを再生させ、次の動画の、右上のテキストのように表示が切り替われば成功です</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/renderoverride_actionsSampleResult.gif"><img alt="ActionsResult" src="../../_images/renderoverride_actionsSampleResult.gif" style="width: 807.8px; height: 546.0px;" /></a>
+</div>
+</li>
+</ul>
+<hr class="docutils" />
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../sec04_notes/notes_python.html#notes-python-jp"><span class="std std-ref">Pythonスクリプトの注意事項</span></a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../sec04_notes/index.html" class="btn btn-neutral float-right" title="注意事項・補足" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="sample_letterbox.html" class="btn btn-neutral float-left" title="Letterboxの設定方法" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

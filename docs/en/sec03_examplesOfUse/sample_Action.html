@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/en/sec03_examplesOfUse/sample_Action.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Actions (using external Python files) &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Notes" href="../sec04_notes/index.html" />
+    <link rel="prev" title="How to set up Letterbox" href="sample_letterbox.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Examples of Use</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sample_letterbox.html">How to set up Letterbox</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Actions (using external Python files)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-file">Project file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#process">Process</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#actions-attribute-settings">1. Actions Attribute Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#preparing-python-scripts">2. Preparing Python Scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-text-attributes">3. Setting Text Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#check-display">4. Check display</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec02_howToUse/index.html">使い方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Examples of Use</a> &raquo;</li>
+        
+      <li>Actions (using external Python files)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/en/sec03_examplesOfUse/sample_Action.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="actions-using-external-python-files">
+<span id="sample-action-en"></span><h1>Actions (using external Python files)<a class="headerlink" href="#actions-using-external-python-files" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents-of-this-page">
+<p class="topic-title">Contents of this page:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id3">Overview</a></p></li>
+<li><p><a class="reference internal" href="#project-file" id="id4">Project file</a></p></li>
+<li><p><a class="reference internal" href="#process" id="id5">Process</a></p>
+<ul>
+<li><p><a class="reference internal" href="#actions-attribute-settings" id="id6">1. Actions Attribute Settings</a></p></li>
+<li><p><a class="reference internal" href="#preparing-python-scripts" id="id7">2. Preparing Python Scripts</a></p></li>
+<li><p><a class="reference internal" href="#setting-text-attributes" id="id8">3. Setting Text Attributes</a></p></li>
+<li><p><a class="reference internal" href="#check-display" id="id9">4. Check display</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="overview">
+<h2><a class="toc-backref" href="#id3">Overview</a><a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Python scripts can be used to generate and display text tailored to the situation</p></li>
+<li><p>This example shows how to output action information in combination with the <code class="docutils literal notranslate"><span class="pre">Actions</span></code> Attribute of the RenderOverride node</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/renderoverride_actionsSampleResult.gif"><img alt="ActionsResult" src="../../_images/renderoverride_actionsSampleResult.gif" style="width: 807.8px; height: 546.0px;" /></a>
+<p class="caption"><span class="caption-text">The text display can be switched as shown in the upper right corner.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="project-file">
+<h2><a class="toc-backref" href="#id4">Project file</a><a class="headerlink" href="#project-file" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>This is the finished scene of this project (saved in Maya2022)</p>
+<ul>
+<li><p><a class="reference download internal" download="" href="../../_downloads/aa9eb3e682c6200235ebf923d88469f2/cube_animation_sample_actions_maya2022_v001.zip"><code class="xref download docutils literal notranslate"><span class="pre">MayaScene(2022)</span></code></a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="process">
+<h2><a class="toc-backref" href="#id5">Process</a><a class="headerlink" href="#process" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="actions-attribute-settings">
+<h3><a class="toc-backref" href="#id6">1. Actions Attribute Settings</a><a class="headerlink" href="#actions-attribute-settings" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Add information to the <code class="docutils literal notranslate"><span class="pre">Actions</span></code> attribute</p>
+<div class="figure align-default" id="id2">
+<img alt="ActionsAttr" src="../../_images/sample_actions_attrs.png" />
+<p class="caption"><span class="caption-text">Enter the action name and start frame number</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="preparing-python-scripts">
+<h3><a class="toc-backref" href="#id7">2. Preparing Python Scripts</a><a class="headerlink" href="#preparing-python-scripts" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>This time, we will use the <code class="docutils literal notranslate"><span class="pre">renderoverride_actions.py</span></code> provided by the plugin</p>
+<ul>
+<li><p>The Python files are installed in <code class="docutils literal notranslate"><span class="pre">C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA</span> <span class="pre">VERSION]/python/</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> is passed when RenderOverride is loaded, so you can use it right away!</p>
+<ul>
+<li><p>(If you want to run your own Python code, it is recommended that you use <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> or similar to pass it through.)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="setting-text-attributes">
+<h3><a class="toc-backref" href="#id8">3. Setting Text Attributes</a><a class="headerlink" href="#setting-text-attributes" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Check <code class="docutils literal notranslate"><span class="pre">Enable</span></code> of Text.</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Type</span></code> of Text to <strong>Python</strong>.</p></li>
+<li><p>Enter the following code in the <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> Attribute</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">renderoverride_actions</span><span class="p">;</span><span class="n">renderoverride_actions</span><span class="o">.</span><span class="n">actions_text</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<img alt="TextAttr" src="../../_images/sample_actions_textAttrs.png" />
+</div>
+<ul>
+<li><p>Right click on the text box to select a template (choose <code class="docutils literal notranslate"><span class="pre">Python:</span> <span class="pre">Actions</span></code>)</p>
+<div class="figure align-default">
+<img alt="TextRightClicked" src="../../_images/sample_actions_textRightClicked.png" />
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="check-display">
+<h3><a class="toc-backref" href="#id9">4. Check display</a><a class="headerlink" href="#check-display" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Play the timeline, and if the display changes to look like the text in the upper right corner of the next video, you have succeeded.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/renderoverride_actionsSampleResult.gif"><img alt="ActionsResult" src="../../_images/renderoverride_actionsSampleResult.gif" style="width: 807.8px; height: 546.0px;" /></a>
+</div>
+</li>
+</ul>
+<hr class="docutils" />
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../sec04_notes/notes_python.html#notes-python-en"><span class="std std-ref">Python Scripting Notes</span></a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../sec04_notes/index.html" class="btn btn-neutral float-right" title="Notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="sample_letterbox.html" class="btn btn-neutral float-left" title="How to set up Letterbox" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

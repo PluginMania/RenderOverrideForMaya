@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/jp/sec02_howToUse/attr_Grid.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>グリッド &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="フォアグラウンド" href="attr_Foreground.html" />
+    <link rel="prev" title="レターボックス" href="attr_Letterbox.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">使い方</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="renderOverride.html">Render Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="renderOverrideNode.html">Render Override Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Text.html">テキスト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Letterbox.html">レターボックス</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">グリッド</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">概要</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">アトリビュート</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enable">Enable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-new-item">[Add New Item] ボタン</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#grids">アトリビュート(Grids[*]枠内)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Enable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grid-type">Grid Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mirror">Mirror</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#color">Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opacity">Opacity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#line-width">Line Width</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">“ゴミ箱”アイコン</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">注意事項 (既知の問題)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#grid">Gridを複数設定すると、表示されないものがある</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Foreground.html">フォアグラウンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Background.html">バックグラウンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Action.html">Action List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shelf.html">Shelf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">使い方</a> &raquo;</li>
+        
+      <li>グリッド</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/jp/sec02_howToUse/attr_Grid.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="attr-grid-jp">
+<span id="id1"></span><h1>グリッド<a class="headerlink" href="#attr-grid-jp" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="id2">
+<p class="topic-title">このページの目次:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id11">概要</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id12">アトリビュート</a></p>
+<ul>
+<li><p><a class="reference internal" href="#enable" id="id13">Enable</a></p></li>
+<li><p><a class="reference internal" href="#add-new-item" id="id14">[Add New Item] ボタン</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#grids" id="id15">アトリビュート(Grids[*]枠内)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id5" id="id16">Enable</a></p></li>
+<li><p><a class="reference internal" href="#grid-type" id="id17">Grid Type</a></p></li>
+<li><p><a class="reference internal" href="#mirror" id="id18">Mirror</a></p></li>
+<li><p><a class="reference internal" href="#color" id="id19">Color</a></p></li>
+<li><p><a class="reference internal" href="#opacity" id="id20">Opacity</a></p></li>
+<li><p><a class="reference internal" href="#line-width" id="id21">Line Width</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id22">“ゴミ箱”アイコン</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id7" id="id23">注意事項 (既知の問題)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#grid" id="id24">Gridを複数設定すると、表示されないものがある</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id11">概要</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>ResolutionGate内(レターボックスが表示されている時は、レターボックスの枠内)に、グリッドを表示させます</p></li>
+<li><p>ファイ・グリッド(Phi Grid)など、よく使われているグリッドのプリセットが用意されています</p></li>
+<li><p>複数のグリッドを組み合わせて表示することもできます</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/renderoverride_gridTop.gif"><img alt="gridOverview" src="../../_images/renderoverride_gridTop.gif" style="width: 913.6px; height: 588.8000000000001px;" /></a>
+</div>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id12">アトリビュート</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="gridAttr1" src="../../_images/gridAttr1.png" />
+</div>
+<div class="section" id="enable">
+<h3><a class="toc-backref" href="#id13">Enable</a><a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Grid全体のon/offを制御します</p></li>
+</ul>
+</div>
+<div class="section" id="add-new-item">
+<h3><a class="toc-backref" href="#id14">[Add New Item] ボタン</a><a class="headerlink" href="#add-new-item" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>グリッドのアイテムを追加します</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="grids">
+<h2><a class="toc-backref" href="#id15">アトリビュート(Grids[*]枠内)</a><a class="headerlink" href="#grids" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="gridAttr2" src="../../_images/gridAttr2.png" />
+</div>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id16">Enable</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>各Gridのon/off</p></li>
+<li><p>個別に無効にすることができます</p></li>
+</ul>
+</div>
+<div class="section" id="grid-type">
+<h3><a class="toc-backref" href="#id17">Grid Type</a><a class="headerlink" href="#grid-type" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>下図のグリッドが用意されています</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Mirror</span></code> アトリビュートで反転させる事ができます</p>
+<div class="figure align-default" id="id8">
+<a class="reference internal image-reference" href="../../_images/grid_list_v002.svg"><img alt="gridList" src="../../_images/grid_list_v002.svg" /></a>
+<p class="caption"><span class="caption-text">(図の青い破線は補助線です(ラインの頂点の場所を示したもので、描画されません)。画像をクリックすると大きな画面でご覧いただけます)</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="mirror">
+<h3><a class="toc-backref" href="#id18">Mirror</a><a class="headerlink" href="#mirror" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>グリッドを反転させます</p></li>
+<li><p>(殆どのグリッドが左右反転ですが、一部のグリッドでは上下に反転します)</p></li>
+</ul>
+</div>
+<div class="section" id="color">
+<h3><a class="toc-backref" href="#id19">Color</a><a class="headerlink" href="#color" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>グリッドのカラー</p></li>
+<li><p>(テクスチャを接続しても、単色で表示されます)</p></li>
+</ul>
+</div>
+<div class="section" id="opacity">
+<h3><a class="toc-backref" href="#id20">Opacity</a><a class="headerlink" href="#opacity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>グリッドの不透明度</p></li>
+<li><p>(テクスチャを接続しても、均一に不透明度が適用されます)</p></li>
+</ul>
+</div>
+<div class="section" id="line-width">
+<h3><a class="toc-backref" href="#id21">Line Width</a><a class="headerlink" href="#line-width" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>グリッドの太さ</p></li>
+<li><p>(テクスチャを接続しても、均一に太さが適用されます)</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3><a class="toc-backref" href="#id22">“ゴミ箱”アイコン</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>グリッドを削除します</p></li>
+<li><p>一時的に非表示にしたい場合は、 <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートを使用してください</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id7">
+<h2><a class="toc-backref" href="#id23">注意事項 (既知の問題)</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="grid">
+<h3><a class="toc-backref" href="#id24">Gridを複数設定すると、表示されないものがある</a><a class="headerlink" href="#grid" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>次の2つのGridは、先頭で指定しないと描画されません</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Golden</span> <span class="pre">Spiral(A)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Golden</span> <span class="pre">Spiral(B)</span></code> (Mirror)</p>
+<div class="figure align-default" id="id9">
+<img alt="gridTroubleA" src="../../_images/gridTroubleA.png" />
+<p class="caption"><span class="caption-text">(<code class="docutils literal notranslate"><span class="pre">Golden</span> <span class="pre">Spiral(A)</span></code> が2番目に設定されているので、ビューに表示されません)</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
+</li>
+<li><p>原因は、他のGridと描画処理が違う為です</p></li>
+<li><p>Gridの描画の順番を変えて対応をお願いします</p>
+<blockquote>
+<div><div class="figure align-default" id="id10">
+<img alt="gridTroubleB" src="../../_images/gridTroubleB.png" />
+<p class="caption"><span class="caption-text">(<code class="docutils literal notranslate"><span class="pre">Golden</span> <span class="pre">Spiral(A)</span></code> を先頭で指定すると、ビューに表示されます)</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="attr_Foreground.html" class="btn btn-neutral float-right" title="フォアグラウンド" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="attr_Letterbox.html" class="btn btn-neutral float-left" title="レターボックス" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

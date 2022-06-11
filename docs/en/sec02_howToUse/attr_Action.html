@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/en/sec02_howToUse/attr_Action.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Action List &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Shelf" href="shelf.html" />
+    <link rel="prev" title="Background" href="attr_Background.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">How to use</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="renderOverride.html">Render Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="renderOverrideNode.html">Render Override Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Text.html">Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Letterbox.html">Letterbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Grid.html">Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Foreground.html">Foreground</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Background.html">Background</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Action List</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#attributes">Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#add-new-item-button">[Add New Item] button</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#attributes-actions-in-frame">Attributes (Actions[*] in frame)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#action-name">Action Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#start-frame">Start Frame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#trash-icon">“Trash” icon</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="shelf.html">Shelf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec02_howToUse/index.html">使い方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jp/sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">How to use</a> &raquo;</li>
+        
+      <li>Action List</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/en/sec02_howToUse/attr_Action.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="action-list">
+<span id="attr-action-en"></span><h1>Action List<a class="headerlink" href="#action-list" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents-of-this-page">
+<p class="topic-title">Contents of this page:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id1">Overview</a></p></li>
+<li><p><a class="reference internal" href="#attributes" id="id2">Attributes</a></p>
+<ul>
+<li><p><a class="reference internal" href="#add-new-item-button" id="id3">[Add New Item] button</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#attributes-actions-in-frame" id="id4">Attributes (Actions[*] in frame)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#action-name" id="id5">Action Name</a></p></li>
+<li><p><a class="reference internal" href="#start-frame" id="id6">Start Frame</a></p></li>
+<li><p><a class="reference internal" href="#trash-icon" id="id7">“Trash” icon</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="overview">
+<h2><a class="toc-backref" href="#id1">Overview</a><a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>This attribute does not directly affect the view</p></li>
+<li><p>Can be combined with Python or MEL scripts to customize the view</p>
+<ul>
+<li><p>This Attribute is often used when creating animations for games.</p></li>
+<li><p>See [<a class="reference internal" href="../sec03_examplesOfUse/sample_Action.html#sample-action-en"><span class="std std-ref">Actions (using external Python files)</span></a>] for specific usage</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="attributes">
+<h2><a class="toc-backref" href="#id2">Attributes</a><a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="actionAttr1" src="../../_images/actionAttr1.png" />
+</div>
+<div class="section" id="add-new-item-button">
+<h3><a class="toc-backref" href="#id3">[Add New Item] button</a><a class="headerlink" href="#add-new-item-button" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Add an Action item</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="attributes-actions-in-frame">
+<h2><a class="toc-backref" href="#id4">Attributes (Actions[*] in frame)</a><a class="headerlink" href="#attributes-actions-in-frame" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="actionAttr2" src="../../_images/actionAttr2.png" />
+</div>
+<div class="section" id="action-name">
+<h3><a class="toc-backref" href="#id5">Action Name</a><a class="headerlink" href="#action-name" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Enter an action name</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Walk</span></code> <code class="docutils literal notranslate"><span class="pre">Jump</span></code> etc.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="start-frame">
+<h3><a class="toc-backref" href="#id6">Start Frame</a><a class="headerlink" href="#start-frame" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Enter the start frame of the action</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li><p>If you need <code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">Frame</span></code> attributes, please report them in <a class="reference external" href="https://github.com/PluginMania/RenderOverrideForMaya/issues">Issues</a>.</p></li>
+<li><p>(The author thinks it can be controlled by a script ( <a class="reference internal" href="../sec03_examplesOfUse/sample_Action.html#sample-action-en"><span class="std std-ref">Actions (using external Python files)</span></a> ))</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># basic</span>
+<span class="n">cur_actions_end_frame</span> <span class="o">=</span> <span class="n">next_actions_start_frame</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="c1"># has margin frame?</span>
+<span class="n">cur_actions_end_frame</span> <span class="o">=</span> <span class="n">next_actions_start_frame</span> <span class="o">-</span> <span class="n">margin_time</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="trash-icon">
+<h3><a class="toc-backref" href="#id7">“Trash” icon</a><a class="headerlink" href="#trash-icon" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Delete Action</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="shelf.html" class="btn btn-neutral float-right" title="Shelf" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="attr_Background.html" class="btn btn-neutral float-left" title="Background" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

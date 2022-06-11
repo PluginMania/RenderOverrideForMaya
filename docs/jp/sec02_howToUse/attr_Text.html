@@ -1,0 +1,733 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/jp/sec02_howToUse/attr_Text.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>テキスト &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="レターボックス" href="attr_Letterbox.html" />
+    <link rel="prev" title="Render Override Node" href="renderOverrideNode.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">使い方</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="renderOverride.html">Render Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="renderOverrideNode.html">Render Override Node</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">テキスト</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">概要</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">アトリビュート</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">テキストのグループ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">各グループ内のアトリビュート</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Letterbox.html">レターボックス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Grid.html">グリッド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Foreground.html">フォアグラウンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Background.html">バックグラウンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Action.html">Action List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shelf.html">Shelf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">使い方</a> &raquo;</li>
+        
+      <li>テキスト</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/jp/sec02_howToUse/attr_Text.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="attr-text-jp">
+<span id="id1"></span><h1>テキスト<a class="headerlink" href="#attr-text-jp" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="id2">
+<p class="topic-title">このページの目次:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id8">概要</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id9">アトリビュート</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id5" id="id10">テキストのグループ</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id11">各グループ内のアトリビュート</a></p>
+<ul>
+<li><p><a class="reference internal" href="#enable" id="id12">Enable</a></p></li>
+<li><p><a class="reference internal" href="#generate-type" id="id13">Generate Type</a></p></li>
+<li><p><a class="reference internal" href="#text-string" id="id14">Text String</a></p></li>
+<li><p><a class="reference internal" href="#text-color" id="id15">Text Color</a></p></li>
+<li><p><a class="reference internal" href="#text-opacity" id="id16">Text Opacity</a></p></li>
+<li><p><a class="reference internal" href="#fit-text-size-to-letterbox" id="id17">Fit text size to letterbox</a></p></li>
+<li><p><a class="reference internal" href="#text-scale" id="id18">Text Scale</a></p></li>
+<li><p><a class="reference internal" href="#offset-x" id="id19">Offset X (%)</a></p></li>
+<li><p><a class="reference internal" href="#offset-y" id="id20">Offset Y (%)</a></p></li>
+<li><p><a class="reference internal" href="#font" id="id21">Font</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id8">概要</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>RenderOverrideは、表示させるテキストを自由にカスタマイズすることができます</p></li>
+<li><p>文字のフォント、カラー、不透明度、大きさ、表示位置のオフセットを設定することができます</p></li>
+<li><p>フォントが対応していれば、日本語を表示させることもできます</p></li>
+<li><p>複数行の表示が可能です</p></li>
+<li><p>通常の文字列での指定のほかに、PythonやMELコマンドを使った、複雑な情報を表示することもできます</p>
+<ul>
+<li><p>例えば、MELの <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-selection</span></code> を入力すると、選択しているオブジェクトのリストが表示されます</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/renderoverride_textTop.gif"><img alt="attrText" src="../../_images/renderoverride_textTop.gif" style="width: 627.2px; height: 358.40000000000003px;" /></a>
+</div>
+</li>
+<li><p>また、RenderOverrideノードのActionsアトリビュートと組み合わせて、アクション情報を表示させることもできます(特にゲームモーション作成時に使える機能になります。(<a class="reference internal" href="../sec03_examplesOfUse/sample_Action.html#sample-action-jp"><span class="std std-ref">Actions (外部Pythonファイルの利用)</span></a>))</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id9">アトリビュート</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id10">テキストのグループ</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<img alt="TextGroup" src="../../_images/textAttrGroup.png" />
+</div>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Text</span></code> グループが9つ用意されています。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>グループ名</p></th>
+<th class="head"><p>ResolutionGate内での表示場所 (テキストの整列)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Text [Top Left]</p></td>
+<td><p>左上 (左寄せ)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Top Center]</p></td>
+<td><p>上中央 (中央)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Top Right]</p></td>
+<td><p>右上 (右寄せ)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Center Left]</p></td>
+<td><p>左中央 (左寄せ)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Center]</p></td>
+<td><p>中央 (中央)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Center Right]</p></td>
+<td><p>右中央 (右寄せ)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Bottom Left]</p></td>
+<td><p>左下 (左寄せ)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text [Bottom Center]</p></td>
+<td><p>下中央 (中央)</p></td>
+</tr>
+<tr class="row-even"><td><p>Text [Bottom Right]</p></td>
+<td><p>右下 (右寄せ)</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>表示位置ごとに、テキストを設定することができます</p></li>
+<li><p>表示させるポジションの基準は、ResolutionGateになります</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id6">
+<h3><a class="toc-backref" href="#id11">各グループ内のアトリビュート</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<img alt="TextAttr" src="../../_images/textAttrs.png" />
+</div>
+<ul class="simple">
+<li><p>各グループ内のアトリビュートの構成は同じになっています</p></li>
+</ul>
+<p>(各アトリビュートの概要)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>アトリビュート</p></th>
+<th class="head"><p>概要</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Enable</p></td>
+<td><p>各グループごとに有効/無効を切り替えることができます</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">Generate Type</div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> アトリビュートに記述した文字をそのまま表示させる時は” <strong>String</strong> “にします。</div>
+<div class="line">スクリプトを実行させたいときは、” <strong>Python</strong> “や” <strong>MEL</strong> “を選択します。</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Text String</p></td>
+<td><p>表示させたい文字を入力します。スクリプトを実行させたいときは、コードを記述します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>Text Color</p></td>
+<td><p>テキストのカラー</p></td>
+</tr>
+<tr class="row-even"><td><p>Text Opacity</p></td>
+<td><p>テキストの不透明度(0.0: 透明, 1.0: 不透明)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fit text size to letterbox</p></td>
+<td><p>文字の大きさを <a class="reference internal" href="attr_Letterbox.html#attr-letterbox-jp"><span class="std std-ref">レターボックス</span></a> の大きさに合わせます。</p></td>
+</tr>
+<tr class="row-even"><td><p>Text Scale</p></td>
+<td><p>自動計算されたテキストサイズに対し、スケールを掛けます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>Offset X (%)</p></td>
+<td><p>横軸のオフセット値。 ResolutionGateの幅に対し、オフセットの割合を指定します。</p></td>
+</tr>
+<tr class="row-even"><td><p>Offset Y (%)</p></td>
+<td><p>縦軸のオフセット値。 ResolutionGateの高さに対し、オフセットの割合を指定します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>Font</p></td>
+<td><p>フォントを設定します。<strong>Font Dialog</strong> / <strong>Set Default</strong> ボタンから編集を行います。</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="section" id="enable">
+<h4><a class="toc-backref" href="#id12">Enable</a><a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>各ポジションのテキストを、個別にon/offさせることができます</p></li>
+<li><p>文字が表示されない時は、このアトリビュートがonになっているか確認してください</p></li>
+</ul>
+</div>
+<div class="section" id="generate-type">
+<h4><a class="toc-backref" href="#id13">Generate Type</a><a class="headerlink" href="#generate-type" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><strong>String</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> アトリビュートに記述した文字をそのまま表示させる時は” <strong>String</strong> “を選択します</p></li>
+</ul>
+</li>
+<li><p><strong>Python</strong></p>
+<ul>
+<li><p>Pythonコードを実行させたいときは” <strong>Python</strong> “を選択します</p></li>
+<li><p>外部ファイル(.pyなど)を実行させたいときは、予め <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> を通しておくなど、対応が必要です</p></li>
+</ul>
+</li>
+<li><p><strong>MEL</strong></p>
+<ul>
+<li><p>MELコードを実行させたいときは” <strong>MEL</strong> “を選択します</p></li>
+<li><p>外部ファイル(.mel)を実行させたいときは、Mayaが認識できるように環境を整えてください</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="text-string">
+<h4><a class="toc-backref" href="#id14">Text String</a><a class="headerlink" href="#text-string" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>表示させる文字や、実行させるコードを記述します</p></li>
+</ul>
+<div class="section" id="generate-type-string">
+<h5>(Generate Typeが <strong>String</strong> の場合)<a class="headerlink" href="#generate-type-string" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li><p>表示させたい文字を入力します</p></li>
+<li><p>改行する時は、改行コード( <code class="docutils literal notranslate"><span class="pre">\n</span></code> )を行間に挿入します</p>
+<ul>
+<li><p>例: <code class="docutils literal notranslate"><span class="pre">1行目\n2行目</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\</span></code> (バックスラッシュ)は、日本語キーボードの場合は” <code class="docutils literal notranslate"><span class="pre">￥</span></code> (円マーク/半角)”のキーを押下してください</p></li>
+</ul>
+</li>
+<li><p>予め用意されているキーワード(変数)を波カッコ( <code class="docutils literal notranslate"><span class="pre">{}</span></code> )で囲って入力すると、値を置き換えて表示されます</p>
+<ul>
+<li><p>例: <code class="docutils literal notranslate"><span class="pre">{FOCAL_LENGTH}</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">35.0</span></code></p></li>
+</ul>
+</li>
+<li><p>キーワードと通常の文字列を組み合わせることもできます</p>
+<ul>
+<li><p>例: <code class="docutils literal notranslate"><span class="pre">{FOCAL_LENGTH}mm</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">35.0mm</span></code></p></li>
+</ul>
+</li>
+<li><p>表示オプション(波カッコの中の、コロンの後の書式)を使うと、”小数点の桁数を揃える”など、出力を制御できます</p>
+<ul>
+<li><p>例: <code class="docutils literal notranslate"><span class="pre">{FOCAL_LENGTH:.3f}</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">35.000</span></code> (小数点を3桁に揃える)</p></li>
+<li><p>表示オプションは <a class="reference external" href="https://docs.python.org/ja/3.10/tutorial/inputoutput.html">Pythonの文字format</a> に準拠しています</p></li>
+</ul>
+</li>
+</ul>
+<p>(キーワード (変数)と意味)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 57%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>キーワード (変数)</p></th>
+<th class="head"><p>意味</p></th>
+<th class="head"><p>置き換わる値(例)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ANIM_START_TIME</p></td>
+<td><p>アニメーションの開始時間</p></td>
+<td><p>1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>ANIM_END_TIME</p></td>
+<td><p>アニメーションの終了時間</p></td>
+<td><p>48.0</p></td>
+</tr>
+<tr class="row-even"><td><p>MIN_TIME</p></td>
+<td><p>再生のタイムレンジの開始時間</p></td>
+<td><p>5.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>MAX_TIME</p></td>
+<td><p>再生のタイムレンジの終了時間</p></td>
+<td><p>24.0</p></td>
+</tr>
+<tr class="row-even"><td><p>CUR_TIME</p></td>
+<td><p>現在の時間</p></td>
+<td><p>10.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>SCENE_NAME</p></td>
+<td><p>Mayaファイル名(ファイルが保存されていなければ”Untitled”)</p></td>
+<td><p>PRJ_ChrA_model_v001.ma</p></td>
+</tr>
+<tr class="row-even"><td><p>CAM_NAME</p></td>
+<td><p>ビューのカメラ名</p></td>
+<td><p>persp</p></td>
+</tr>
+<tr class="row-odd"><td><p>FOCAL_LENGTH</p></td>
+<td><p>カメラの焦点距離</p></td>
+<td><p>35.0</p></td>
+</tr>
+<tr class="row-even"><td><p>USER</p></td>
+<td><p>マシンにログインしているユーザー名</p></td>
+<td><p>JohnSmith</p></td>
+</tr>
+<tr class="row-odd"><td><p>DATE_JP</p></td>
+<td><p>本日の日付(日本式フォーマット)</p></td>
+<td><p>2022/04/25</p></td>
+</tr>
+<tr class="row-even"><td><p>DATE_US</p></td>
+<td><p>本日の日付(アメリカ式フォーマット)</p></td>
+<td><p>Apr 25, 2022</p></td>
+</tr>
+<tr class="row-odd"><td><p>DATE_UK</p></td>
+<td><p>本日の日付(イギリス式フォーマット)</p></td>
+<td><p>14 Apr 2022</p></td>
+</tr>
+</tbody>
+</table>
+<p>(キーワード、文字、表示オプション( <a class="reference external" href="https://docs.python.org/ja/3.10/tutorial/inputoutput.html">Pythonの文字format</a> )の組み合わせ例)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 15%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>アトリビュートに入力する値</p></th>
+<th class="head"><p>出力例</p></th>
+<th class="head"><p>備考</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">[{MIN_TIME:.0f}</span> <span class="pre">-</span> <span class="pre">{MAX_TIME:.0f}]</span> <span class="pre">{CUR_TIME:03.0f}</span></code></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">[1</span> <span class="pre">-</span> <span class="pre">48]</span> <span class="pre">005</span></code></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">再生のタイムレンジの”開始/終了時間”と、現在のフレームを表示します。</div>
+<div class="line">キーワードの後の <code class="docutils literal notranslate"><span class="pre">:.0f</span></code> で、小数点部分を取り除くことができます(“小数点部分を0桁にする”)。</div>
+<div class="line">キーワードの後の <code class="docutils literal notranslate"><span class="pre">:03.0f</span></code> で、小数点部分を取り除き、整数部分を3桁にすることができます。</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Focal</span> <span class="pre">Length:</span> <span class="pre">{FOCAL_LENGTH:.1f}mm</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Focal</span> <span class="pre">Length:</span> <span class="pre">35.0mm</span></code></p></td>
+<td><p>焦点距離を、小数点1桁で( <code class="docutils literal notranslate"><span class="pre">:.1f</span></code> )表示させます</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="generate-type-python-mel">
+<h5>(Generate Typeが <strong>Python</strong> , <strong>MEL</strong> の場合)<a class="headerlink" href="#generate-type-python-mel" title="Permalink to this headline">¶</a></h5>
+<ul>
+<li><p>外部のPythonスクリプトを実行させる時は、次のように記述します( <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> などを通して、Mayaが認識できるようにしておいてください)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">renderoverride_actions</span><span class="p">;</span><span class="n">renderoverride_actions</span><span class="o">.</span><span class="n">actions_text</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Pythonスクリプトを活用した例は、 <a class="reference internal" href="../sec03_examplesOfUse/sample_Action.html#sample-action-jp"><span class="std std-ref">こちら</span></a> で紹介しています</p></li>
+</ul>
+</li>
+<li><p>MELコマンドを直接実行する場合は、次のように記述します</p>
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">selection</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>選択されているオブジェクトのリストが表示されます</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h5>(右クリックからプリセットを適用する)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h5>
+<ul>
+<li><p>テキストボックス上で右クリックすると、メニューが表示されます</p></li>
+<li><p>いずれかのプリセットを選択すると、 <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Type</span></code> と <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">String</span></code> のアトリビュートが更新されます</p>
+<div class="figure align-default">
+<img alt="textRightClick" src="../../_images/textRightClick.png" />
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="text-color">
+<h4><a class="toc-backref" href="#id15">Text Color</a><a class="headerlink" href="#text-color" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p>テキストのカラーを設定します</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>カラーを変更しても、すぐにビューの表示は更新されません。これは、アトリビュートエディタの問題です(ColorのUIを更新したときに、ビューのリフレッシュが行われない)。その為、更新結果を確認したい場合は、カラーを設定した後にShelfの”Refresh”ボタンを押して、ビューをリフレッシュさせてください。</p>
+<div class="figure align-default">
+<img alt="shelfRefresh" src="../../_images/shelf_refresh_icon.png" />
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="text-opacity">
+<h4><a class="toc-backref" href="#id16">Text Opacity</a><a class="headerlink" href="#text-opacity" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>テキストの不透明度を設定します</p></li>
+</ul>
+</div>
+<div class="section" id="fit-text-size-to-letterbox">
+<h4><a class="toc-backref" href="#id17">Fit text size to letterbox</a><a class="headerlink" href="#fit-text-size-to-letterbox" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p>テキストのサイズを、<a class="reference internal" href="attr_Letterbox.html#attr-letterbox-jp"><span class="std std-ref">レターボックス</span></a> の高さに合うように調整します</p>
+<div class="figure align-default">
+<img alt="textFitLine1" src="../../_images/textFitLine1.png" />
+</div>
+</li>
+<li><p>テキストが複数行の場合は、全ての行がLetterbox内に収まるように調整されます</p>
+<div class="figure align-default">
+<img alt="textFitLine2" src="../../_images/textFitLine2.png" />
+</div>
+</li>
+<li><p>※テキストは10px以上を保とうとする為、Letterboxの高さが十分でない場合は、はみ出すことがあります</p>
+<div class="figure align-default">
+<img alt="textFitLine3" src="../../_images/textFitLine3.png" />
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="text-scale">
+<h4><a class="toc-backref" href="#id18">Text Scale</a><a class="headerlink" href="#text-scale" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>自動計算されたテキストサイズに対し、スケールを掛けます</p>
+<ul>
+<li><p>デフォルトでは、テキストのサイズはResolutionGateの高さに応じて自動計算されます</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Fit</span> <span class="pre">text</span> <span class="pre">size</span> <span class="pre">to</span> <span class="pre">letterbox</span></code> アトリビュートがonになっている場合は、Letterboxの高さに応じてテキストのサイズを自動計算します</p></li>
+</ul>
+</li>
+<li><p>スケールを掛けた結果、テキストのサイズが10pxを下回った場合は、10pxに固定されます</p></li>
+</ul>
+</div>
+<div class="section" id="offset-x">
+<h4><a class="toc-backref" href="#id19">Offset X (%)</a><a class="headerlink" href="#offset-x" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>自動計算されたポジションから、横軸にオフセットさせる割合を指定します</p>
+<ul>
+<li><p>ResolutionGateの幅を基準に計算されます</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="offset-y">
+<h4><a class="toc-backref" href="#id20">Offset Y (%)</a><a class="headerlink" href="#offset-y" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>自動計算されたポジションから、縦軸にオフセットさせる割合を指定します</p>
+<ul>
+<li><p>ResolutionGateの高さを基準に計算されます</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="font">
+<h4><a class="toc-backref" href="#id21">Font</a><a class="headerlink" href="#font" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-default">
+<img alt="textFontAttr" src="../../_images/textFontAttr.png" />
+</div>
+<ul>
+<li><p>フォントを設定します</p></li>
+<li><p>フォントファミリー、太さ、イタリック、下線の表示などを指定できます</p></li>
+<li><p>直接編集できないようになっているので、<strong>Font Dialog</strong>/<strong>Set Default</strong> ボタンから編集を行います</p>
+<ul>
+<li><p><strong>Font Dialog</strong> ボタン</p>
+<ul>
+<li><p>FontDialogが表示されます</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="textFontDialog" src="../../_images/textFontDialog.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>このダイアログで、 <code class="docutils literal notranslate"><span class="pre">Font</span></code>, <code class="docutils literal notranslate"><span class="pre">Font</span> <span class="pre">style</span></code>, <code class="docutils literal notranslate"><span class="pre">Strikeout</span></code>, <code class="docutils literal notranslate"><span class="pre">Underline</span></code> を設定します</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p><strong>Size</strong> は適用されません</p>
+<ul>
+<li><p>(ResolutionGateの高さに応じて自動計算されるため)</p></li>
+<li><p>テキストのサイズは、自動計算されたサイズに <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Scale</span></code> の値を掛けて調整してください</p></li>
+</ul>
+</li>
+<li><p><strong>Strikeout</strong> (打消し線)と <strong>Underline</strong> (下線)は同時に使えません</p>
+<ul>
+<li><p>両方チェックを入れた場合は、 <strong>Underline</strong> が優先されます</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Set Default</strong> ボタン</p>
+<ul class="simple">
+<li><p>Mayaデフォルトのフォントに設定します</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="attr_Letterbox.html" class="btn btn-neutral float-right" title="レターボックス" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="renderOverrideNode.html" class="btn btn-neutral float-left" title="Render Override Node" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

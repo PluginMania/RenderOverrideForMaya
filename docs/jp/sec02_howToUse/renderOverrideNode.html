@@ -1,0 +1,396 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <base href="https://pluginmania.github.io/RenderOverrideForMaya/jp/sec02_howToUse/renderOverrideNode.html" charset="utf-8"/>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Render Override Node &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="テキスト" href="attr_Text.html" />
+    <link rel="prev" title="Render Override" href="renderOverride.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RenderOverride for Maya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec01_overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec02_howToUse/index.html">How to use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec03_examplesOfUse/index.html">Examples of Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec04_notes/index.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/sec99_other/index.html">Others</a></li>
+</ul>
+<p class="caption"><span class="caption-text">目次 (Japanese):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sec01_overview/index.html">概要</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">使い方</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="renderOverride.html">Render Override</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Render Override Node</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">概要</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#renderoverride">RenderOverride ノードの作成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">ノードの確認方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">RenderOverrideノードのアトリビュート</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enable">Enable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">その他アトリビュート</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Text.html">テキスト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Letterbox.html">レターボックス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Grid.html">グリッド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Foreground.html">フォアグラウンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Background.html">バックグラウンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attr_Action.html">Action List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shelf.html">Shelf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sec03_examplesOfUse/index.html">作例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec04_notes/index.html">注意事項・補足</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sec99_other/index.html">その他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RenderOverride for Maya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">使い方</a> &raquo;</li>
+        
+      <li>Render Override Node</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/jp/sec02_howToUse/renderOverrideNode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="render-override-node">
+<span id="renderoverridenode-jp"></span><h1>Render Override Node<a class="headerlink" href="#render-override-node" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="id1">
+<p class="topic-title">このページの目次:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id7">概要</a></p></li>
+<li><p><a class="reference internal" href="#renderoverride" id="id8">RenderOverride ノードの作成</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id9">ノードの確認方法</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id10">RenderOverrideノードのアトリビュート</a></p>
+<ul>
+<li><p><a class="reference internal" href="#enable" id="id11">Enable</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id12">その他アトリビュート</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id7">概要</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>RenderOverrideを起動すると基本的な情報(テキスト)が表示されますが、より詳細に制御したい場合は <code class="docutils literal notranslate"><span class="pre">RenderOverrideノード</span></code> を作成し、各種アトリビュートを設定します</p>
+<div class="figure align-default">
+<img alt="outlinerFindNode" src="../../_images/outlinerFindNode.png" />
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="renderoverride">
+<h2><a class="toc-backref" href="#id8">RenderOverride ノードの作成</a><a class="headerlink" href="#renderoverride" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><strong>方法1</strong></p>
+<ol class="arabic">
+<li><p>Shelfから、 <strong>NodeEditor</strong> アイコンをクリックし、エディタを立ち上げます</p>
+<div class="figure align-default">
+<img alt="shelf_editor_icon" src="../../_images/shelf_editor_icon.png" />
+</div>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">RenderOverride</span> <span class="pre">Node</span></code> ボタンをクリックすると、ノードが作成されます</p>
+<div class="figure align-default">
+<img alt="NodeEditorAll" src="../../_images/NodeEditorAll_JP.png" />
+</div>
+</li>
+</ol>
+</li>
+<li><p><strong>方法2</strong></p>
+<ul>
+<li><p>次のMELコマンドを実行します</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">createNode</span> <span class="s">&quot;renderOverride&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id9">ノードの確認方法</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>RenderOverrideノード(DGノード)が作成されたことを確認します</p>
+<ul>
+<li><p><strong>Outliner で確認する</strong></p>
+<div class="figure align-default">
+<img alt="outlinerFindNode" src="../../_images/outlinerFindNode.png" />
+</div>
+<ul>
+<li><p>Outlinerでは、メニューの <code class="docutils literal notranslate"><span class="pre">Display</span> <span class="pre">&gt;</span> <span class="pre">DAG</span> <span class="pre">Objects</span> <span class="pre">Only</span></code> のチェックを外してください</p>
+<div class="figure align-default">
+<img alt="outlinerMenu" src="../../_images/outlinerMenu.png" />
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>NodeEditor で確認する</strong></p>
+<div class="figure align-default" id="id6">
+<img alt="NodeEditorAll" src="../../_images/NodeEditorList.png" />
+<p class="caption"><span class="caption-text">NodeEditorのノードのリストに、作成されたノードが表示されます。</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>RenderOverrideノードは、Mayaシーンの中で複数作ることができますが、ビューに適用されるノード(“アクティブなノード”)は1つだけです。</p></li>
+<li><p>ビューに適用されるノードは次のように決まります</p>
+<ol class="arabic simple">
+<li><p>RenderOverrideノードを、名前順に並び変えます</p></li>
+<li><p>順番に <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートにチェックが入っているかどうかを確認します</p></li>
+<li><p>最初に <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートにチェックが入っていたノードの情報が適用されます</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Enable</span></code> にチェックが入っているノードが1つも無ければ、デフォルトのテキストが表示されます。</p></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<ul class="simple">
+<li><p>NodeEditorを使用すれば、選択したノード以外の <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートは <strong>off</strong> になるので、アクティブなノードを1つに限定することができます</p></li>
+<li><p>「 <strong>レイアウト用</strong> 」, 「 <strong>Playblast用</strong> 」のように、複数のノードを目的に応じて使い分けることができます。</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id10">RenderOverrideノードのアトリビュート</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="enable">
+<h3><a class="toc-backref" href="#id11">Enable</a><a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="outlinerFindNode" src="../../_images/attrEnable.png" />
+</div>
+<ul class="simple">
+<li><p>チェックが <strong>on</strong> の場合、各種設定がビューに反映されます</p>
+<ul>
+<li><p>チェックが <strong>off</strong> の場合は無効になります</p></li>
+<li><p>複数のRenderOverrideノードがシーンに存在する場合は、 <code class="docutils literal notranslate"><span class="pre">Enable</span></code> が <strong>on</strong> のノードの中で、名前順で一番先頭のノードの情報が反映されます</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id12">その他アトリビュート</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>その他のアトリビュートの設定方法は、専用のページで紹介します(以下のリンク)</p>
+<div class="section" id="attr-text-jp">
+<h4>・ <a class="reference internal" href="attr_Text.html#attr-text-jp"><span class="std std-ref">テキスト</span></a><a class="headerlink" href="#attr-text-jp" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="attr-letterbox-jp">
+<h4>・ <a class="reference internal" href="attr_Letterbox.html#attr-letterbox-jp"><span class="std std-ref">レターボックス</span></a><a class="headerlink" href="#attr-letterbox-jp" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="attr-grid-jp">
+<h4>・ <a class="reference internal" href="attr_Grid.html#attr-grid-jp"><span class="std std-ref">グリッド</span></a><a class="headerlink" href="#attr-grid-jp" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="attr-foreground-jp">
+<h4>・ <a class="reference internal" href="attr_Foreground.html#attr-foreground-jp"><span class="std std-ref">フォアグラウンド</span></a><a class="headerlink" href="#attr-foreground-jp" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="attr-background-jp">
+<h4>・ <a class="reference internal" href="attr_Background.html#attr-background-jp"><span class="std std-ref">バックグラウンド</span></a><a class="headerlink" href="#attr-background-jp" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="attr-action-jp">
+<h4>・ <a class="reference internal" href="attr_Action.html#attr-action-jp"><span class="std std-ref">Action List</span></a><a class="headerlink" href="#attr-action-jp" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="attr_Text.html" class="btn btn-neutral float-right" title="テキスト" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="renderOverride.html" class="btn btn-neutral float-left" title="Render Override" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, PluginMania.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
