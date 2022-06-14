@@ -62,4 +62,14 @@
      * Linux版の要望や、ビルドの協力をお願いできる方は、 `Issues`_ に報告をお願いします
 
 
+++++
+
+トラブルの場合
+**************
+
+* ツールを使っていて、トラブルが発生した場合は、「 :ref:`bugReport_jp` 」からご連絡をお願いします。
+* もし、GitHubのアカウントをお持ちでしたら、 `Issues`_ からのご報告をお願いします。
+
+
+
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
