@@ -12,15 +12,22 @@ Download and install plug-ins
 How to download and install plug-ins
 ******************************************
 
-1. Download the installer from AutodeskAppStore.
-
 .. (you will find the "Download" button in the upper right corner of the following URL)
 
    * [Trial version] `Trial version Download`_
    * [Commercial version] `Commercial version Download`_
 
+1. Download the installer from AutodeskAppStore.
+
+   .. figure:: ../../_images/install_downloadAppPage.png
+      :alt: downloadAppPage
+
 2. Run the downloaded installer.
 3. Follow the instructions in the installer to install the software.
+
+   .. figure:: ../../_images/install_installer.png
+      :alt: installer
+
 4. Close the installer when installation is complete.
 
 ++++

@@ -12,15 +12,22 @@
 プラグインのダウンロード・インストール方法
 ******************************************
 
-1. AutodeskAppStoreからインストーラーをダウンロードしてください
-
 .. (下記URL先ページの右上に『ダウンロード』というボタンがあります)
 
    * [評価版] `Trial version Download`_
    * [商用版] `Commercial version Download`_
 
+1. AutodeskAppStoreからインストーラーをダウンロードしてください
+
+   .. figure:: ../../_images/install_downloadAppPage.png
+      :alt: downloadAppPage
+
 2. ダウンロードしたインストーラーを起動します
 3. インストーラーの指示に従い、インストールを行います
+
+   .. figure:: ../../_images/install_installer.png
+      :alt: installer
+
 4. インストールが完了したら、インストーラーを閉じます
 
 ++++
