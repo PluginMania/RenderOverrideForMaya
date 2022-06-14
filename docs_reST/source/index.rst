@@ -24,7 +24,7 @@ Last update(最終更新日): [|today|]
 
 .. note::
    English translation is based on automatic translation.
-   If you find any sentences that are difficult to understand, please contact `Issues`_ .
+   If you find any sentences that are difficult to understand, please contact ":ref:`bugReport_en`".
 
 
 ++++
