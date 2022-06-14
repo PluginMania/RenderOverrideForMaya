@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Render Override Node &mdash; RenderOverride for Maya 2022-06-11 documentation</title>
+  <title>Render Override Node &mdash; RenderOverride for Maya 2022-06-14 documentation</title>
   
 
   
@@ -110,9 +110,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#id2">概要</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#renderoverride">RenderOverride ノードの作成</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">ノードの確認方法</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">RenderOverrideノードのアトリビュート</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">プリセット</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">RenderOverrideノードのアトリビュート</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#enable">Enable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">その他アトリビュート</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">その他アトリビュート</a></li>
 </ul>
 </li>
 </ul>
@@ -203,20 +204,21 @@
 <div class="contents local topic" id="id1">
 <p class="topic-title">このページの目次:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id7">概要</a></p></li>
-<li><p><a class="reference internal" href="#renderoverride" id="id8">RenderOverride ノードの作成</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id9">ノードの確認方法</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id10">RenderOverrideノードのアトリビュート</a></p>
+<li><p><a class="reference internal" href="#id2" id="id8">概要</a></p></li>
+<li><p><a class="reference internal" href="#renderoverride" id="id9">RenderOverride ノードの作成</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id10">ノードの確認方法</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11">プリセット</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id12">RenderOverrideノードのアトリビュート</a></p>
 <ul>
-<li><p><a class="reference internal" href="#enable" id="id11">Enable</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id12">その他アトリビュート</a></p></li>
+<li><p><a class="reference internal" href="#enable" id="id13">Enable</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id14">その他アトリビュート</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id7">概要</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">概要</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>RenderOverrideを起動すると基本的な情報(テキスト)が表示されますが、より詳細に制御したい場合は <code class="docutils literal notranslate"><span class="pre">RenderOverrideノード</span></code> を作成し、各種アトリビュートを設定します</p>
 <div class="figure align-default">
 <img alt="outlinerFindNode" src="../../_images/outlinerFindNode.png" />
@@ -224,7 +226,7 @@
 </div>
 <hr class="docutils" />
 <div class="section" id="renderoverride">
-<h2><a class="toc-backref" href="#id8">RenderOverride ノードの作成</a><a class="headerlink" href="#renderoverride" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">RenderOverride ノードの作成</a><a class="headerlink" href="#renderoverride" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p><strong>方法1</strong></p>
 <ol class="arabic">
@@ -253,7 +255,7 @@
 </div>
 <hr class="docutils" />
 <div class="section" id="id3">
-<h2><a class="toc-backref" href="#id9">ノードの確認方法</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">ノードの確認方法</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p>RenderOverrideノード(DGノード)が作成されたことを確認します</p>
 <ul>
@@ -270,9 +272,9 @@
 </ul>
 </li>
 <li><p><strong>NodeEditor で確認する</strong></p>
-<div class="figure align-default" id="id6">
+<div class="figure align-default" id="id7">
 <img alt="NodeEditorAll" src="../../_images/NodeEditorList.png" />
-<p class="caption"><span class="caption-text">NodeEditorのノードのリストに、作成されたノードが表示されます。</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">NodeEditorのノードのリストに、作成されたノードが表示されます。</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 </li>
 </ul>
@@ -284,8 +286,7 @@
 <li><p>RenderOverrideノードは、Mayaシーンの中で複数作ることができますが、ビューに適用されるノード(“アクティブなノード”)は1つだけです。</p></li>
 <li><p>ビューに適用されるノードは次のように決まります</p>
 <ol class="arabic simple">
-<li><p>RenderOverrideノードを、名前順に並び変えます</p></li>
-<li><p>順番に <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートにチェックが入っているかどうかを確認します</p></li>
+<li><p>RenderOverrideノードを、名前順に <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートにチェックが入っているかどうかを確認します</p></li>
 <li><p>最初に <code class="docutils literal notranslate"><span class="pre">Enable</span></code> アトリビュートにチェックが入っていたノードの情報が適用されます</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Enable</span></code> にチェックが入っているノードが1つも無ければ、デフォルトのテキストが表示されます。</p></li>
@@ -302,9 +303,21 @@
 </div>
 <hr class="docutils" />
 <div class="section" id="id4">
-<h2><a class="toc-backref" href="#id10">RenderOverrideノードのアトリビュート</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">プリセット</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="AEPresets" src="../../_images/renderOverrideNode_AEPresets.png" />
+</div>
+<ul class="simple">
+<li><p>ノード作成後、アトリビュートエディタの <strong>Presets</strong> ボタンから、定義されたHUDの文字列などを流し込むことができます</p></li>
+</ul>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id12">RenderOverrideノードのアトリビュート</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="enable">
-<h3><a class="toc-backref" href="#id11">Enable</a><a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">Enable</a><a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="outlinerFindNode" src="../../_images/attrEnable.png" />
@@ -320,8 +333,8 @@
 </div></blockquote>
 </div>
 <hr class="docutils" />
-<div class="section" id="id5">
-<h3><a class="toc-backref" href="#id12">その他アトリビュート</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3><a class="toc-backref" href="#id14">その他アトリビュート</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>その他のアトリビュートの設定方法は、専用のページで紹介します(以下のリンク)</p>
 <div class="section" id="attr-text-jp">
 <h4>・ <a class="reference internal" href="attr_Text.html#attr-text-jp"><span class="std std-ref">テキスト</span></a><a class="headerlink" href="#attr-text-jp" title="Permalink to this headline">¶</a></h4>

@@ -9,6 +9,7 @@ Others
 
    knownIssues
    privacyPolicy
+   bugReport
    questionnaire
    thirdPartySoftware
    releaseNotes

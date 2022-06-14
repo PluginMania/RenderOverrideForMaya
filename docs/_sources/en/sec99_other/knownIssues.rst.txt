@@ -59,10 +59,4 @@ When multiple Grids are set, some of them are not displayed.
 ++++
 
 .. note::
-   If you have any bugs or troubles that are not mentioned here, please report them from `Issues`_.
-   We accept reports of bugs and troubles only from this page.
-
-
-
-.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
-
+   If you have any bugs or troubles that are not mentioned here, please report them from ":ref:`bugReport_en`".

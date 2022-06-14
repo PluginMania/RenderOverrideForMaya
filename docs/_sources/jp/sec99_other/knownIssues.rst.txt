@@ -58,10 +58,5 @@ Gridを複数設定すると、表示されないものがある
 ++++
 
 .. note::
-   ここに書かれていない、バグ・トラブルがありましたら、 `Issues`_ からご報告をお願いします。
-   バグ・トラブルなどの報告はこのページからのみ受け付けています。
-
-
-
-.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
+   ここに書かれていない、バグ・トラブルがありましたら、「 :ref:`bugReport_jp` 」からご報告をお願いします。
 

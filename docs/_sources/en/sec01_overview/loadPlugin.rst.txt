@@ -60,8 +60,9 @@ License Authentication
      :alt: licenseAuthFlowJP
 
   .. note::
-     If you have any trouble with activation, please report it to us through `Issues`_.
-     If you attach a snapshot of ScriptEditor, it will be easier for us to respond.
+     * If you encounter any trouble with activation, please report it to us at " :ref:`bugReport_en`".
+     * If you attach a snapshot of ScriptEditor, it will be easier for us to respond.
+
 
 ++++
 

@@ -72,9 +72,8 @@ How to verify that a node has been created
    * Multiple RenderOverride nodes can be created in a Maya scene, but only one node ("active node") is applied to the view.
    * The node applied to the view is determined as follows
 
-     1. RenderOverride nodes in order of name
-     2. In turn, check if the ``Enable`` attribute is checked.
-     3. The information for the node whose ``Enable`` attribute was checked first is applied.
+     1. Check the RenderOverride node, in order of name, to see if the ``Enable`` attribute is checked.
+     2. The information for the node whose ``Enable`` attribute was checked first is applied.
 
         * If none of the nodes have ``Enable`` checked, the default text will be displayed.
 
@@ -82,6 +81,18 @@ How to verify that a node has been created
 
    * With NodeEditor, you can limit the number of active nodes to one, since the ``Enable`` attribute will be **off** for all but the selected node.
    * Multiple nodes can be used for different purposes, such as " **for layout** " and " **for Playblast** ".
+
+   .. `(文字のGrammerがバグったので、調整用コメント)
+
+++++
+
+Presets
+**********
+
+  .. figure:: ../../_images/renderOverrideNode_AEPresets.png
+     :alt: AEPresets
+
+  * After creating a node, you can use the **Presets** button in the Attribute Editor to fill in the defined HUD strings, etc.
 
 ++++
 

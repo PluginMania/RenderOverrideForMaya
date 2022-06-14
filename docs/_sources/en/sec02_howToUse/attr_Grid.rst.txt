@@ -18,7 +18,7 @@ Overview
 * Multiple grids can be displayed in combination.
 
   .. figure:: ../../_gif/renderoverride_gridTop.gif
-     :scale: 80%
+     :scale: 70%
      :alt: gridOverview
 
 ++++

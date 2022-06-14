@@ -108,5 +108,5 @@
 
 .. raw:: html
 
-   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScRNiGF8OeBPQQ3PdV2iaIjc74r59tac3zuEOoFzk5ei5_uhA/viewform?embedded=true" width="640" height="1521" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScRNiGF8OeBPQQ3PdV2iaIjc74r59tac3zuEOoFzk5ei5_uhA/viewform?embedded=true" width="640" height="400" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 

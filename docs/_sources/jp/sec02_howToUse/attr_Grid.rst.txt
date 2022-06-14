@@ -18,7 +18,7 @@
 * 複数のグリッドを組み合わせて表示することもできます
 
   .. figure:: ../../_gif/renderoverride_gridTop.gif
-     :scale: 80%
+     :scale: 70%
      :alt: gridOverview
 
 ++++
