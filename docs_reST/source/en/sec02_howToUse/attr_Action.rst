@@ -3,13 +3,11 @@
 Action List
 ###########
 
-
 .. contents:: Contents of this page:
    :depth: 3
    :local:
 
 ++++
-
 
 Overview
 ********
@@ -17,12 +15,12 @@ Overview
 * This attribute does not directly affect the view
 * Can be combined with Python or MEL scripts to customize the view
 
-  * This Attribute is often used when creating animations for games.
+  * This attribute is often used when creating animation clips for games.
+
+.. seealso::
   * See [:ref:`sample_Action_en`] for specific usage
 
-
 ++++
-
 
 Attributes
 **********
@@ -37,7 +35,6 @@ Attributes
 * Add an Action item
 
 ++++
-
 
 Attributes (Actions[*] in frame)
 ********************************
@@ -58,19 +55,10 @@ Start Frame
 
 * Enter the start frame of the action
 
-  .. note::
-     * If you need ``End Frame`` attributes, please report them in `Issues`_.
-     * (The author thinks it can be controlled by a script ( :ref:`sample_Action_en` ))
+End Frame
+===========
 
-       .. code-block:: python
-
-          # basic
-          cur_actions_end_frame = next_actions_start_frame - 1
-
-          # has margin frame?
-          cur_actions_end_frame = next_actions_start_frame - margin_time - 1
-
-
+* Enter the end frame of the action
 
 "Trash" icon
 ============
@@ -79,4 +67,3 @@ Start Frame
 
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
-

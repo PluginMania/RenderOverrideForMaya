@@ -43,8 +43,7 @@ Actions (外部Pythonファイルの利用)
   .. figure:: ../../_images/sample_actions_attrs.png
      :alt: ActionsAttr
 
-     アクション名と開始フレーム番号を入力します
-
+     アクション名/ 開始フレーム/ 終了フレームを入力します
 
 2. Pythonスクリプトの準備
 =========================
@@ -76,7 +75,6 @@ Actions (外部Pythonファイルの利用)
      .. figure:: ../../_images/sample_actions_textRightClicked.png
         :alt: TextRightClicked
 
-
 4. 表示の確認
 =============
 
@@ -85,7 +83,6 @@ Actions (外部Pythonファイルの利用)
   .. figure:: ../../_gif/renderoverride_actionsSampleResult.gif
      :scale: 70%
      :alt: ActionsResult
-
 
 ++++
 

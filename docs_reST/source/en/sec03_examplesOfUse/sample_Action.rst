@@ -43,8 +43,7 @@ Process
   .. figure:: ../../_images/sample_actions_attrs.png
      :alt: ActionsAttr
 
-     Enter the action name and start frame number
-
+     Enter ActionName/ StartFrame/ EndFrame
 
 2. Preparing Python Scripts
 ===========================
@@ -52,10 +51,9 @@ Process
 * This time, we will use the ``renderoverride_actions.py`` provided by the plugin
 
   * The Python files are installed in ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA VERSION]/python/``.
-  * The ``PYTHONPATH`` is passed when RenderOverride is loaded, so you can use it right away!
+  * The ``PYTHONPATH`` is passed when RenderOverride is loaded, so you can use it right away.
 
     * (If you want to run your own Python code, it is recommended that you use ``PYTHONPATH`` or similar to pass it through.)
-
 
 3. Setting Text Attributes
 ==========================
@@ -75,7 +73,6 @@ Process
 
      .. figure:: ../../_images/sample_actions_textRightClicked.png
         :alt: TextRightClicked
-
 
 4. Check display
 ================
