@@ -28,7 +28,7 @@ Project file
 
 * This is the finished scene of this project (saved in Maya2022)
 
-  * :download:`MayaScene(2022) <../../_download/cube_animation_sample_actions_maya2022_v001.zip>`
+  * :download:`MayaScene(2022) <../../_download/cube_animation_sample_actions_maya2022.zip>`
 
 ++++
 

@@ -28,7 +28,7 @@ Actions (外部Pythonファイルの利用)
 
 * このプロジェクトの完成シーンです (Maya2022で保存されています)
 
-  * :download:`MayaScene(2022) <../../_download/cube_animation_sample_actions_maya2022_v001.zip>`
+  * :download:`MayaScene(2022) <../../_download/cube_animation_sample_actions_maya2022.zip>`
 
 ++++
 
