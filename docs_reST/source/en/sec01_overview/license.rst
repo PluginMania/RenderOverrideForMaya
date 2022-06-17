@@ -7,6 +7,8 @@ License for RenderOverride
 
 ++++
 
+Users can use the software's features to produce content such as Maya files and videos.
+
 License Type
 ************
 
@@ -41,8 +43,8 @@ License Expiration Date/Upgrade
   * You can always use the latest version
 
 
-Licensing
-*********
+License Authentication
+**********************
 
 This software queries Autodesk's servers to determine if an account holds an authorized license.
 Therefore, the following conditions must be met.
@@ -64,17 +66,16 @@ Prohibited Items
 ****************
 
 1. Claiming copyright or ownership of this software
-2. Modification
-3. Combining
+2. Modification of the source code of this software
+3. Combination of the source code of this software
 4. Reverse engineering
-5. Distribution (including copying to a file server)
+5. Distribution of this software (including copying to a file server)
 
    * If you introduce the software to others, please inform them to download the software from AutodeskAppStore.
 
 .. note::
    * The above items are prohibited for the **program (source code)** of this software.
-   * There are no restrictions on Maya files or video files created during the period of validity of the commercial use of this software.
-
+   * There are no restrictions on content such as Maya files and video files created during the period of validity of the commercial use of this software.
 
 
 More
