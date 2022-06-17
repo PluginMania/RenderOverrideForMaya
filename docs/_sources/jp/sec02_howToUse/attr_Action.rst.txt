@@ -3,13 +3,11 @@
 Action List
 ###########
 
-
 .. contents:: このページの目次:
    :depth: 3
    :local:
 
 ++++
-
 
 概要
 *****
@@ -17,12 +15,12 @@ Action List
 * このアトリビュートは、直接ビューに影響を与えることはありません
 * PythonやMELのスクリプトと組み合わせ、表示をカスタマイズすることができます
 
-  * ゲームのアニメーション作成時に使われることが多いアトリビュートです
+  * ゲームのアニメーションクリップ作成時に使われることが多いアトリビュートです
+
+.. seealso::
   * 具体的な使い方は、[:ref:`sample_Action_jp`]を参照してください
 
-
 ++++
-
 
 アトリビュート
 **************
@@ -38,13 +36,11 @@ Action List
 
 ++++
 
-
 アトリビュート(Actions[*]枠内)
 ******************************
 
 .. figure:: ../../_images/actionAttr2.png
    :alt: actionAttr2
-
 
 Action Name
 ===========
@@ -58,19 +54,10 @@ Start Frame
 
 * アクションのスタートフレームを入力します
 
-  .. note::
-     * ``End Frame`` アトリビュートが必要であれば、 `Issues`_ に報告をお願いします
-     * (著者は、スクリプトで制御できると考えています ( :ref:`sample_Action_jp` ))
+End Frame
+===========
 
-       .. code-block:: python
-
-          # basic
-          cur_actions_end_frame = next_actions_start_frame - 1
-
-          # has margin frame? (各アクションの間にマージンが入りますか?)
-          cur_actions_end_frame = next_actions_start_frame - margin_time - 1
-
-
+* アクションのエンドフレームを入力します
 
 "ゴミ箱"アイコン
 ================
@@ -79,4 +66,3 @@ Start Frame
 
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
-
