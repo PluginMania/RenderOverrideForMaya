@@ -9,6 +9,8 @@ Known Issues
 
 ++++
 
+.. _knownIssues_colorAttr_en:
+
 Changing the color of the "Color" attribute is not immediately reflected in the view.
 *************************************************************************************
 
@@ -20,6 +22,8 @@ Changing the color of the "Color" attribute is not immediately reflected in the 
 
 
 ++++
+
+.. _knownIssues_fgBgImg_en:
 
 Foreground and background images are not displayed even if they are set in the file node.
 *****************************************************************************************
@@ -59,4 +63,7 @@ When multiple Grids are set, some of them are not displayed.
 ++++
 
 .. note::
-   If you have any bugs or troubles that are not mentioned here, please report them from ":ref:`bugReport_en`".
+   * If you have any bugs or troubles that are not mentioned here, please report them from ":ref:`bugReport_en`".
+   * You can check the status of reported bugs and troubles at "`Issues`_".
+
+.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

@@ -69,5 +69,8 @@ For trouble
 * If you have trouble using the tool, please contact us via :ref:`bugReport_en`.
 * If you have a GitHub account, please report it via `Issues`_.
 
+.. seealso::
+   Known issues are summarized on the page ":ref:`knownIssues_en`".
+
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
