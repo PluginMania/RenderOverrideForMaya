@@ -87,7 +87,9 @@ Attributes within each group
 +----------------------------+---------------------------------------------------------------------------------------------------------+
 | Text String                | Enter the text you want to display. If you want the script to run, write the code.                      |
 +----------------------------+---------------------------------------------------------------------------------------------------------+
-| Text Color                 | Text Color                                                                                              |
+|| Text Color                || Text Color                                                                                             |
+||                           || (There is a problem that changes are not reflected in real time after the color is set.                |
+||                           || [more info... :ref:`knownIssues_colorAttr_en`])                                                        |
 +----------------------------+---------------------------------------------------------------------------------------------------------+
 | Text Opacity               | Text opacity (0.0: transparent, 1.0: opaque)                                                            |
 +----------------------------+---------------------------------------------------------------------------------------------------------+

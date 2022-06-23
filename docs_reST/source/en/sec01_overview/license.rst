@@ -31,16 +31,17 @@ License Expiration Date/Upgrade
 
 * Trial version
 
-  * No expiration date as long as it is for non-commercial use
-  * You can always use the latest version
+  * No expiration date as long as it is for non-commercial use.
+  * You can always use the latest version.
 
-* Paid version (subscription/monthly)
+* Paid version (subscription/ (Monthly/Yearly))
 
-  * Expires in one-month increments
+  * Expiration date is set in one-month/one-year increments.
 
-    * Check AutodeskAppStore for detailed expiration dates
+    * Commercial use is allowed as long as the [30-day free trial] is valid.
+    * Check AutodeskAppStore for detailed expiration dates.
 
-  * You can always use the latest version
+  * You can always use the latest version.
 
 
 License Authentication
