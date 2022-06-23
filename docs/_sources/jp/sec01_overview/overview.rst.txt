@@ -67,9 +67,10 @@
 トラブルの場合
 **************
 
-* ツールを使っていて、トラブルが発生した場合は、「 :ref:`bugReport_jp` 」からご連絡をお願いします。
+* ツールを使っていて、トラブルが発生した場合は、「:ref:`bugReport_jp`」からご連絡をお願いします。
 * もし、GitHubのアカウントをお持ちでしたら、 `Issues`_ からのご報告をお願いします。
 
-
+.. seealso::
+   既知の問題は、「:ref:`knownIssues_jp`」ページにまとめられています
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
