@@ -11,4 +11,4 @@ Release notes
 ********************
 
 * New Release
-* Support for Maya2022, 2023
+* Support for Maya®2022, 2023

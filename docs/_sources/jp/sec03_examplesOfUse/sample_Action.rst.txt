@@ -26,9 +26,9 @@ Actions (外部Pythonファイルの利用)
 サンプル プロジェクト
 *********************
 
-* このプロジェクトの完成シーンです (Maya2022で保存されています)
+* このプロジェクトの完成シーンです (Maya®2022で保存されています)
 
-  * :download:`MayaScene(2022) <../../_download/cube_animation_sample_actions_maya2022.zip>`
+  * :download:`Maya®Scene(2022) <../../_download/cube_animation_sample_actions_maya2022.zip>`
 
 ++++
 
@@ -48,9 +48,9 @@ Actions (外部Pythonファイルの利用)
 2. Pythonスクリプトの準備
 =========================
 
-* 今回は、プラグインで用意されている ``renderoverride_actions.py`` を使用します
+* 今回は、プラグインで用意されている ``actions.py`` を使用します
 
-  * Pythonファイルは ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA VERSION]/python/`` にインストールされています
+  * Pythonファイルは ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA VERSION]/python/actions/`` にインストールされています
   * RenderOverrideをロードした段階で ``PYTHONPATH`` が通っているので、すぐに使うことができます
 
     * (自分で作ったPythonコードを実行させたい時は、 ``PYTHONPATH`` などを使用し、パスを通しておくことを推奨します)
@@ -65,12 +65,12 @@ Actions (外部Pythonファイルの利用)
 
    .. code-block:: python
 
-      import renderoverride_actions;renderoverride_actions.actions_text()
+      import actions;actions.actions_text()
 
    .. figure:: ../../_images/sample_actions_textAttrs.png
       :alt: TextAttr
 
-   * テキストボックス上で右クリックし、 ``Python: Actions`` を選択すると、コードが入力されます
+   * テキストボックス上で右クリックし、 ``Python: Actions`` を選択する方法でも、コードを入力することができます
 
      .. figure:: ../../_images/sample_actions_textRightClicked.png
         :alt: TextRightClicked

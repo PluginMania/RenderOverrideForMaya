@@ -20,7 +20,7 @@ Launch Render Override
 
 * By default, the following information is displayed in the ResolutionGate frame
 
-  * ``Date``, ``Maya scene name``, ``Logged-in user name``, ``Frame number``, ``Camera name``, ``Camera focal length``.
+  * ``Date``, ``Maya® scene name``, ``Logged-in user name``, ``Frame number``, ``Camera name``, ``Camera focal length``.
 
   .. figure:: ../../_images/textDefault.png
      :alt: launchRenderOverride

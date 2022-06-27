@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>テキスト &mdash; RenderOverride for Maya 2022-06-23 documentation</title>
+  <title>テキスト &mdash; RenderOverride for Maya 2022-06-27 documentation</title>
   
 
   
@@ -394,7 +394,7 @@
 <li><p><strong>MEL</strong></p>
 <ul>
 <li><p>MELコードを実行させたいときは” <strong>MEL</strong> “を選択します</p></li>
-<li><p>外部ファイル(.mel)を実行させたいときは、Mayaが認識できるように環境を整えてください</p></li>
+<li><p>外部ファイル(.mel)を実行させたいときは、Maya®が認識できるように環境を整えてください</p></li>
 </ul>
 </li>
 </ul>
@@ -435,7 +435,7 @@
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 19%" />
-<col style="width: 57%" />
+<col style="width: 58%" />
 <col style="width: 24%" />
 </colgroup>
 <thead>
@@ -466,7 +466,7 @@
 <td><p>10.0</p></td>
 </tr>
 <tr class="row-odd"><td><p>SCENE_NAME</p></td>
-<td><p>Mayaファイル名(ファイルが保存されていなければ”Untitled”)</p></td>
+<td><p>Maya®ファイル名(ファイルが保存されていなければ”Untitled”)</p></td>
 <td><p>PRJ_ChrA_model_v001.ma</p></td>
 </tr>
 <tr class="row-even"><td><p>CAM_NAME</p></td>
@@ -538,8 +538,8 @@
 <div class="section" id="generate-type-python-mel">
 <h5>(Generate Typeが <strong>Python</strong> , <strong>MEL</strong> の場合)<a class="headerlink" href="#generate-type-python-mel" title="Permalink to this headline">¶</a></h5>
 <ul>
-<li><p>外部のPythonスクリプトを実行させる時は、次のように記述します( <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> などを通して、Mayaが認識できるようにしておいてください)</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">renderoverride_actions</span><span class="p">;</span><span class="n">renderoverride_actions</span><span class="o">.</span><span class="n">actions_text</span><span class="p">()</span>
+<li><p>外部のPythonスクリプトを実行させる時は、次のように記述します( <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> などを通して、Maya®が認識できるようにしておいてください)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">actions</span><span class="p">;</span><span class="n">actions</span><span class="o">.</span><span class="n">actions_text</span><span class="p">()</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -574,10 +574,10 @@
 <li><p>テキストのカラーを設定します</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>カラーを変更しても、すぐにビューの表示は更新されません。これは、アトリビュートエディタの問題です(ColorのUIを更新したときに、ビューのリフレッシュが行われない)。その為、更新結果を確認したい場合は、カラーを設定した後にShelfの”Refresh”ボタンを押して、ビューをリフレッシュさせてください。</p>
-<div class="figure align-default">
-<img alt="shelfRefresh" src="../../_images/shelf_refresh_icon.png" />
-</div>
+<ul class="simple">
+<li><p>カラーの設定後、リアルタイムに変更が反映されない問題があります。</p></li>
+<li><p>詳しくは、「<a class="reference internal" href="../sec99_other/knownIssues.html#knownissues-colorattr-jp"><span class="std std-ref">Colorアトリビュートの色を変更しても、ビューに直ぐに反映されない</span></a>」をご確認ください。</p></li>
+</ul>
 </div>
 </li>
 </ul>
@@ -681,7 +681,7 @@
 </li>
 <li><p><strong>Set Default</strong> ボタン</p>
 <ul class="simple">
-<li><p>Mayaデフォルトのフォントに設定します</p></li>
+<li><p>Maya®デフォルトのフォントに設定します</p></li>
 </ul>
 </li>
 </ul>

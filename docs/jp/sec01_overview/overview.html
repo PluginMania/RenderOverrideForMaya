@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>概要 &mdash; RenderOverride for Maya 2022-06-23 documentation</title>
+  <title>概要 &mdash; RenderOverride for Maya 2022-06-27 documentation</title>
   
 
   
@@ -214,26 +214,34 @@
 <ul>
 <li><p><strong>RenderOverrideノード</strong> を使うことで、表示させるテキストなどをカスタマイズできます</p></li>
 <li><p>※Viewport2.0の表示(オブジェクトの見え方)に変化はありません</p>
+<ul>
+<li><p>Viewport2.0のオプションは、Viewport2.0横のオプションボックスから設定することができます(RenderOverrideのビューに反映されます)</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../../_images/renderoverride_top.gif"><img alt="overview" src="../../_images/renderoverride_top.gif" style="width: 777.6px; height: 493.2px;" /></a>
+<img alt="viewport2.0_options" src="../../_images/overview_viewport20_option.png" />
 </div>
 </li>
 </ul>
+</li>
+</ul>
+<hr class="docutils" />
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../_images/renderoverride_top.gif"><img alt="overview" src="../../_images/renderoverride_top.gif" style="width: 777.6px; height: 493.2px;" /></a>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="os">
 <h2><a class="toc-backref" href="#id6">サポートされるバージョン・OS</a><a class="headerlink" href="#os" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 6%" />
-<col style="width: 16%" />
+<col style="width: 7%" />
+<col style="width: 15%" />
 <col style="width: 29%" />
 <col style="width: 10%" />
-<col style="width: 13%" />
-<col style="width: 26%" />
+<col style="width: 12%" />
+<col style="width: 27%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Maya</p></th>
+<tr class="row-odd"><th class="head"><p>Maya®</p></th>
 <th class="head"><p>OS</p></th>
 <th class="head"><p>プラグインの最新バージョン</p></th>
 <th class="head"><p>動作確認</p></th>
@@ -247,23 +255,23 @@
 <td><p>1.0.0</p></td>
 <td><p>✅</p></td>
 <td><p>アクティブ</p></td>
-<td><p>Python3.7 + Maya API2.0</p></td>
+<td><p>Maya® API2.0 + Python3.7</p></td>
 </tr>
 <tr class="row-odd"><td><p>2023</p></td>
 <td><p>Win10 (64bit)</p></td>
 <td><p>1.0.0</p></td>
 <td><p>✅</p></td>
 <td><p>アクティブ</p></td>
-<td><p>Python3.9 + Maya API2.0</p></td>
+<td><p>Maya® API2.0 + Python3.9</p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
-<li><p>RenderOverrideは、2022以降のMayaで使えるように設計されています</p></li>
+<li><p>RenderOverrideは、2022以降のAutodesk® Maya®で使えるように設計されています</p></li>
 <li><p>コードはPython3、API2.0、Cythonで書かれており、最適化されています</p>
 <ul>
-<li><p>Maya2020(Python2)と比べると、2倍近くパフォーマンスが上がっています</p></li>
-<li><p>Pythonのバージョンとパフォーマンスの都合上、Maya2022より前のバージョンは非対応になります</p></li>
+<li><p>Maya®2020(Python2)と比べると、2倍近くパフォーマンスが上がっています</p></li>
+<li><p>Pythonのバージョンとパフォーマンスの都合上、Maya®2022より前のバージョンは非対応になります</p></li>
 </ul>
 </li>
 <li><p>現在対応しているOSはWindows10のみです</p>
@@ -271,21 +279,17 @@
 <li><p>Windows11は動作未確認ですが、動作する可能性はあります(現在はサポート対象外)</p></li>
 </ul>
 </li>
-<li><p>サポートされるMayaのバージョンは、『最新バージョン～2世代前』の、3世代が基本となります。</p>
+<li><p>サポートされるMaya®のバージョンは、『最新バージョン～2世代前』の、3世代が基本となります。</p>
 <ul>
-<li><p>過去にサポートされていたMayaのバージョンは引き続き使用できますが、バグフィックスや最新の機能が追加されない可能性があります</p></li>
+<li><p>過去にサポートされていたMaya®のバージョンは引き続き使用できるよう配慮いたしますが、バグフィックスや最新の機能が追加されない可能性があります</p></li>
 </ul>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>MacOSには対応することができません</p></li>
-<li><p>Linux(CentOS, Rocky Linux)への対応は、ビルド協力者が現れた場合に対応を検討します</p>
-<ul>
-<li><p>Linux版の要望や、ビルドの協力をお願いできる方は、 <a class="reference external" href="https://github.com/PluginMania/RenderOverrideForMaya/issues">Issues</a> に報告をお願いします</p></li>
-</ul>
-</li>
+<li><p>MacOSには対応することができません。</p></li>
+<li><p>Linux(CentOS, Rocky Linux)への対応は検討中です。</p></li>
 </ul>
 </div>
 </div>

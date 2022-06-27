@@ -18,7 +18,7 @@ How to write "Text String"
 
      ls -sl
 
-* If you want to run an external MEL file (.mel), you can make Maya recognize the procedure (``global proc``) first
+* If you want to run an external MEL file (.mel), you can make Maya® recognize the procedure (``global proc``) first
 
 
 Return value

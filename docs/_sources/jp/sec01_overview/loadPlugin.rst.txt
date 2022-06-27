@@ -7,17 +7,17 @@
 
 ++++
 
-* Mayaを起動する前に、プラグインのインストールを完了させてください
+* Maya®を起動する前に、プラグインのインストールを完了させてください
 
   * (:ref:`how-to-plugin-install_jp`)
 
-* インストールができたら、Mayaを起動します
+* インストールができたら、Maya®を起動します
 
 
 プラグインのロード方法
 **********************
 
-1. Mayaのメニューから ``Windows > Settings/Preferences > Plug-in Manager`` と辿ります
+1. **Plug-in Manager** を立ち上げます (``Windows > Settings/Preferences > Plug-in Manager``)
 2. Plug-in Managerのダイアログの ``RenderOverride.py`` と ``RenderOverrideNode.py`` の **Loaded** もしくは **Auto load** にチェックを入れます
 
    .. figure:: ../../_images/pluginManager.png
@@ -71,7 +71,7 @@ Shelf
 
 * RenderOverrideが正常にロードされると、"RenderOverride" Shelfが自動的に読み込まれます
 
-  * (プラグインのインストール後、Maya起動時に自動的に読み込まれている可能性があります)
+  * (プラグインのインストール後、Maya®起動時に自動的に読み込まれている可能性があります)
 
 * 下図のようなShelfが読み込まれていることを確認してください
 * RenderOverrideノードの作成や、アクティブなノードの切り替えを行うときに使います

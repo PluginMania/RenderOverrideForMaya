@@ -31,8 +31,8 @@ RenderOverride ノードの作成
 
   2. ``Create RenderOverride Node`` ボタンをクリックすると、ノードが作成されます
 
-     .. figure:: ../../_images/NodeEditorAll_JP.png
-        :alt: NodeEditorAll
+     .. figure:: ../../_images/NodeEditor_create.png
+        :alt: NodeEditorCreate
 
 * **方法2**
 
@@ -69,7 +69,7 @@ RenderOverride ノードの作成
 
 .. important::
 
-   * RenderOverrideノードは、Mayaシーンの中で複数作ることができますが、ビューに適用されるノード("アクティブなノード")は1つだけです。
+   * RenderOverrideノードは、Maya®シーンの中で複数作ることができますが、ビューに適用されるノード("アクティブなノード")は1つだけです。
    * ビューに適用されるノードは次のように決まります
 
      1. RenderOverrideノードを、名前順に ``Enable`` アトリビュートにチェックが入っているかどうかを確認します

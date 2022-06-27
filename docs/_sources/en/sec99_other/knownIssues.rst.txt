@@ -15,11 +15,21 @@ Changing the color of the "Color" attribute is not immediately reflected in the 
 *************************************************************************************
 
 * This is a specification of the attribute editor and is caused by the screen not being refreshed immediately.
-* Click the ``Refresh`` button on the Shelf or change any attribute except the color to refresh the screen.
 
-  .. figure:: ../../_images/shelf_refresh_icon.png
-     :alt: shelf_editor_icon
+.. sep
 
+* Solution
+
+  * Change attributes other than color
+  * Click the ``Refresh`` button on the shelf.
+
+    .. figure:: ../../_images/shelf_refresh_icon.png
+       :alt: shelf_editor_icon
+
+  * Click the "**Refresh the scene and UI**" button in the NodeEditor.
+
+    .. figure:: ../../_images/NodeEditor_refresh.png
+       :alt: NodeEditor_refesh
 
 ++++
 
@@ -29,12 +39,23 @@ Foreground and background images are not displayed even if they are set in the f
 *****************************************************************************************
 
 
-* This error is occurring in **Maya2023**.
-* Click the ``Refresh`` button on the Shelf to refresh the screen
+* This error is occurring in **Maya®2023**.
+* Images may load slowly and take some time to display.
 
-  .. figure:: ../../_images/shelf_refresh_icon.png
-     :alt: shelf_editor_icon
+.. sep
 
+* Solution
+
+  * Change attributes other than color
+  * Click the ``Refresh`` button on the shelf.
+
+    .. figure:: ../../_images/shelf_refresh_icon.png
+       :alt: shelf_editor_icon
+
+  * Click the "**Refresh the scene and UI**" button in the NodeEditor.
+
+    .. figure:: ../../_images/NodeEditor_refresh.png
+       :alt: NodeEditor_refesh
 
 ++++
 

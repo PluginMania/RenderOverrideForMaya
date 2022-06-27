@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>既知の問題 &mdash; RenderOverride for Maya 2022-06-23 documentation</title>
+  <title>既知の問題 &mdash; RenderOverride for Maya 2022-06-27 documentation</title>
   
 
   
@@ -203,24 +203,49 @@
 <hr class="docutils" />
 <div class="section" id="color">
 <span id="knownissues-colorattr-jp"></span><h2><a class="toc-backref" href="#id5">Colorアトリビュートの色を変更しても、ビューに直ぐに反映されない</a><a class="headerlink" href="#color" title="Permalink to this headline">¶</a></h2>
-<ul>
+<ul class="simple">
 <li><p>これはアトリビュートエディタの仕様で、画面が直ぐにリフレッシュされないのが原因です</p></li>
-<li><p>Shelfの <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> ボタンをクリックするか、カラー以外のアトリビュートを変更し、画面をリフレッシュさせてください</p>
+</ul>
+<ul>
+<li><p>解決方法</p>
+<ul>
+<li><p>カラー以外のアトリビュートを変更する</p></li>
+<li><p>Shelfの <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> ボタンをクリックする</p>
 <div class="figure align-default">
 <img alt="shelf_editor_icon" src="../../_images/shelf_refresh_icon.png" />
 </div>
+</li>
+<li><p>NodeEditorの「 <strong>Refresh the scene and UI</strong> 」ボタンをクリックする</p>
+<div class="figure align-default">
+<img alt="NodeEditor_refesh" src="../../_images/NodeEditor_refresh.png" />
+</div>
+</li>
+</ul>
 </li>
 </ul>
 <hr class="docutils" />
 </div>
 <div class="section" id="foregroundbackgroundfile">
 <span id="knownissues-fgbgimg-jp"></span><h2><a class="toc-backref" href="#id6">foregroundやbackgroundの画像をfileノードで設定しても表示されない</a><a class="headerlink" href="#foregroundbackgroundfile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>この症状は、 <strong>Maya®2023</strong> で確認されています</p></li>
+<li><p>画像の読み込みが遅く、表示されるまでに時間がかかる場合があります</p></li>
+</ul>
 <ul>
-<li><p>この症状は、 <strong>Maya2023</strong> で確認されています</p></li>
-<li><p>Shelfの <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> ボタンをクリックし、画面をリフレッシュさせてください</p>
+<li><p>解決方法</p>
+<ul>
+<li><p>カラー以外のアトリビュートを変更する</p></li>
+<li><p>Shelfの <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> ボタンをクリックする</p>
 <div class="figure align-default">
 <img alt="shelf_editor_icon" src="../../_images/shelf_refresh_icon.png" />
 </div>
+</li>
+<li><p>NodeEditorの「 <strong>Refresh the scene and UI</strong> 」ボタンをクリックする</p>
+<div class="figure align-default">
+<img alt="NodeEditor_refesh" src="../../_images/NodeEditor_refresh.png" />
+</div>
+</li>
+</ul>
 </li>
 </ul>
 </div>

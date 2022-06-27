@@ -78,7 +78,7 @@ Install
   .. figure:: ../../_images/sp_copyRootFolder.png
      :alt: CopyRootFolder
 
-* After copying, start Maya and check the **Plug-in Manager** for the ``RenderOverrideNewFeature_[VERSION]`` item and load it.
+* After copying, start Maya® and check the **Plug-in Manager** for the ``RenderOverrideNewFeature_[VERSION]`` item and load it.
 
   * Once successfully loaded, you can use it just like the regular production version
 
@@ -90,7 +90,7 @@ Install
 Remove
 ======
 
-1. Close Maya
+1. Close Maya®
 2. Delete the ``RenderOverrideNewFeature_[VERSION]`` folder
 
    * (``C:/ProgramData/Autodesk/ApplicationPlugins/``)

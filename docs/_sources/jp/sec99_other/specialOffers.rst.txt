@@ -77,7 +77,7 @@
   .. figure:: ../../_images/sp_copyRootFolder.png
      :alt: CopyRootFolder
 
-* コピー後にMayaを起動し、 **Plug-in Manager** を確認すると、 ``RenderOverrideNewFeature_[VERSION]`` の項目がありますので、ロードしてください
+* コピー後にMaya®を起動し、 **Plug-in Manager** を確認すると、 ``RenderOverrideNewFeature_[VERSION]`` の項目がありますので、ロードしてください
 
   * 正常にロードされると、通常の製品版と同じように使用することができます
 
@@ -88,7 +88,7 @@
 削除方法
 ========
 
-1. Mayaを落とします
+1. Maya®を落とします
 2. ``RenderOverrideNewFeature_[VERSION]`` フォルダをDeleteしてください
 
    * (``C:/ProgramData/Autodesk/ApplicationPlugins/`` 内)

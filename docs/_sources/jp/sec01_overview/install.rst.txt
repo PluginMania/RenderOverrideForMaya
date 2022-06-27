@@ -12,12 +12,11 @@
 プラグインのダウンロード・インストール方法
 ******************************************
 
-.. (下記URL先ページの右上に『ダウンロード』というボタンがあります)
-
-   * [評価版] `Trial version Download`_
-   * [商用版] `Commercial version Download`_
+.. * [商用版] `Commercial version Download`_
 
 1. AutodeskAppStoreからインストーラーをダウンロードしてください
+
+   * 支払方法を選択し、「Free 30-Day Trial(30日間体験版)」ボタンからアクティベーションすると、最初の30日間は料金の引き落としなしで使用することができます。
 
    .. figure:: ../../_images/install_downloadAppPage.png
       :alt: downloadAppPage
@@ -45,6 +44,6 @@
    * トラブルが発生した時は「 :ref:`bugReport_jp` 」からご報告をお願いします
 
 
-.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
 .. _Commercial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
+
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
