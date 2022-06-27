@@ -18,8 +18,6 @@ Shelf
   .. figure:: ../../_images/shelf_all.png
      :alt: Shelf
 
-* RenderOverrideノードの作成や、アクティブなノードの切り替えなどでこのShelfを使います
-
 ++++
 
 各ツールの説明
@@ -28,41 +26,56 @@ Shelf
 1. Node Editor
 ==============
 
-  .. figure:: ../../_images/shelf_editor_icon.png
-     :alt: ShelfNodeEditorIcon
+.. figure:: ../../_images/shelf_editor_icon.png
+    :alt: ShelfNodeEditorIcon
+
+* RenderOverrideノードの作成や、アクティブなノードの切り替えなどでこのツールを使います
+
 
   * アイコンをクリックすると、次のようなウィンドウが開きます
 
-    .. figure:: ../../_images/NodeEditorAll_JP.png
+    .. figure:: ../../_images/NodeEditorAll.png
        :alt: NodeEditorAll
 
-    * **ノードのリスト**
+    1. **ノードのリスト**
 
-      * Mayaシーンに存在するRenderOverrideノードのリストが表示されます
-      * 各項目のチェックボックスは、 ``Enable`` アトリビュートの **on** / **off** を表しています
-      * リストをクリックすると、そのノードが選択され、アクティブになります
+       * Maya®シーンに存在するRenderOverrideノードのリストが表示されます
+       * 各項目のチェックボックスは、 ``Enable`` アトリビュートの **on** / **off** を表しています
+       * リストをクリックすると、そのノードが選択され、アクティブになります
 
-        * (選択したノードの ``Enable`` アトリビュートが **on** になり、その他のノードは **off** になります)
+         * (選択したノードの ``Enable`` アトリビュートが **on** になり、その他のノードは **off** になります)
 
-    * **Create RenderOverride Node**
+    2. **Create RenderOverride Node**
 
-      * RenderOverrideノードを作成します
-      * 作成されたノードがアクティブになります
+       * RenderOverrideノードを作成します
+       * 作成されたノードがアクティブになります
 
-    * **Refresh UI**
+    3. **Delete Selected Node**
 
-      * UIを最新の状態に更新します
+       * UIで選択されているノードを削除します
 
-    * **Close**
+    4. **Refresh the scene and UI**
 
-      * ウィンドウを閉じます
+       * Maya®のシーンをリフレッシュし、UIを最新の状態に更新します
+
+    5. **Close**
+
+       * ウィンドウを閉じます
 
 2. Refresh
 ==========
 
-  .. figure:: ../../_images/shelf_refresh_icon.png
-     :alt: ShelfRefreshIcon
+.. figure:: ../../_images/shelf_refresh_icon.png
+    :alt: ShelfRefreshIcon
 
-  * アイコンをクリックすると、ビューがリフレッシュされます
+* ビューをリフレッシュします
+
   * RenderOverrideノードのアトリビュートを変更しても表示が更新されない場合は、このボタンをクリックし、画面をリフレッシュしてください
 
+3. Help
+=======
+
+.. figure:: ../../_images/shelf_help_icon.png
+    :alt: ShelfRefreshIcon
+
+* Webブラウザで、オンラインドキュメントを開きます

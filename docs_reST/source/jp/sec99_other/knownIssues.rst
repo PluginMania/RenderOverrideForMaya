@@ -15,11 +15,21 @@ Colorアトリビュートの色を変更しても、ビューに直ぐに反映
 ***************************************************************
 
 * これはアトリビュートエディタの仕様で、画面が直ぐにリフレッシュされないのが原因です
-* Shelfの ``Refresh`` ボタンをクリックするか、カラー以外のアトリビュートを変更し、画面をリフレッシュさせてください
 
-  .. figure:: ../../_images/shelf_refresh_icon.png
-     :alt: shelf_editor_icon
+.. sep
 
+* 解決方法
+
+  * カラー以外のアトリビュートを変更する
+  * Shelfの ``Refresh`` ボタンをクリックする
+
+    .. figure:: ../../_images/shelf_refresh_icon.png
+       :alt: shelf_editor_icon
+
+  * NodeEditorの「 **Refresh the scene and UI** 」ボタンをクリックする
+
+    .. figure:: ../../_images/NodeEditor_refresh.png
+       :alt: NodeEditor_refesh
 
 ++++
 
@@ -28,12 +38,23 @@ Colorアトリビュートの色を変更しても、ビューに直ぐに反映
 foregroundやbackgroundの画像をfileノードで設定しても表示されない
 ****************************************************************
 
-* この症状は、 **Maya2023** で確認されています
-* Shelfの ``Refresh`` ボタンをクリックし、画面をリフレッシュさせてください
+* この症状は、 **Maya®2023** で確認されています
+* 画像の読み込みが遅く、表示されるまでに時間がかかる場合があります
 
-  .. figure:: ../../_images/shelf_refresh_icon.png
-     :alt: shelf_editor_icon
+.. sep
 
+* 解決方法
+
+  * カラー以外のアトリビュートを変更する
+  * Shelfの ``Refresh`` ボタンをクリックする
+
+    .. figure:: ../../_images/shelf_refresh_icon.png
+       :alt: shelf_editor_icon
+
+  * NodeEditorの「 **Refresh the scene and UI** 」ボタンをクリックする
+
+    .. figure:: ../../_images/NodeEditor_refresh.png
+       :alt: NodeEditor_refesh
 
 ++++
 
