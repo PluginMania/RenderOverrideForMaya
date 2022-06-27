@@ -7,38 +7,27 @@ License for RenderOverride
 
 ++++
 
-Users can use the software's features to produce content such as Maya files and videos.
+[Updated June 27, 2022]
+
+++++
+
+Users can use the software's features to produce content such as Maya® files and videos.
 
 License Type
 ************
 
-There are two types of licenses
-
-1. Trial version (not for commercial use)
-2. Paid version (commercial license/subscription)
-
-.. spce
-
-* The trial version is marked with a watermark.
-* There is no difference in functionality between the two types of licenses other than whether or not the watermark is displayed.
-* Please check the operation of the trial version first, and if there are no problems, please purchase the paid license.
-
-  * The content of the paid version and the trial version distributed on the AutodeskAppStore is the same, so there is no need to reinstall the paid version if you have already installed the trial version.
+* Only "paid" licenses are distributed.
+* Activate your license with either monthly or yearly payment.
+* "Free 30-Day Trial" allows you to test the tool before paying for it.
 
 
 License Expiration Date/Upgrade
 *******************************
 
-* Trial version
-
-  * No expiration date as long as it is for non-commercial use.
-  * You can always use the latest version.
-
 * Paid version (subscription/ (Monthly/Yearly))
 
   * Expiration date is set in one-month/one-year increments.
 
-    * Commercial use is allowed as long as the [30-day free trial] is valid.
     * Check AutodeskAppStore for detailed expiration dates.
 
   * You can always use the latest version.
@@ -60,7 +49,6 @@ Therefore, the following conditions must be met.
 .. separate
 
 * Once the license is approved, the watermark is hidden and can be used for commercial purposes.
-* If the developer provides you with a LICENSE file, you can use it for commercial purposes as long as the license is valid.
 
 
 Prohibited Items
@@ -76,7 +64,7 @@ Prohibited Items
 
 .. note::
    * The above items are prohibited for the **program (source code)** of this software.
-   * There are no restrictions on content such as Maya files and video files created during the period of validity of the commercial use of this software.
+   * There are no restrictions on content such as Maya® files and video files created during the period of validity of the commercial use of this software.
 
 
 More
@@ -84,16 +72,11 @@ More
 
 * Pricing
 
-  * Trial version is free.
   * See AutodeskAppStore for pricing of paid version
 
 * Expiration date
 
-  * Trial version does not expire.
-
-    * However, it must be watermarked and used for non-commercial purposes.
-
-  * Paid version is subject to AutodeskAppStore purchase terms and conditions.
+  * Subject to the terms and conditions of purchase on the AutodeskAppStore.
 
     * Please refer to AutodeskAppStore for detailed expiration date.
 
