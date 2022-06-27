@@ -22,44 +22,46 @@ Functions
 * **RenderOverride node** can be used to customize the text to be displayed, etc.
 * There is no change in the Viewport 2.0 display (object visibility)
 
+  * Please set Viewport2.0 options from the option box next to Viewport2.0 (reflected in the RenderOverride view).
 
-  .. figure:: ../../_gif/renderoverride_top.gif
-     :scale: 60%
-     :alt: overview
+    .. figure:: ../../_images/overview_viewport20_option.png
+       :alt: viewport2.0_options
 
 ++++
+
+.. figure:: ../../_gif/renderoverride_top.gif
+    :scale: 60%
+    :alt: overview
 
 Supported Versions / OS
 ****************************
 
-+------+---------------+----------------------------+-----------+---------+-------------------------+
-| Maya | OS            | Latest version of plug-ins | Operation | Support | Source code             |
-+======+===============+============================+===========+=========+=========================+
-| 2022 | Win10 (64bit) | 1.0.0                      | ✅        | Active  | Python3.7 + Maya API2.0 |
-+------+---------------+----------------------------+-----------+---------+-------------------------+
-| 2023 | Win10 (64bit) | 1.0.0                      | ✅        | Active  | Python3.9 + Maya API2.0 |
-+------+---------------+----------------------------+-----------+---------+-------------------------+
++-------+---------------+----------------------------+-----------+---------+--------------------------+
+| Maya® | OS            | Latest version of plug-ins | Operation | Support | Source code              |
++=======+===============+============================+===========+=========+==========================+
+| 2022  | Win10 (64bit) | 1.0.0                      | ✅        | Active  | Maya® API2.0 + Python3.7 |
++-------+---------------+----------------------------+-----------+---------+--------------------------+
+| 2023  | Win10 (64bit) | 1.0.0                      | ✅        | Active  | Maya® API2.0 + Python3.9 |
++-------+---------------+----------------------------+-----------+---------+--------------------------+
 
 
-* RenderOverride is designed for use with Maya 2022 and later
+* RenderOverride is designed for use with Autodesk® Maya® 2022 and later
 * Code is written in Python3, API 2.0, and Cython and has been optimized
 
-  * Nearly 2x performance improvement over Maya2020 (Python2)
-  * Due to Python version and performance reasons, versions prior to Maya2022 are not supported.
+  * Nearly 2x performance improvement over Maya®2020 (Python2)
+  * Due to Python version and performance reasons, versions prior to Maya®2022 are not supported.
 
 * Windows 10 is the only OS currently supported.
 
   * Windows 11 has not been tested, but may work (Currently not supported).
 
-* The supported Maya versions are basically three generations, from the latest version to the previous two generations.
+* The supported Maya® versions are basically three generations, from the latest version to the previous two generations.
 
-  * Maya versions that have been supported in the past can continue to be used, but there is a possibility that bugs may not be addressed if they are discovered.
+  * We will make every effort to ensure that previously supported versions of Maya® will continue to be available, but may not include bug fixes or the latest functionality.
 
 .. note::
    * MacOS cannot be supported.
-   * Linux (CentOS, Rocky Linux) support will be considered when we get some builders to help us.
-
-     * If you have any requests for Linux version, or if you want to help us to build it, please report them in `Issues`_.
+   * Support for Linux (CentOS, Rocky Linux) is under consideration.
 
 ++++
 

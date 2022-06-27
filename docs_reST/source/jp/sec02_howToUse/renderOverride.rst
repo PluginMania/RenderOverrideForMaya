@@ -20,7 +20,7 @@ Render Overrideの起動
 
 * デフォルトでは、次の情報が、ResolutionGateの枠内に表示されます
 
-  * ``日付``, ``Mayaシーン名``, ``ログインユーザー名``, ``フレーム番号``, ``カメラ名``, ``カメラの焦点距離``
+  * ``日付``, ``Maya®シーン名``, ``ログインユーザー名``, ``フレーム番号``, ``カメラ名``, ``カメラの焦点距離``
 
   .. figure:: ../../_images/textDefault.png
      :alt: launchRenderOverride

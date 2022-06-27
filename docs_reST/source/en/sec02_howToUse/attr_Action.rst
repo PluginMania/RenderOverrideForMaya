@@ -15,7 +15,7 @@ Overview
 * This attribute does not directly affect the view
 * Can be combined with Python or MEL scripts to customize the view
 
-  * This attribute is often used when creating animation clips for games.
+  * This attribute is intended to be used when creating animation clips for games.
 
 .. seealso::
   * See [:ref:`sample_Action_en`] for specific usage
@@ -63,7 +63,7 @@ End Frame
 "Trash" icon
 ============
 
-* Delete Action
+* Delete Actions[*]
 
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

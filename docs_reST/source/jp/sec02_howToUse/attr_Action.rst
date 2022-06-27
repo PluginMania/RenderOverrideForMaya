@@ -15,7 +15,7 @@ Action List
 * このアトリビュートは、直接ビューに影響を与えることはありません
 * PythonやMELのスクリプトと組み合わせ、表示をカスタマイズすることができます
 
-  * ゲームのアニメーションクリップ作成時に使われることが多いアトリビュートです
+  * ゲームのアニメーションクリップ作成時に使われることを想定したアトリビュートです
 
 .. seealso::
   * 具体的な使い方は、[:ref:`sample_Action_jp`]を参照してください
@@ -62,7 +62,7 @@ End Frame
 "ゴミ箱"アイコン
 ================
 
-* Actionを削除します
+* Actions[*]を削除します
 
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

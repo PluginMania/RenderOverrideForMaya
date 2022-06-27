@@ -31,8 +31,8 @@ Create RenderOverride node
 
   2. Click the ``Create RenderOverride Node`` button to create a node
 
-     .. figure:: ../../_images/NodeEditorAll_EN.png
-        :alt: NodeEditorAll
+     .. figure:: ../../_images/NodeEditor_create.png
+        :alt: NodeEditorCreate
 
 * **Method2**
 
@@ -69,7 +69,7 @@ How to verify that a node has been created
 
 .. important::
 
-   * Multiple RenderOverride nodes can be created in a Maya scene, but only one node ("active node") is applied to the view.
+   * Multiple RenderOverride nodes can be created in a Maya® scene, but only one node ("active node") is applied to the view.
    * The node applied to the view is determined as follows
 
      1. Check the RenderOverride node, in order of name, to see if the ``Enable`` attribute is checked.

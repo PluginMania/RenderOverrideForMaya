@@ -7,17 +7,17 @@ Load plug-ins
 
 ++++
 
-* Complete the plugin installation before launching Maya.
+* Complete the plugin installation before launching Maya®.
 
   * (:ref:`how-to-plugin-install_en`)
 
-* Once installed, launch Maya.
+* Once installed, launch Maya®.
 
 
 How to load plug-ins
 **********************
 
-1. From the Maya menu, navigate to ``Windows > Settings/Preferences > Plug-in Manager``
+1. Launch **Plug-in Manager** (``Windows > Settings/Preferences > Plug-in Manager``)
 2. In the Plug-in Manager dialog, check the **Loaded** or **Auto load** checkboxes for ``RenderOverride.py`` and ``RenderOverrideNode.py``.
 
    .. figure:: ../../_images/pluginManager.png
@@ -71,7 +71,7 @@ Shelf
 
 * When RenderOverride is successfully loaded, the "RenderOverride" shelf is automatically loaded.
 
-  * (may be loaded automatically when Maya is launched after the plug-in is installed)
+  * (may be loaded automatically when Maya® is launched after the plug-in is installed)
 
 * Please make sure that the Shelf is loaded as shown below.
 * Use this Shelf to create RenderOverride nodes, switch active nodes, etc.

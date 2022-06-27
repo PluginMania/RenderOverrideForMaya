@@ -1,5 +1,5 @@
-RenderOverride for Maya
-########################
+RenderOverride for Autodesk®Maya®
+#################################
 
 Last update(最終更新日): [|today|]
 
