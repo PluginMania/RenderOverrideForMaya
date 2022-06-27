@@ -26,9 +26,9 @@ Overview
 Project file
 ************
 
-* This is the finished scene of this project (saved in Maya2022)
+* This is the finished scene of this project (saved in Maya®2022)
 
-  * :download:`MayaScene(2022) <../../_download/cube_animation_sample_actions_maya2022.zip>`
+  * :download:`Maya®Scene(2022) <../../_download/cube_animation_sample_actions_maya2022.zip>`
 
 ++++
 
@@ -48,9 +48,9 @@ Process
 2. Preparing Python Scripts
 ===========================
 
-* This time, we will use the ``renderoverride_actions.py`` provided by the plugin
+* This time, we will use the ``actions.py`` provided by the plugin
 
-  * The Python files are installed in ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA VERSION]/python/``.
+  * The Python files are installed in ``C:/ProgramData/Autodesk/ApplicationPlugins/RenderOverride/Contents/plug-ins/[OS-MAYA VERSION]/python/actions/``.
   * The ``PYTHONPATH`` is passed when RenderOverride is loaded, so you can use it right away.
 
     * (If you want to run your own Python code, it is recommended that you use ``PYTHONPATH`` or similar to pass it through.)
@@ -64,12 +64,12 @@ Process
 
    .. code-block:: python
 
-      import renderoverride_actions;renderoverride_actions.actions_text()
+      import actions;actions.actions_text()
 
    .. figure:: ../../_images/sample_actions_textAttrs.png
       :alt: TextAttr
 
-   * Right click on the text box to select a template (choose ``Python: Actions``)
+   * You can also enter code by right-clicking on the text box and selecting ``Python: Actions``.
 
      .. figure:: ../../_images/sample_actions_textRightClicked.png
         :alt: TextRightClicked

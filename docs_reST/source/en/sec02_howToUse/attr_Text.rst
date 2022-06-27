@@ -128,7 +128,7 @@ Generate Type
 * **MEL**
 
   * If you want to run MEL code, select "**MEL**"
-  * If you want to run an external file (.mel), please make sure that Maya can recognize it in your environment.
+  * If you want to run an external file (.mel), please make sure that Maya® can recognize it in your environment.
 
 
 Text String
@@ -159,33 +159,33 @@ Text String
 
 (Keywords (variables) and their meanings)
 
-+----------------------+------------------------------------------------------+-----------------------------+
-| Keywords (variables) | Meaning                                              | Value to be replaced (e.g.) |
-+======================+======================================================+=============================+
-| ANIM_START_TIME      | Animation start time                                 | 1.0                         |
-+----------------------+------------------------------------------------------+-----------------------------+
-| ANIM_END_TIME        | Animation end time                                   | 48.0                        |
-+----------------------+------------------------------------------------------+-----------------------------+
-| MIN_TIME             | Start time of time range of playback                 | 5.0                         |
-+----------------------+------------------------------------------------------+-----------------------------+
-| MAX_TIME             | End time of time range of playback                   | 24.0                        |
-+----------------------+------------------------------------------------------+-----------------------------+
-| CUR_TIME             | Current Time                                         | 10.0                        |
-+----------------------+------------------------------------------------------+-----------------------------+
-| SCENE_NAME           | Maya file name ("Untitled" if the file is not saved) | PRJ_ChrA_model_v001.ma      |
-+----------------------+------------------------------------------------------+-----------------------------+
-| CAM_NAME             | Camera name in view                                  | persp                       |
-+----------------------+------------------------------------------------------+-----------------------------+
-| FOCAL_LENGTH         | Camera focal length                                  | 35.0                        |
-+----------------------+------------------------------------------------------+-----------------------------+
-| USER                 | Name of the user logged in to the machine            | JohnSmith                   |
-+----------------------+------------------------------------------------------+-----------------------------+
-| DATE_JP              | Today's date (Japanese format)                       | 2022/04/25                  |
-+----------------------+------------------------------------------------------+-----------------------------+
-| DATE_US              | Today's date (American format)                       | Apr 25, 2022                |
-+----------------------+------------------------------------------------------+-----------------------------+
-| DATE_UK              | Today's date (UK format)                             | 14 Apr 2022                 |
-+----------------------+------------------------------------------------------+-----------------------------+
++----------------------+-------------------------------------------------------+-----------------------------+
+| Keywords (variables) | Meaning                                               | Value to be replaced (e.g.) |
++======================+=======================================================+=============================+
+| ANIM_START_TIME      | Animation start time                                  | 1.0                         |
++----------------------+-------------------------------------------------------+-----------------------------+
+| ANIM_END_TIME        | Animation end time                                    | 48.0                        |
++----------------------+-------------------------------------------------------+-----------------------------+
+| MIN_TIME             | Start time of time range of playback                  | 5.0                         |
++----------------------+-------------------------------------------------------+-----------------------------+
+| MAX_TIME             | End time of time range of playback                    | 24.0                        |
++----------------------+-------------------------------------------------------+-----------------------------+
+| CUR_TIME             | Current Time                                          | 10.0                        |
++----------------------+-------------------------------------------------------+-----------------------------+
+| SCENE_NAME           | Maya® file name ("Untitled" if the file is not saved) | PRJ_ChrA_model_v001.ma      |
++----------------------+-------------------------------------------------------+-----------------------------+
+| CAM_NAME             | Camera name in view                                   | persp                       |
++----------------------+-------------------------------------------------------+-----------------------------+
+| FOCAL_LENGTH         | Camera focal length                                   | 35.0                        |
++----------------------+-------------------------------------------------------+-----------------------------+
+| USER                 | Name of the user logged in to the machine             | JohnSmith                   |
++----------------------+-------------------------------------------------------+-----------------------------+
+| DATE_JP              | Today's date (Japanese format)                        | 2022/04/25                  |
++----------------------+-------------------------------------------------------+-----------------------------+
+| DATE_US              | Today's date (American format)                        | Apr 25, 2022                |
++----------------------+-------------------------------------------------------+-----------------------------+
+| DATE_UK              | Today's date (UK format)                              | 14 Apr 2022                 |
++----------------------+-------------------------------------------------------+-----------------------------+
 
 (Example of a combination of keywords, characters, and display options (`Formatted String Literals`_))
 
@@ -203,11 +203,11 @@ Text String
 (When Generate Type is **Python** or **MEL**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* To run an external Python script, write the following (make sure Maya can recognize it through ``PYTHONPATH`` or something similar)
+* To run an external Python script, write the following (make sure Maya® can recognize it through ``PYTHONPATH`` or something similar)
 
   .. code-block:: python
 
-     import renderoverride_actions;renderoverride_actions.actions_text()
+     import actions;actions.actions_text()
 
   * An example utilizing Python scripts can be found at :ref:`here<sample_Action_en>`.
 
@@ -236,10 +236,8 @@ Text Color
 * Sets the text color
 
   .. note::
-     When I change the color, the view does not immediately refresh. This is a problem with the Attribute Editor (the view is not refreshed when the Color UI is updated). Therefore, if you want to see the result of the update, press the "Refresh" button in Shelf after setting the color to refresh the view.
-
-     .. figure:: ../../_images/shelf_refresh_icon.png
-        :alt: shelfRefresh
+     * There is a problem that changes are not reflected in real time after the color is set.
+     * more info... [:ref:`knownIssues_colorAttr_en`]
 
 
 Text Opacity
@@ -324,7 +322,7 @@ Font
 
   * **Set Default**
 
-    * Set to Maya default font
+    * Set to Maya® default font
 
 
 .. _Formatted String Literals: https://docs.python.org/3.10/tutorial/inputoutput.html

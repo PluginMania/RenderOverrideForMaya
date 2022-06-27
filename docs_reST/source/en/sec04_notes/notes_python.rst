@@ -27,7 +27,7 @@ How to write "Text String"
 
   .. code-block:: python
 
-     import renderoverride_actions;renderoverride_actions.actions_text()
+     import actions;actions.actions_text()
 
   .. seealso::
      :ref:`sample_Action_en`
