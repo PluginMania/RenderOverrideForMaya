@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Load plug-ins &mdash; RenderOverride for Maya 2022-06-27 documentation</title>
+  <title>Load plug-ins &mdash; RenderOverride for Maya 2022-07-05 documentation</title>
   
 
   
@@ -193,22 +193,22 @@
 <div class="contents local topic" id="contents-of-this-page">
 <p class="topic-title">Contents of this page:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#how-to-load-plug-ins" id="id1">How to load plug-ins</a></p></li>
-<li><p><a class="reference internal" href="#license-authentication" id="id2">License Authentication</a></p></li>
-<li><p><a class="reference internal" href="#shelf" id="id3">Shelf</a></p></li>
+<li><p><a class="reference internal" href="#how-to-load-plug-ins" id="id4">How to load plug-ins</a></p></li>
+<li><p><a class="reference internal" href="#license-authentication" id="id5">License Authentication</a></p></li>
+<li><p><a class="reference internal" href="#shelf" id="id6">Shelf</a></p></li>
 </ul>
 </div>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Complete the plugin installation before launching Maya®.</p>
 <ul>
-<li><p>(<a class="reference internal" href="install.html#how-to-plugin-install-en"><span class="std std-ref">How to download and install plug-ins</span></a>)</p></li>
+<li><p>(<a class="reference internal" href="install.html#how-to-plugin-install-en"><span class="std std-ref">Download</span></a>)</p></li>
 </ul>
 </li>
 <li><p>Once installed, launch Maya®.</p></li>
 </ul>
 <div class="section" id="how-to-load-plug-ins">
-<h2><a class="toc-backref" href="#id1">How to load plug-ins</a><a class="headerlink" href="#how-to-load-plug-ins" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">How to load plug-ins</a><a class="headerlink" href="#how-to-load-plug-ins" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p>Launch <strong>Plug-in Manager</strong> (<code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">&gt;</span> <span class="pre">Settings/Preferences</span> <span class="pre">&gt;</span> <span class="pre">Plug-in</span> <span class="pre">Manager</span></code>)</p></li>
 <li><p>In the Plug-in Manager dialog, check the <strong>Loaded</strong> or <strong>Auto load</strong> checkboxes for <code class="docutils literal notranslate"><span class="pre">RenderOverride.py</span></code> and <code class="docutils literal notranslate"><span class="pre">RenderOverrideNode.py</span></code>.</p>
@@ -220,42 +220,38 @@
 </div>
 <hr class="docutils" />
 <div class="section" id="license-authentication">
-<h2><a class="toc-backref" href="#id2">License Authentication</a><a class="headerlink" href="#license-authentication" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">License Authentication</a><a class="headerlink" href="#license-authentication" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p>Activation is performed when the plugin is loaded</p></li>
-<li><p>The authorization procedure is as follows</p>
-<ol class="arabic">
-<li><p>Check LICENSE file</p>
+<li><p>Activation is performed when the plugin is loaded</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <ul class="simple">
-<li><p>If a LICENSE file exists, check if the license is valid</p></li>
-<li><p>If it is valid, you can use it as a commercial version</p></li>
-<li><p>If the LICENSE file is valid, the authorization process to the Autodesk App Store in (2.) will be skipped</p></li>
+<li><p>Software downloaded from the Trial version page will be activated as a trial version without being activated, even if you have paid for the paid version license.</p></li>
+<li><p>If you have paid for the paid version license, please uninstall the Trial version and download and install the paid version software.</p></li>
 </ul>
-</li>
-<li><p>Go to the Autodesk App Store to check for a commercial license</p>
-<ul>
-<li><p>Access Autodesk’s server over the network to check if your license is valid</p></li>
-<li><p>Make sure you are connected to the network.</p></li>
-<li><p>Enter your Autodesk user ID (email address) and click the OK button.</p>
-<div class="figure align-default">
-<img alt="AutodeskUserID" src="../../_images/licenseAuthUserIdDialog.png" />
 </div>
 </li>
-<li><p>If certified, you can use it for commercial purposes.</p></li>
-<li><p>If not certified, it will be for trial use (watermark will be displayed)</p></li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p>The diagram is as follows</p>
-<div class="figure align-default">
-<img alt="licenseAuthFlowEN" src="../../_images/licenseAuthFlowEN.PNG" />
-</div>
-</li>
-<li><p>When the plugin is loaded, the ScriptEditor outputs the authentication history</p>
-<div class="figure align-default">
+<li><p>ScriptEditor outputs the authentication history</p>
+<div class="figure align-default" id="id1">
 <img alt="licenseAuthFlowJP" src="../../_images/licenseAuthScriptEditor.png" />
+<p class="caption"><span class="caption-text">(If the license of the paid version is valid, the history will be displayed as shown in the figure)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
+</li>
+<li><p>If the following dialog box appears during activation, please update to a newer version.</p>
+<ul class="simple">
+<li><p>This dialog will appear so that you can use a version with new features and increased stability.</p></li>
+<li><p>We also ask you to update your software periodically to avoid security issues.</p></li>
+</ul>
+<div class="figure align-default" id="id2">
+<img alt="licenseAuth_newRelease" src="../../_images/licenseAuth_newRelease1.png" />
+<p class="caption"><span class="caption-text">(If you get this indication, please update within a month.)</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id3">
+<img alt="licenseAuth_newRelease" src="../../_images/licenseAuth_newRelease2.png" />
+<p class="caption"><span class="caption-text">(If you see this message, please update your software immediately. Commercial use is no longer available and a watermark will be displayed)</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -263,12 +259,10 @@
 <li><p>If you attach a snapshot of ScriptEditor, it will be easier for us to respond.</p></li>
 </ul>
 </div>
-</li>
-</ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="shelf">
-<h2><a class="toc-backref" href="#id3">Shelf</a><a class="headerlink" href="#shelf" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Shelf</a><a class="headerlink" href="#shelf" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p>When RenderOverride is successfully loaded, the “RenderOverride” shelf is automatically loaded.</p>
 <ul class="simple">

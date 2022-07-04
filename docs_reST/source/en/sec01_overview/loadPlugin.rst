@@ -29,39 +29,37 @@ License Authentication
 **********************
 
 * Activation is performed when the plugin is loaded
-* The authorization procedure is as follows
 
-  1. Check LICENSE file
 
-     * If a LICENSE file exists, check if the license is valid
-     * If it is valid, you can use it as a commercial version
-     * If the LICENSE file is valid, the authorization process to the Autodesk App Store in (2.) will be skipped
+  .. warning::
+     * Software downloaded from the Trial version page will be activated as a trial version without being activated, even if you have paid for the paid version license.
+     * If you have paid for the paid version license, please uninstall the Trial version and download and install the paid version software.
 
-  2. Go to the Autodesk App Store to check for a commercial license
-
-     * Access Autodesk's server over the network to check if your license is valid
-     * Make sure you are connected to the network.
-     * Enter your Autodesk user ID (email address) and click the OK button.
-
-       .. figure:: ../../_images/licenseAuthUserIdDialog.png
-          :alt: AutodeskUserID
-
-     * If certified, you can use it for commercial purposes.
-     * If not certified, it will be for trial use (watermark will be displayed)
-
-* The diagram is as follows
-
-  .. figure:: ../../_images/licenseAuthFlowEN.PNG
-     :alt: licenseAuthFlowEN
-
-* When the plugin is loaded, the ScriptEditor outputs the authentication history
+* ScriptEditor outputs the authentication history
 
   .. figure:: ../../_images/licenseAuthScriptEditor.png
      :alt: licenseAuthFlowJP
 
-  .. note::
-     * If you encounter any trouble with activation, please report it to us at " :ref:`bugReport_en`".
-     * If you attach a snapshot of ScriptEditor, it will be easier for us to respond.
+     (If the license of the paid version is valid, the history will be displayed as shown in the figure)
+
+* If the following dialog box appears during activation, please update to a newer version.
+
+  * This dialog will appear so that you can use a version with new features and increased stability.
+  * We also ask you to update your software periodically to avoid security issues.
+
+  .. figure:: ../../_images/licenseAuth_newRelease1.png
+     :alt: licenseAuth_newRelease
+
+     (If you get this indication, please update within a month.)
+
+  .. figure:: ../../_images/licenseAuth_newRelease2.png
+     :alt: licenseAuth_newRelease
+
+     (If you see this message, please update your software immediately. Commercial use is no longer available and a watermark will be displayed)
+
+.. note::
+   * If you encounter any trouble with activation, please report it to us at " :ref:`bugReport_en`".
+   * If you attach a snapshot of ScriptEditor, it will be easier for us to respond.
 
 
 ++++
