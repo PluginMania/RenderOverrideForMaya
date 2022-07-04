@@ -66,7 +66,7 @@ Author of this software (hereinafter referred to as the "Author") has establishe
   +----------------------------------------+-------------------------------------------------+
   | Information Collection Module Provider | Autodesk, Inc.                                  |
   +----------------------------------------+-------------------------------------------------+
-  | User Information Items to be Provided  | E-mail address (user ID)                        |
+  | User Information Items to be Provided  | User ID                                         |
   +----------------------------------------+-------------------------------------------------+
   | Means and methods of provision         | HTTP (REST) call                                |
   +----------------------------------------+-------------------------------------------------+
@@ -115,4 +115,5 @@ Author of this software (hereinafter referred to as the "Author") has establishe
   The Author will modify this Privacy Policy as necessary. However, in the case of changes to this Policy that require the consent of the User under laws and regulations, the revised Policy shall be applied only to those Users who have consented to the changes in the manner prescribed by the Author. In the event of any changes to this Policy, the Author will notify the User of the effective date and content of the revised Policy by displaying it on the Author's website or by other appropriate means.
 
 
-【Established June 1, 2022】
+* 【Revised on July 4, 2022】
+* 【Established June 1, 2022】

@@ -9,19 +9,35 @@ Download and install plug-ins
 
 .. _how-to-plugin-install_en:
 
-How to download and install plug-ins
-******************************************
+Download
+********
 
+.. * [Trial version] `Trial version Download`_
 .. * [Commercial version] `Commercial version Download`_
 
 1. Download the installer from AutodeskAppStore.
 
-   * After selecting a payment method and activating it via the "Free 30-Day Trial" button, you can use the software for the first 30 days without debiting any fees.
+   * Trial version is available without payment. (A watermark will appear on the screen.)
+   * The paid version is a yearly subscription contract.
+
+     * The only difference between the trial version and the paid version is whether the watermark is displayed on the screen or not.
+     * The functions other than the watermark are the same, so please use the paid version after confirming the operation with the trial version.
 
    .. figure:: ../../_images/install_downloadAppPage.png
       :alt: downloadAppPage
 
-2. Run the downloaded installer.
+Install
+*******
+
+1. If you have already installed the trial version and wish to install the paid version, be sure to uninstall it first!
+
+   * ``(Windows) Settings  > Apps > Apps & features``
+   * (To activate the commercial version, you need to download the app from the paid version page.)
+
+   .. figure:: ../../_images/install_uninstall.png
+         :alt: Uninstall
+
+2. Launch the installer you have just downloaded.
 3. Follow the instructions in the installer to install the software.
 
    .. figure:: ../../_images/install_installer.png
@@ -44,6 +60,7 @@ Notes on downloading and installation
    * If you encounter any trouble, please report it via ":ref:`bugReport_en`".
 
 
+.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
 .. _Commercial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues

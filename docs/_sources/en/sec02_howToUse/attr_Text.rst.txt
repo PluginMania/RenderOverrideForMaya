@@ -189,15 +189,15 @@ Text String
 
 (Example of a combination of keywords, characters, and display options (`Formatted String Literals`_))
 
-+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------------------------------------+
-| Value to be entered for the attribute                   | Output Example           | Remarks                                                                                                           |
-+=========================================================+==========================+===================================================================================================================+
-|| ``[{MIN_TIME:.0f} - {MAX_TIME:.0f}] {CUR_TIME:03.0f}`` || ``[1 - 48] 005``        || Displays the "start/end time" of the playback time range and the current frame.                                  |
-||                                                        ||                         || You can remove the decimal point with ``:.0f`` after the keyword ("zero decimal places").                        |
-||                                                        ||                         || The ``:03.0f`` after the keyword allows you to remove the decimal portion and make the integer portion 3 digits. |
-+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------------------------------------+
-| ``Focal Length: {FOCAL_LENGTH:.1f}mm``                  | ``Focal Length: 35.0mm`` | Displays the focal length with one decimal place (``:.1f``)                                                       |
-+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------+-------------------+-------------------------------------------------------------------------------------------------------------------+
+| Value to be entered for the attribute                   | Output Example    | Remarks                                                                                                           |
++=========================================================+===================+===================================================================================================================+
+|| ``[{MIN_TIME:.0f} - {MAX_TIME:.0f}] {CUR_TIME:03.0f}`` || ``[1 - 48] 005`` || Displays the "start/end time" of the playback time range and the current frame.                                  |
+||                                                        ||                  || You can remove the decimal point with ``:.0f`` after the keyword ("zero decimal places").                        |
+||                                                        ||                  || The ``:03.0f`` after the keyword allows you to remove the decimal portion and make the integer portion 3 digits. |
++---------------------------------------------------------+-------------------+-------------------------------------------------------------------------------------------------------------------+
+| ``{FOCAL_LENGTH:.1f}mm``                                | ``35.0mm``        | Displays the focal length with one decimal place (``:.1f``)                                                       |
++---------------------------------------------------------+-------------------+-------------------------------------------------------------------------------------------------------------------+
 
 
 (When Generate Type is **Python** or **MEL**)
