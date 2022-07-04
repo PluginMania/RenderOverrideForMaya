@@ -9,7 +9,8 @@ RenderOverride for Autodesk®Maya®
 
 * ライセンスの定義
 
-  * ライセンシーに付与されるライセンスとは、本ソフトウェアの機能を使用して、Mayaファイルやビデオなどのコンテンツを制作することを目的とした使用権です
+  * ライセンシーに付与されるライセンスとは、本ソフトウェアの機能を使用して、
+    Mayaファイルやビデオなどのコンテンツを制作することを目的とした使用権です
   * ライセンシーは、著作権者の許可なく本ソフトウェアのソースコードを改変・結合・販売・配布することはできません
 
 * 本ソフトウェアのライセンス形態
@@ -38,16 +39,19 @@ RenderOverride for Autodesk®Maya®
       7. 本ソフトウェアを使用して作成したコンテンツの商用利用
 
     免責
-      本ソフトウェアは、商品性、特定目的への適合性、および非侵害の保証を含むがこれに限定されない、明示的または黙示的ないかなる種類の保証もなく、「現状のまま」で提供されます。いかなる場合においても、著者または著作権者は、本ソフトウェアまたは本ソフトウェアの使用またはその他の取引に起因する、または関連する、契約、不法行為またはその他の行為であるかを問わず、いかなる請求、損害またはその他の責任も負いません。
+      本ソフトウェアは、商品性、特定目的への適合性、および非侵害の保証を含むがこれに限定されない、
+      明示的または黙示的ないかなる種類の保証もなく、「現状のまま」で提供されます。
+      いかなる場合においても、著者または著作権者は、本ソフトウェアまたは本ソフトウェアの使用または
+      その他の取引に起因する、または関連する、契約、不法行為またはその他の行為であるかを問わず、
+      いかなる請求、損害またはその他の責任も負いません。
 
     その他
       * 料金
         * 無償
-          (試用版のページより本ソフトウェアの認証・ダウンロードを行ってください)
 
       * 有効期限
         * 定めなし
-          ※ 但し、ウォーターマークが表示されている限り
+          ※ 但し、ウォーターマークが表示されており、非商用の限り
 
       * 本ソフトウェアのダウンロード・インストール
         * AutodeskAppStoreからインストーラーをダウンロードしてください
@@ -80,7 +84,11 @@ RenderOverride for Autodesk®Maya®
          * 他人に紹介する場合は、必ずAutodeskAppStoreからのダウンロードを案内してください
 
     免責
-      本ソフトウェアは、商品性、特定目的への適合性、および非侵害の保証を含むがこれに限定されない、明示的または黙示的ないかなる種類の保証もなく、「現状のまま」で提供されます。いかなる場合においても、著者または著作権者は、本ソフトウェアまたは本ソフトウェアの使用またはその他の取引に起因する、または関連する、契約、不法行為またはその他の行為であるかを問わず、いかなる請求、損害またはその他の責任も負いません。
+      本ソフトウェアは、商品性、特定目的への適合性、および非侵害の保証を含むがこれに限定されない、
+      明示的または黙示的ないかなる種類の保証もなく、「現状のまま」で提供されます。
+      いかなる場合においても、著者または著作権者は、本ソフトウェアまたは本ソフトウェアの使用または
+      その他の取引に起因する、または関連する、契約、不法行為またはその他の行為であるかを問わず、
+      いかなる請求、損害またはその他の責任も負いません。
 
     その他
       * 料金
@@ -118,7 +126,8 @@ You must purchase and use not only the Software, but also the license for Autode
 
 * Definition of License
 
-  * A license granted to a licensee is for use of the features of this software for the purpose of producing content, such as Maya files and videos, using the features of this software.
+  * A license granted to a licensee is for use of the features of this software for the purpose of producing content,
+    such as Maya files and videos, using the features of this software.
   * Licensee may not modify, merge, sell, or distribute the source code of this software without the permission of the copyright holder.
 
 * License type of this software
@@ -147,16 +156,19 @@ You must purchase and use not only the Software, but also the license for Autode
       7. Commercial use of content created using this software
 
     Disclaimer of Liability
-      the software is provided "as is" without warranty of any kind, either express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement. in no event shall the author or copyright holder be liable for any claims, damages or other liability, whether in contract, tort or otherwise, arising out of or in connection with the software or any use or other dealings with the software.
+      the software is provided "as is" without warranty of any kind, either express or implied, including,
+      but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+      in no event shall the author or copyright holder be liable for any claims, damages or other liability,
+      whether in contract, tort or otherwise, arising out of or in connection with the software or any use or
+      other dealings with the software.
 
     Other
       * Fee
         * No charge
-          (Please authenticate and download this software from the Trial Version page. If you authenticate from the paid version page, the license fee may be deducted. Please note that no refunds will be made if you have paid for the license by mistake.)
 
       * Expiration date
         * Not specified
-          However, as long as the watermark is displayed
+          However, as long as the watermark is displayed and non-commercial
 
       * Download and install this software
         * Download the installer from AutodeskAppStore
@@ -188,7 +200,11 @@ You must purchase and use not only the Software, but also the license for Autode
          * If you introduce this service to others, be sure to inform them to download it from the AutodeskAppStore.
 
     Disclaimer of Liability
-      the software is provided "as is" without warranty of any kind, either express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement. in no event shall the author or copyright holder be liable for any claims, damages or other liability, whether in contract, tort or otherwise, arising out of or in connection with the software or any use or other dealings with the software.
+      the software is provided "as is" without warranty of any kind, either express or implied, including,
+      but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+      in no event shall the author or copyright holder be liable for any claims, damages or other liability,
+      whether in contract, tort or otherwise, arising out of or in connection with the software or any use or
+      other dealings with the software.
 
 
     Other
