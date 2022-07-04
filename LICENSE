@@ -1,5 +1,5 @@
 Copyright (c) 2022 PluginMania
-RenderOverride for Maya
+RenderOverride for Autodesk®Maya®
 
 [English translation is after Japanese]
 
@@ -10,14 +10,14 @@ RenderOverride for Maya
 * ライセンスの定義
 
   * ライセンシーに付与されるライセンスとは、本ソフトウェアの機能を使用して、Mayaファイルやビデオなどのコンテンツを制作することを目的とした使用権です
-  * ライセンシーは、著作権者の許可なく、本ソフトウェアのソースコードを改変・結合・販売・配布することはできません
+  * ライセンシーは、著作権者の許可なく本ソフトウェアのソースコードを改変・結合・販売・配布することはできません
 
 * 本ソフトウェアのライセンス形態
-   1. 評価版 (トライアル・商用利用不可)
+   1. 試用版 (トライアル・商用利用不可)
    2. 有償ライセンス (商用利用可)
 
 
-* 評価版(トライアル・商用利用不可)
+* 試用版(トライアル・商用利用不可)
     次の行為を許可します
     ※ 但し、本ソフトウェアのバグ等によりウォーターマークが外れた場合は、使用を中止してください
       1. 本ソフトウェアを使用して作成したコンテンツの私的利用
@@ -43,7 +43,7 @@ RenderOverride for Maya
     その他
       * 料金
         * 無償
-          (デモ版のページより本ソフトウェアの認証・ダウンロードを行ってください。有償版のページより認証した場合は、ライセンス料が引き落とされる可能性があります。間違ってライセンスをお支払い頂いた場合、返金は致しかねますのでご了承ください)
+          (試用版のページより本ソフトウェアの認証・ダウンロードを行ってください)
 
       * 有効期限
         * 定めなし
@@ -106,6 +106,8 @@ RenderOverride for Maya
         * AutodeskAppStoreからインストーラーをダウンロードしてください
         * AutodeskAppStore以外での配布は行っておりません
         * メンテナンスなどでAutodeskAppStoreが利用できない場合は、復旧するまでお待ちください
+
+[2022年7月4日更新]
 
 # ====================================================================== #
 If there is any difference in nuance between the Japanese and English translations, the Japanese license terms shall prevail.
@@ -210,3 +212,4 @@ You must purchase and use not only the Software, but also the license for Autode
         * We do not distribute the software outside of the AutodeskAppStore.
         * If AutodeskAppStore is unavailable due to maintenance or other reasons, please wait until it is restored.
 
+[Updated July 4, 2022]

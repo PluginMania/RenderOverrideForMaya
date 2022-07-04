@@ -23,7 +23,7 @@ There are two types of licenses
 * There is no difference in functionality between the two types of licenses other than whether or not the watermark is displayed.
 * Please check the operation of the trial version first, and if there are no problems, please purchase the paid license.
 
-  * The content of the paid version and the trial version distributed on the AutodeskAppStore is the same, so there is no need to reinstall the paid version if you have already installed the trial version.
+  * If you have purchased a paid license, uninstall the trial version and reinstall it using the installer downloaded from the paid version page.
 
 
 License Expiration Date/Upgrade
@@ -34,15 +34,17 @@ License Expiration Date/Upgrade
   * No expiration date as long as it is for non-commercial use.
   * You can always use the latest version.
 
-* Paid version (subscription/ (Monthly/Yearly))
+* Paid version (subscription/ (Yearly))
 
-  * Expiration date is set in one-month/one-year increments.
-
-    * Commercial use is allowed as long as the [30-day free trial] is valid.
-    * Check AutodeskAppStore for detailed expiration dates.
-
+  * Expiration date is set in one-year increments.
   * You can always use the latest version.
 
+.. note::
+   **Update Supplement**
+
+   * When a new RenderOverride version is released, a dialog may appear prompting you to update.
+   * Due to security and other reasons, after a certain period of time, the current version will no longer be available.
+   * In that case, please download the new version from AutodeskAppStore and update.
 
 License Authentication
 **********************
@@ -60,7 +62,8 @@ Therefore, the following conditions must be met.
 .. separate
 
 * Once the license is approved, the watermark is hidden and can be used for commercial purposes.
-* If the developer provides you with a LICENSE file, you can use it for commercial purposes as long as the license is valid.
+
+  * However, software installed from the installer downloaded from the trial version page will always start as a trial version. Therefore, please be sure to install the software using the installer downloaded from the paid version page.
 
 
 Prohibited Items
