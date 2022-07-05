@@ -34,9 +34,9 @@ License Expiration Date/Upgrade
   * No expiration date as long as it is for non-commercial use.
   * You can always use the latest version.
 
-* Paid version (subscription/ (Yearly))
+* Paid version (subscription)
 
-  * Expiration date is set in one-year increments.
+  * Please check the AutodeskAppStore for detailed expiration dates.
   * You can always use the latest version.
 
 .. note::

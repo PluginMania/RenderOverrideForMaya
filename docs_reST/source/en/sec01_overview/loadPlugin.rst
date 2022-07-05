@@ -9,7 +9,7 @@ Load plug-ins
 
 * Complete the plugin installation before launching Maya®.
 
-  * (:ref:`how-to-plugin-install_en`)
+  * (:ref:`how-to-plugin-download_en`, :ref:`how-to-plugin-install_en`)
 
 * Once installed, launch Maya®.
 

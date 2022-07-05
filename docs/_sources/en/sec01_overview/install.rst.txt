@@ -7,7 +7,7 @@ Download and install plug-ins
 
 ++++
 
-.. _how-to-plugin-install_en:
+.. _how-to-plugin-download_en:
 
 Download
 ********
@@ -18,13 +18,15 @@ Download
 1. Download the installer from AutodeskAppStore.
 
    * Trial version is available without payment. (A watermark will appear on the screen.)
-   * The paid version is a yearly subscription contract.
+   * The paid version is a subscription contract.
 
      * The only difference between the trial version and the paid version is whether the watermark is displayed on the screen or not.
      * The functions other than the watermark are the same, so please use the paid version after confirming the operation with the trial version.
 
    .. figure:: ../../_images/install_downloadAppPage.png
       :alt: downloadAppPage
+
+.. _how-to-plugin-install_en:
 
 Install
 *******
