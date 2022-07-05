@@ -9,7 +9,7 @@
 
 * Maya®を起動する前に、プラグインのインストールを完了させてください
 
-  * (:ref:`how-to-plugin-install_jp`)
+  * (:ref:`how-to-plugin-download_jp`, :ref:`how-to-plugin-install_jp`)
 
 * インストールができたら、Maya®を起動します
 
