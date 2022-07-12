@@ -27,7 +27,7 @@ Process
 
 1. First, check the "Resolution" in ResolutionGate
 
-   * Basically, it is the resolution or its magnification at the time of final rendering.
+   * Basically, the resolution of the final rendering or a multiple of it.
    * In this case, we will use ``1920 x 1080``.
 
 2. To add letterboxes to the top and bottom of the screen by 10%, we multiply the previous resolution height by ``1.2``.
@@ -82,3 +82,8 @@ Process
 8. Click the ``Playblast`` or ``Apply`` button in the options dialog to run Playblast
 
    * Check the output video
+
+
+.. seealso::
+   * A tool is available to easily configure letterbox settings, as described on this page
+   * See ":ref:`shelf_letterboxSettings_jp`" in Shelf.
