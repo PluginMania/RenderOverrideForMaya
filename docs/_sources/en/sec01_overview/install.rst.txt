@@ -12,16 +12,19 @@ Download and install plug-ins
 Download
 ********
 
-.. * [Trial version] `Trial version Download`_
 .. * [Commercial version] `Commercial version Download`_
 
 1. Download the installer from AutodeskAppStore.
 
+   [Trial version] `Trial version Download`_
+
    * Trial version is available without payment. (A watermark will appear on the screen.)
-   * The paid version is a subscription contract.
+   * The paid version is currently being prepared for sale.
 
      * The only difference between the trial version and the paid version is whether the watermark is displayed on the screen or not.
      * The functions other than the watermark are the same, so please use the paid version after confirming the operation with the trial version.
+
+       * (The program downloaded from the trial version page will not activate the license, so you will need to uninstall the trial version and then reinstall the paid version of the program.)
 
    .. figure:: ../../_images/install_downloadAppPage.png
       :alt: downloadAppPage
@@ -62,7 +65,7 @@ Notes on downloading and installation
    * If you encounter any trouble, please report it via ":ref:`bugReport_en`".
 
 
-.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
+.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/Detail/Index?id=1500980629671557990&os=Win64&appLang=en
 .. _Commercial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
