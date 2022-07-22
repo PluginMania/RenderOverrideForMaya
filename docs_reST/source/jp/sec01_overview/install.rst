@@ -12,16 +12,19 @@
 ダウンロード方法
 ****************
 
-.. * [試用版] `Trial version Download`_
 .. * [商用版] `Commercial version Download`_
 
 1. AutodeskAppStoreからインストーラーをダウンロードしてください
 
+   [試用版] `Trial version Download`_
+
    * 試用版は、料金の支払無しで試用できます。 (画面にウォーターマークが表示されます)
-   * 有償版は、サブスクリプション契約になります。
+   * 有償版の販売は現在準備中です。
 
      * 試用版と有償版の違いは、画面にウォーターマークが表示されるかどうかの違いしかありません。
      * ウォーターマーク以外の機能は同じですので、試用版で動作確認を行った上、有償版をご使用ください。
+
+       * (試用版のページからダウンロードしたプログラムではライセンス認証されませんので、一度試用版をアンインストールしたのち、有償版のプログラムをインストールし直す必要があります)
 
    .. figure:: ../../_images/install_downloadAppPage.png
       :alt: downloadAppPage
@@ -62,7 +65,7 @@
    * トラブルが発生した時は「 :ref:`bugReport_jp` 」からご報告をお願いします
 
 
-.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
+.. _Trial version Download: https://apps.autodesk.com/MAYA/ja/Detail/Index?id=1500980629671557990&os=Win64&appLang=ja
 .. _Commercial version Download: https://apps.autodesk.com/MAYA/ja/List/Search?isAppSearch=True&searchboxstore=MAYA
 
 .. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
