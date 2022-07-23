@@ -15,7 +15,7 @@ License Type
 There are two types of licenses
 
 1. Trial version (not for commercial use)
-2. Paid version (commercial license/subscription)
+2. Paid version (commercial license)
 
 .. spce
 
@@ -34,7 +34,7 @@ License Expiration Date/Upgrade
   * No expiration date as long as it is for non-commercial use.
   * You can always use the latest version.
 
-* Paid version (subscription)
+* Paid version (Preparing for release)
 
   * Please check the AutodeskAppStore for detailed expiration dates.
   * You can always use the latest version.
