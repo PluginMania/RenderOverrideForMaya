@@ -40,8 +40,9 @@ Last update(最終更新日): [|today|]
    jp/sec99_other/index
 
 
-.. _Issues: https://github.com/PluginMania/RenderOverrideForMaya/issues
+++++
 
+"Autodesk" and "Maya" are registered trademarks or trademarks of Autodesk, Inc. and its subsidiaries or affiliates in the United States and other countries.
 
 
 .. Indices and tables
