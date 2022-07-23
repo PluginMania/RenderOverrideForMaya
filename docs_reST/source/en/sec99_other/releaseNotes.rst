@@ -23,3 +23,5 @@ New Features
 
 * New Release
 * Support for Maya®2022, 2023
+
+(Commercial version in preparation)
