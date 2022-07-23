@@ -7,8 +7,12 @@ Release notes
 
 ++++
 
-1.0.0 [MM DD, 2022]
-********************
+1.0.0 [July 22, 2022]
+*********************
+
+[Trial version]
 
 * New Release
 * Support for Maya®2022, 2023
+
+(Commercial version in preparation)
