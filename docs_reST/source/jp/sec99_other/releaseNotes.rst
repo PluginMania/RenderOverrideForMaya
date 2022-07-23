@@ -18,7 +18,7 @@
 * :ref:`LetterboxSettings<shelf_letterboxSettings_jp>`
 
 
-1.0.0 [2022/07/13]
+1.0.0 [2022/07/22]
 ******************
 
 [試用版]

@@ -18,8 +18,10 @@ New Features
 * :ref:`LetterboxSettings<shelf_letterboxSettings_en>`
 
 
-1.0.0 [July 13, 2022]
+1.0.0 [July 22, 2022]
 *********************
+
+[Trial only]
 
 * New Release
 * Support for Maya®2022, 2023
